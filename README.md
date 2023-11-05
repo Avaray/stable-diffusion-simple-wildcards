@@ -8,7 +8,7 @@ The purpose of these Wildcards is to introduce randomness and diversity into the
 To use these Wildcards, you need an extension. You can use the official one [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards).  
 Of course, there are other extensions that allow you to use Wildcards. I recommend the one I mentioned because it's the simplest.
 
-Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the rented server) for the extension to work correctly. A simple reload of WebUI may not be sufficient.
+Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly. A simple reload of WebUI may not be sufficient.
 
 Once you have a working Wildcards extension, you just need to copy wildcard files to the appropriate directory.  
 In the case of [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards), it will be   `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
