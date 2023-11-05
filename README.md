@@ -1,4 +1,4 @@
-# 📑 Wildcards for Stable Diffusion WebUI
+# 📑 Simple Wildcards for Stable Diffusion WebUI
 
 I created these Wildcards using [ChatGPT](https://chat.openai.com) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts) extension, which I used before. Through my experience, I've found that Wildcards work better.
 
