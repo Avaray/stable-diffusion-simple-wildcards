@@ -1,6 +1,6 @@
 # 📑 Simple Wildcards for Stable Diffusion WebUI
 
-I created these Wildcards using [ChatGPT](https://chat.openai.com) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts) extension, which I used before. Through my experience, I've found that Wildcards work better.
+This is my collection of useful Wildcards. I created them using [ChatGPT](https://chat.openai.com) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts) extension, which I used before. Through my experience, I've found that Wildcards work better.
 
 The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are mainly intended to help you in creating scenes with people.
 
@@ -24,4 +24,4 @@ The initial prompt will look as follows:
 
 
 # 📝 Contributing
-If you believe something is missing, that something could be useful, or that something should be removed, go ahead - [clone the repository, edit the files, and submit a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
+If you believe something is missing, that something could be useful, or that something should be removed, go ahead - [fork this repository, edit the files, and submit a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
