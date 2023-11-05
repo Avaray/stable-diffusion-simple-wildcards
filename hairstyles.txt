@@ -32,9 +32,6 @@ comb over
 cornrow updo
 cornrows
 crew cut
-crown braid
-crown twist
-crown twist braid
 curled ends
 curls with bangs
 curly
@@ -66,7 +63,6 @@ frohawk
 goddess braids
 half-down
 half-up
-half-up braided crown
 high ponytail
 honeycomb locs
 layered
@@ -82,7 +78,6 @@ milkmaid braids
 mohawk
 mullet
 pigtails
-pineapple updo
 pinned back
 pinned curls
 pixie cut
@@ -130,7 +125,6 @@ twist braids
 twist out
 twisted bangs
 twisted chignon
-twisted crown
 twisted dreadlocks
 twisted half-up
 twisted ponytail
