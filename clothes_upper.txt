@@ -1,0 +1,77 @@
+baseball jacket
+bathrobe
+bikini
+blazer
+blouse
+bodysuit
+bolero
+bra
+bustier
+button-down
+button-up shirt
+camisole
+cape
+cardigan
+coat
+corset
+cowl-neck sweater
+crochet top
+crop jacket
+crop top
+denim jacket
+dress
+fisherman sweater
+flannel shirt
+fleece jacket
+halter dress
+halter top
+hawaiian shirt
+hooded sweatshirt
+hoodie
+jacket
+jeans
+jersey
+jumpsuit
+kimono
+leather jacket
+leggings
+one-piece
+panties
+pants
+parka
+peacoat
+peplum jacket
+peplum top
+peter pan collar top
+polo shirt
+poncho
+puffer jacket
+pullover
+raincoat
+robe
+romper
+scarf
+shawl
+shirt
+shorts
+shrug
+skirt
+suit
+sweater
+sweatshirt
+swimsuit
+t-shirt
+tank top
+thermal top
+tie
+toga
+trench coat
+tube top
+tunic
+turtleneck
+tuxedo
+tweed blazer
+underwear
+velvet blazer
+vest
+windbreaker
