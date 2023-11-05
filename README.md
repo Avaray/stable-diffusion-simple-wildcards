@@ -14,12 +14,12 @@ Once you have a working Wildcards extension, you just need to copy wildcard file
 You can download these files as a [compressed archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip) and extract them on your machine, or you can download them using [Git](https://git-scm.com/docs/git-clone), whichever is more convenient for you.
 
 # ⚡️ Usage
-Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well. 
+Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.  
 
-`photography of __nationalities__ woman BREAK wearing __colors__ __clothes_upper__ BREAK in __locations__, at evening`
+`photography of __nationalities__ woman BREAK wearing __colors__ __clothes_upper__ BREAK in __locations__`
 
-The initial prompt will look as follows:
-`photography of Polish woman BREAK wearing purple jacket BREAK in city street, at evening`
+The initial prompt will look as follows:  
+`photography of Polish woman BREAK wearing purple jacket BREAK in city street`
 
 
 # 📝 Contributing
