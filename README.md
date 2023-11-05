@@ -22,4 +22,4 @@ The initial prompt will look as follows:
 
 
 # 📝 Contributing
-If you believe something is missing, that something could be useful, or that something should be removed, go ahead - clone the repository, edit the files, and submit a pull request.
+If you believe something is missing, that something could be useful, or that something should be removed, go ahead - [clone the repository, edit the files, and submit a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
