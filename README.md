@@ -4,10 +4,23 @@ I created these Wildcards using [ChatGPT](https://chat.openai.com) to streamline
 
 The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are mainly intended to help you in creating scenes with people.
 
-# ⚡️ Usage
+# ⚡️ Installation 
 To use these Wildcards, you need an extension. You can use the official one [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards). Of course, there are other extensions that allow you to use Wildcards. I recommend the one I mentioned because it's the simplest.
 
 Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the rented server) for the extension to work correctly. A simple reload of WebUI may not be sufficient.
+
+Once you have a working Wildcards extension, you just need to copy wildcard files to the appropriate directory. In the case of [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards), it will be `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`. directory.
+
+You can download these files as a [compressed archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip) and extract them on your machine, or you can download them using [Git](https://git-scm.com/docs/git-clone), whichever is more convenient for you.
+
+# ⚡️ Usage
+Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well. 
+
+`photography of __nationalities__ woman BREAK wearing __colors__ __clothes_upper__ BREAK in __locations__, at evening`
+
+The initial prompt will look as follows:
+`photography of Polish woman BREAK wearing purple jacket BREAK in city street, at evening`
+
 
 # 📝 Contributing
 If you believe something is missing, that something could be useful, or that something should be removed, go ahead - clone the repository, edit the files, and submit a pull request.
