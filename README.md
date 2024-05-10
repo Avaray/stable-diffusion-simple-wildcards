@@ -1,6 +1,6 @@
 # 📑 Simple Wildcards for Stable Diffusion WebUI
 
-This is my collection of useful Wildcards. I created most of them using [ChatGPT](https://chat.openai.com) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts) extension, which I used before. Through my experience, I've found that Wildcards are more convenient to use.
+This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts) extension, which I used before. Through my experience, I've found that Wildcards are more convenient to use.
 
 The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are mainly intended to help you in creating scenes with people.
 
