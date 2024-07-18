@@ -1,19 +1,14 @@
 abandoned building
 abandoned pier
 alleyway
-antique shop
 architectural landmark
 architectural ruins
-art gallery
 autumn foliage
 balcony
 balcony with city view
-balloon field
-barber shop
 beach
 beach boardwalk
 beach bonfire
-beach cave
 beach dunes
 beachfront boardwalk
 bookstore
@@ -24,61 +19,42 @@ botanical greenhouse
 bridge
 cafe
 campground
-canal
 canopy walkway
-carnival
-carnival carousel
-carousel
-castle
-cave
 city skyline at night
 city street
 classroom
 cliff-top viewpoint
 cliffside
 coastal path
-coffee plantation
 coffee shop
 college campus
 college courtyard
 college library
-cornfield
 country road
 countryside
-cozy cabin
-desert
-desert oasis
-enchanted garden
 fairground
-fairy-tale castle
 farm
 farmers market
 farmhouse
 field
-fire escape
 flower field
-flower shop
 foggy forest
 forest
 forest trail
-fountain
-fruit market
-fruit orchard
 garden
 graffiti alley
 graffiti wall
-grassy knoll
-harbor
+grass field
+green field
 hills
+empty street
+empty road
+middle of nowhere
 historic bridge
 historic church
 historic mansion garden
-historic theater
-historic train station
 historical mansion
 historical site
-horse stable
-indoor studio
 industrial area
 industrial warehouse
 kitchen
@@ -92,26 +68,18 @@ meadow
 moonlit beach
 mountain
 mountain summit
-museum
-music venue
 nightclub
 ocean pier
 office
 old town
 open field
 orchard
-outdoor amphitheater
 park
-pedestrian bridge
-pedestrian tunnel
-pedestrianized street
 picnic spot
 playground
 public garden
 public library
 public plaza
-railroad tracks
-railway station
 restroom
 river delta
 riverbank
@@ -125,49 +93,30 @@ rooftop pool
 rooftop terrace
 ruins
 rural road
-sailboat
 saloon
 sandy dunes
 school
 seaside cliff
 seaside town
-secret alley
-secret garden
-secret passageway
-skate park
-skateboard park
 skyscraper rooftop
-snow-covered landscape
-sports stadium
 staircase
 stairwell
+street
 street art mural
-street market
-subway station
 sunrise viewpoint
 sunset overlook
-suspension bridge
-swimming pool
 theater
 toilet
-train station
-train tracks
-treehouse
 tropical rainforest
 urban alley
-urban art installation
 urban courtyard
 urban garden
 urban rooftop garden
-urban skate park
 urban skyline
 urban warehouse
 village
-vineyard
-vintage arcade
-vintage car
-vintage train
-volcano
+village sqare
+village street
 warehouse district
 waterfall
 waterfront
@@ -175,8 +124,5 @@ waterfront cafe
 waterfront promenade
 waterfront warehouse
 wildflower field
-windmill
-wine cellar
-winery
 winter wonderland
 yacht club
