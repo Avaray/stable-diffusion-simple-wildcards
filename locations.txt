@@ -6,11 +6,13 @@ architectural ruins
 autumn foliage
 balcony
 balcony with city view
+bamboo forest
 beach
 beach boardwalk
 beach bonfire
 beach dunes
 beachfront boardwalk
+bioluminescent bay
 bookstore
 botanical arboretum
 botanical conservatory
@@ -20,6 +22,7 @@ bridge
 cafe
 campground
 canopy walkway
+canyon overlook
 city skyline at night
 city street
 classroom
@@ -32,29 +35,31 @@ college courtyard
 college library
 country road
 countryside
+empty road
+empty street
 fairground
 farm
 farmers market
 farmhouse
 field
+fjord lookout
 flower field
 foggy forest
 forest
 forest trail
 garden
+glacial lake
 graffiti alley
 graffiti wall
 grass field
 green field
 hills
-empty street
-empty road
-middle of nowhere
 historic bridge
 historic church
 historic mansion garden
 historical mansion
 historical site
+hot spring
 industrial area
 industrial warehouse
 kitchen
@@ -64,11 +69,16 @@ library
 lighthouse
 locker room
 lush waterfall
+mangrove swamp
 meadow
+meteor crater
+middle of nowhere
 moonlit beach
 mountain
 mountain summit
+night bazaar
 nightclub
+northern lights viewpoint
 ocean pier
 office
 old town
@@ -80,12 +90,15 @@ playground
 public garden
 public library
 public plaza
+redwood grove
 restroom
+rice terrace
 river delta
 riverbank
 riverfront promenade
 riverside dock
 rolling hills
+roman bathhouse
 rooftop
 rooftop bar
 rooftop garden
@@ -94,6 +107,7 @@ rooftop terrace
 ruins
 rural road
 saloon
+salt flat
 sandy dunes
 school
 seaside cliff
@@ -101,12 +115,15 @@ seaside town
 skyscraper rooftop
 staircase
 stairwell
+stargazing dome
 street
 street art mural
 sunrise viewpoint
 sunset overlook
+tea plantation
 theater
 toilet
+treetop canopy
 tropical rainforest
 urban alley
 urban courtyard
@@ -124,5 +141,7 @@ waterfront cafe
 waterfront promenade
 waterfront warehouse
 wildflower field
+wildlife reserve
 winter wonderland
 yacht club
+zen monastery
