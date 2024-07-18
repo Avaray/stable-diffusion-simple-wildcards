@@ -1,30 +1,37 @@
+asymmetrical top
+bandeau top
 baseball jacket
 bathrobe
 bikini
 blazer
 blouse
+bodystocking 
 bodysuit
 bolero
 bra
 bustier
 button-down
 button-up shirt
-camisole
-cape
+cage bra
 cardigan
 coat
+cold shoulder top
 corset
+corset top
 cowl-neck sweater
 crochet top
+crop hoodie
 crop jacket
 crop top
 denim jacket
 dress
-fisherman sweater
+fishnet top
 flannel shirt
 fleece jacket
+fur stole
 halter dress
 halter top
+harness
 hawaiian shirt
 hooded sweatshirt
 hoodie
@@ -32,14 +39,18 @@ jacket
 jeans
 jersey
 jumpsuit
-kimono
+lace bolero
+latex top
 leather jacket
-leggings
+leather vest
+mesh shirt
+nipple covers
+off-shoulder top
 one-piece
-panties
-pants
 parka
+pasties
 peacoat
+peplum bustier
 peplum jacket
 peplum top
 peter pan collar top
@@ -52,10 +63,12 @@ robe
 romper
 scarf
 shawl
+sheer blouse
 shirt
-shorts
 shrug
 skirt
+sleeveless turtleneck
+strappy bralette
 suit
 sweater
 sweatshirt
@@ -74,4 +87,6 @@ tweed blazer
 underwear
 velvet blazer
 vest
+vinyl crop top
 windbreaker
+wrap top
