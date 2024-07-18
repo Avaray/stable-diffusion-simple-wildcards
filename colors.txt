@@ -1,25 +1,20 @@
 almond
 amaranth
 amethyst
-aqua
 ash
 azure
 beige
 bisque
 black
 blonde
-blonde
-blue
 blue
 blush
 bronze
-brown
 brown
 burgundy
 butterscotch
 caramel
 celadon
-cerulean
 cerulean
 charcoal
 chartreuse
@@ -42,16 +37,12 @@ gold
 graphite
 gray
 green
-green
 indigo
 ivory
 jade
 khaki
 lavender
-lemon
-lemonade
 lilac
-lime
 magenta
 mahogany
 malachite
@@ -68,19 +59,19 @@ obsidian
 olive
 onyx
 orange
-oyster
 pastel
+pastel blue
+pastel creamy
 pastel green
 pastel pink
+pastel red
 peach
 peacock
-pearl
 peridot
 periwinkle
 persian
 persimmon
 pewter
-pink
 pink
 pistachio
 plum
