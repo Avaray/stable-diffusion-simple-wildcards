@@ -3,16 +3,21 @@ abandoned pier
 alleyway
 architectural landmark
 architectural ruins
+atrium
 autumn foliage
 balcony
 balcony with city view
+ballroom
 bamboo forest
+basement
 beach
 beach boardwalk
 beach bonfire
 beach dunes
 beachfront boardwalk
+bedroom
 bioluminescent bay
+boardroom
 bookstore
 botanical arboretum
 botanical conservatory
@@ -33,8 +38,12 @@ coffee shop
 college campus
 college courtyard
 college library
+conservatory
 country road
 countryside
+courtyard
+dining room
+dressing room
 empty road
 empty street
 fairground
@@ -51,6 +60,7 @@ garden
 glacial lake
 graffiti alley
 graffiti wall
+grand staircase
 grass field
 green field
 hills
@@ -59,6 +69,7 @@ historic church
 historic mansion garden
 historical mansion
 historical site
+home office
 hot spring
 industrial area
 industrial warehouse
@@ -67,10 +78,13 @@ lake
 lakeside cottage
 library
 lighthouse
+living room
+lobby
 locker room
 lush waterfall
 mangrove swamp
 meadow
+meditation room
 meteor crater
 middle of nowhere
 moonlit beach
@@ -109,19 +123,25 @@ rural road
 saloon
 salt flat
 sandy dunes
+sauna
 school
 seaside cliff
 seaside town
 skyscraper rooftop
+spa room
 staircase
 stairwell
 stargazing dome
 street
 street art mural
+studio apartment
+study
 sunrise viewpoint
+sunroom
 sunset overlook
 tea plantation
 theater
+theater room
 toilet
 treetop canopy
 tropical rainforest
