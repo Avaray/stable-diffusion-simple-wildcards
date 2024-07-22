@@ -26,7 +26,7 @@ For example `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/
 
 ### Optional settings
 
-If you are using `sd-dynamic-prompts`, you can enable one useful option in the extension settings.
+If you are using `sd-dynamic-prompts`, you can enable one useful option in the extension settings.  
 `Settings` -> `Uncategorised` -> `Dynamic Prompts` -> `Save template to metadata: Write prompt template into the PNG metadata`
 
 # ⚡️ Usage
