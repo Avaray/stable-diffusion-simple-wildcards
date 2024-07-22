@@ -38,4 +38,6 @@ If you believe something is missing, that something could be useful, or that som
 
 # 🍺 Original sources
 
-- The list of artists was obtained from the [Stable Diffusion Cheat-Sheet](https://supagruen.github.io/StableDiffusion-CheatSheet/) website.
+- The list of Nationalities was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/), modified and expanded by me.
+- The list of Light types was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/1cjwi04/made_this_lighting_guide_for_myself_thought_id/), modified and expanded by me.
+- The list of Artists was obtained from the [Stable Diffusion Cheat-Sheet](https://supagruen.github.io/StableDiffusion-CheatSheet/) website.
