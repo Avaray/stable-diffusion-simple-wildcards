@@ -1,30 +1,49 @@
-acrylic
-cashmere
-chiffon
-corduroy
-cotton
-denim
-flannel
-jersey
-lace
-leather
-linen
-mesh
-nylon
-organza
-polyester
-poplin
-rayon
-satin
-silk
-spandex
-suede
-taffeta
-terrycloth
-tulle
-tweed
-twill
-velour
-velvet
-viscose
-wool
+acrylic, synthetic fiber
+bamboo, eco-friendly fiber
+cashmere, soft wool
+chenille, fuzzy fabric
+chiffon, sheer fabric
+corduroy, ribbed fabric
+cotton, soft fiber
+crepe, crinkled surface fabric
+denim, sturdy twill fabric
+elastane, highly elastic fiber
+fishnet, wide open weave
+flannel, soft woven fabric
+fleece, soft pile fabric
+gore-tex, waterproof breathable fabric
+jacquard, intricately woven fabric
+jersey, stretchy knit fabric
+lace, delicate openwork fabric
+latex, rubber-like material
+leather, tough hide
+linen, lightweight fabric
+lycra, stretchy synthetic
+lyocell, wood pulp fiber
+mesh, net-like material
+microfiber, ultrafine synthetic
+modal, beech tree fiber
+neoprene, synthetic rubber
+nylon, strong synthetic
+organza, thin sheer fabric
+polyester, synthetic fiber
+poplin, plain-woven fabric
+pvc, shiny plastic-like material
+qiviut, musk ox wool
+ramie, plant-based fiber
+rayon, semi-synthetic fiber
+satin, glossy fabric
+sheer, transparent fabric
+silk, smooth natural fiber
+spandex, stretchy material
+suede, soft napped leather
+taffeta, crisp fabric
+tencel, wood cellulose fiber
+terrycloth, absorbent fabric
+tulle, fine netted material
+tweed, rough woolen fabric
+twill, diagonal-ribbed fabric
+velour, plush knitted fabric
+velvet, short dense pile fabric
+viscose, regenerated cellulose fiber
+wool, natural fiber
