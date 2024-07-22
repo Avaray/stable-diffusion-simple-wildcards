@@ -37,6 +37,8 @@ Let's say you want to generate a scene with a woman in a random location. Let he
 The initial prompt will look as follows:  
 `photography of Polish woman BREAK wearing purple jacket BREAK in city street`
 
+**WARNING**: Nationalities does not work well with `Pony Diffusion` checkpoints. You need to use it with good checkpoints.
+
 # 📝 Contributing
 
 If you believe something is missing, that something could be useful, or that something should be removed, go ahead - [fork this repository, edit the files, and submit a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
