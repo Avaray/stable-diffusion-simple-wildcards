@@ -15,8 +15,7 @@ Most likely, after installing the extension, you'll need to restart Stable Diffu
 
 # 💾 Installation
 
-Once you have a working Wildcards extension, you just need to copy wildcard `.txt` files to the appropriate directory.  
-In the case of the two mentioned plugins, it will be the `wildcards` folder in the main directory of the extension.  
+Once you have a working Wildcards extension, you just need to copy wildcard `.txt` files to the appropriate directory. In the case of the two mentioned plugins, it will be the `wildcards` folder in the main directory of the extension.  
 For example `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
 
 ### How to download Wildcards ???
