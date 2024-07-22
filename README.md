@@ -24,6 +24,11 @@ For example `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/
 - You can manually download these files as a [compressed archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip) and extract them by yourself.
 - You can download them using [git-clone](https://git-scm.com/docs/git-clone) (output directory must be empty).
 
+### Optional settings
+
+If you are using `sd-dynamic-prompts`, you can enable one useful option in the extension settings.
+`Settings` -> `Uncategorised` -> `Dynamic Prompts` -> `Save template to metadata: Write prompt template into the PNG metadata`
+
 # ⚡️ Usage
 
 Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.  
