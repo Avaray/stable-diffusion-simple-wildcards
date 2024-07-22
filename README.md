@@ -1,6 +1,6 @@
 # 📑 Simple Wildcards Collection for Stable Diffusion
 
-This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts/tree/main?tab=readme-ov-file#basic-usage), which I used before. Through my experience, I've found that Wildcards are more convenient to use.
+This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts/tree/main?tab=readme-ov-file#basic-usage), which I used before. Through my experience, I've found that Wildcards are more convenient to use.
 
 The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are mainly intended to help you in creating scenes with people.
 
@@ -37,7 +37,7 @@ Let's say you want to generate a scene with a woman in a random location. Let he
 The initial prompt will look as follows:  
 `photography of Polish woman BREAK wearing purple jacket BREAK in city street`
 
-**WARNING**: Nationalities does not work well with `Pony Diffusion` checkpoints. You need to use it with good checkpoints.
+**WARNING**: Nationalities does not work well with `Pony Diffusion` checkpoints. You need to use it with good checkpoints focused on real people.
 
 # 📝 Contributing
 
