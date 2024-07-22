@@ -1,20 +1,23 @@
-# 📑 Simple Wildcards for Stable Diffusion WebUI
+# 📑 Simple Wildcards Collection for Stable Diffusion
 
-This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts) extension, which I used before. Through my experience, I've found that Wildcards are more convenient to use.
+This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts/tree/main?tab=readme-ov-file#basic-usage), which I used before. Through my experience, I've found that Wildcards are more convenient to use.
 
 The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are mainly intended to help you in creating scenes with people.
 
 # 💻 Preparations
 
-To use these Wildcards, you need an extension. You can use the official one [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards).  
-Of course, there are other extensions that allow you to use Wildcards. I recommend the one I mentioned because it's the simplest.
+To use these Wildcards, you need an extension. You can use one of the following:
+
+- [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts)
+- [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
 
 Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server instance](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly. A simple reload of WebUI may not be sufficient.
 
 # 💾 Installation
 
-Once you have a working Wildcards extension, you just need to copy wildcard files to the appropriate directory.  
-In the case of [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards), it will be `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
+Once you have a working Wildcards extension, you just need to copy wildcard `.txt` files to the appropriate directory.  
+In the case of the two mentioned plugins, it will be the `wildcards` folder in the main directory of the extension.  
+For example `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
 
 ### How to download Wildcards ???
 
