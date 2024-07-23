@@ -46,14 +46,9 @@ mv stable-diffusion-simple-wildcards/*.txt . &&
 rm -rf stable-diffusion-simple-wildcards
 ```
 
-### How to download Wildcards ???
+### Optional steps
 
-- You can manually download these files as a [compressed archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip) and extract them by yourself.
-- You can download them using [git-clone](https://git-scm.com/docs/git-clone) (output directory must be empty).
-
-### Optional settings
-
-If you are using `sd-dynamic-prompts`, you can enable one useful option in the extension settings.  
+If you are using `sd-dynamic-prompts`, I recommend you to enable one useful option in the extension settings.  
 `Settings` -> `Uncategorised` -> `Dynamic Prompts` -> `Save template to metadata: Write prompt template into the PNG metadata`
 
 # ⚡️ Usage
