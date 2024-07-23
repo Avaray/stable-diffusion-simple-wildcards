@@ -17,11 +17,34 @@ Most likely, after installing the extension, you'll need to restart Stable Diffu
 
 # 💾 Installation
 
-Once you have a working Wildcards extension, you just need to copy wildcard `.txt` files to the appropriate directory. In the case of the two mentioned plugins, it will be the `wildcards` folder in the main directory of the extension:
+Once you have a working Wildcards extension, you need wildcard `.txt` files in appropriate directory. In the case of the two mentioned plugins, it will be the `wildcards` directory in the main directory of the extension.
 
-`stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`
-
+The path to the directory may look like this:  
+`stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`  
 `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
+
+Enter **the proper directory** and download the files from this repository. You can do this in several ways:
+## Download with [CURL](https://curl.se/) and [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html)
+
+```bash
+curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/files | xargs -n 1 -P 8 curl -s -fLO --retry 3 --remote-name-all
+```
+
+## Download with [WGET](https://www.gnu.org/software/wget/) and [unzip](https://linux.die.net/man/1/unzip)
+
+```bash
+wget -q https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip -O main.zip &&
+unzip -joq main.zip '*.txt' &&
+rm -f main.zip
+```
+
+## Download with [GIT](https://git-scm.com/)
+
+```bash
+git clone https://github.com/Avaray/stable-diffusion-simple-wildcards/ &&
+mv stable-diffusion-simple-wildcards/*.txt ../ &&
+rm -rf stable-diffusion-simple-wildcards
+```
 
 ### How to download Wildcards ???
 
