@@ -17,8 +17,11 @@ Most likely, after installing the extension, you'll need to restart Stable Diffu
 
 # 💾 Installation
 
-Once you have a working Wildcards extension, you just need to copy wildcard `.txt` files to the appropriate directory. In the case of the two mentioned plugins, it will be the `wildcards` folder in the main directory of the extension.  
-For example `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
+Once you have a working Wildcards extension, you just need to copy wildcard `.txt` files to the appropriate directory. In the case of the two mentioned plugins, it will be the `wildcards` folder in the main directory of the extension:
+
+`stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`
+
+`stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
 
 ### How to download Wildcards ???
 
@@ -38,7 +41,21 @@ Let's say you want to generate a scene with a woman in a random location. Let he
 The initial prompt will look as follows:  
 `photography of Polish woman BREAK wearing purple jacket BREAK in city street`
 
-**WARNING**: Nationalities does not work well with `Pony Diffusion` checkpoints. You need to use it with good checkpoints focused on real people.
+With `sd-dynamic-prompts`, you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
+
+`${c=__colors__} photography of woman BREAK ${c} shirt BREAK ${c} skirt BREAK ${c} boots`
+
+The prompt will look like this:  
+`photography of Woman BREAK pink shirt BREAK pink skirt BREAK pink boots`
+
+You can read more about BREAK keyword [in this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/15bty86/prompt_trick_for_more_consistent_results_in/).
+
+**WARNING**: [Nationalities](https://github.com/Avaray/stable-diffusion-simple-wildcards/blob/main/nationalities.txt) does not work well with `Pony Diffusion` checkpoints. You need to use it with good checkpoints focused on real people. I recommend using one of following checkpoints:
+
+- [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
+- [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
+- [\_CHINOOK\_](https://civitai.com/models/400589/chinook) `SDXL 1.0`
+- [epiCRealism XL](https://civitai.com/models/277058/epicrealism-xl) `SDXL 1.0`
 
 # 📝 Contributing
 
