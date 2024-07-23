@@ -23,7 +23,7 @@ The path to the directory may look like this:
 `stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`  
 `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
 
-Enter **the proper directory** and download the files from this repository. You can do this in several ways:
+Navigate to **the proper directory** and download the files. You can do this in several ways:
 ## Download with [CURL](https://curl.se/) and [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html)
 
 ```bash
