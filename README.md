@@ -15,6 +15,11 @@ To use these Wildcards, you need an extension. You can use one of the following:
 
 Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server instance](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly. A simple reload of WebUI may not be sufficient. If you installed the extension using the [Provisioning Script](https://github.com/ai-dock/stable-diffusion-webui/blob/main/config/provisioning/default.sh) from [AI-Dock](https://github.com/ai-dock/stable-diffusion-webui), a restart will not be necessary.
 
+### Optional steps
+
+If you are using `sd-dynamic-prompts`, I recommend you to enable one useful option in the extension settings.  
+`Settings` -> `Uncategorised` -> `Dynamic Prompts` -> `Save template to metadata: Write prompt template into the PNG metadata`
+
 # 💾 Installation
 
 Once you have a working Wildcards extension, you need wildcard `.txt` files in appropriate directory. In the case of the two mentioned plugins, it will be the `wildcards` directory in the main directory of the extension.
@@ -24,7 +29,7 @@ The path to the directory may look like this:
 `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
 
 Navigate to **the proper directory** and download the files.  
-You can download them by using one of the following methods:
+You can download them by using one of the following commands:
 ## Download with [CURL](https://curl.se/) and [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html)
 
 ```bash
@@ -46,11 +51,6 @@ git clone https://github.com/Avaray/stable-diffusion-simple-wildcards/ &&
 mv stable-diffusion-simple-wildcards/*.txt . &&
 rm -rf stable-diffusion-simple-wildcards
 ```
-
-### Optional steps
-
-If you are using `sd-dynamic-prompts`, I recommend you to enable one useful option in the extension settings.  
-`Settings` -> `Uncategorised` -> `Dynamic Prompts` -> `Save template to metadata: Write prompt template into the PNG metadata`
 
 # ⚡️ Usage
 
