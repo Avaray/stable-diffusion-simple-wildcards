@@ -11,7 +11,7 @@ To use these Wildcards, you need an extension. You can use one of the following:
 - [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts)
 - [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
 
-Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server instance](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly. A simple reload of WebUI may not be sufficient.
+Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server instance](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly. A simple reload of WebUI may not be sufficient. If you installed the extension using the [Provisioning Script](https://github.com/ai-dock/stable-diffusion-webui/blob/main/config/provisioning/default.sh) from [AI-Dock](https://github.com/ai-dock/stable-diffusion-webui), a restart will not be necessary.
 
 # 💾 Installation
 
