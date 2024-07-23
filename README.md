@@ -43,10 +43,10 @@ The initial prompt will look as follows:
 
 With `sd-dynamic-prompts`, you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
-`${c=__colors__} photography of woman BREAK ${c} shirt BREAK ${c} skirt BREAK ${c} boots`
+`${c=__colors__} woman in __locations__ BREAK ${c} shirt BREAK ${c} skirt BREAK ${c} boots`
 
 The prompt will look like this:  
-`photography of Woman BREAK pink shirt BREAK pink skirt BREAK pink boots`
+`woman in park BREAK pink shirt BREAK pink skirt BREAK pink boots`
 
 You can read more about BREAK keyword [in this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/15bty86/prompt_trick_for_more_consistent_results_in/).
 
