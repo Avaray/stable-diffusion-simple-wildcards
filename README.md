@@ -4,6 +4,8 @@ This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynami
 
 The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are mainly intended to help you in creating scenes with people.
 
+Since I work with these Wildcards myself, I catch problematic prompts and remove them. Sometimes I also add new prompts, and even entire files.
+
 # 💻 Preparations
 
 To use these Wildcards, you need an extension. You can use one of the following:
