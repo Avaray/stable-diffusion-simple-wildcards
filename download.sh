@@ -55,7 +55,7 @@ if [ -z "$ZIP_TOOL_FOUND" ]; then
 else
     echo "Using $ZIP_TOOL_FOUND to extract files"
     if [ "$ZIP_TOOL_FOUND" == "unzip" ]; then
-        unzip -joq '*.txt'
+        unzip -oq '*.txt'
     else
         tar xf '*.txt'
     fi
