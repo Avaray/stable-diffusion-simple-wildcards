@@ -29,15 +29,13 @@ else
 fi
 
 # Default download method 
-try () {
-    echo "Trying default download method"
-    $DOWNLOAD_COMMAND $REPO_URL_API | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 8 wget -q -P . -nc
-    if [ $? -eq 0 ]; then
-        DONE=1
-    else
-        METHOD=$((METHOD+1))
-    fi
-}
+echo "Trying default download method"
+$DOWNLOAD_COMMAND $REPO_URL_API | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 8 wget -q -P . -nc
+if [ $? -eq 0 ]; then
+    DONE=1
+else
+    METHOD=$((METHOD+1))
+fi
 
 # check if DONE is set to 1
 if [ $DONE -eq 0 ]; then
