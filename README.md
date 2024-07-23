@@ -42,7 +42,7 @@ rm -f main.zip
 
 ```bash
 git clone https://github.com/Avaray/stable-diffusion-simple-wildcards/ &&
-mv stable-diffusion-simple-wildcards/*.txt ../ &&
+mv stable-diffusion-simple-wildcards/*.txt . &&
 rm -rf stable-diffusion-simple-wildcards
 ```
 
