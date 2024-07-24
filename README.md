@@ -2,9 +2,9 @@
 
 This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts/tree/main?tab=readme-ov-file#basic-usage), which I used before. Through my experience, I've found that Wildcards are more convenient to use.
 
-The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are mainly intended to help you in creating scenes with people.
+The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are primarily intended for creating photorealistic scenes with people.
 
-Since I work with these Wildcards myself, I catch problematic prompts and remove them. Sometimes I also add new prompts, and even entire files.
+Since I work with these Wildcards myself, I catch problematic prompts and remove them. Sometimes I also add new prompts, and even entire files. I'm constantly looking for new inspirations.
 
 # 💻 Preparations
 
@@ -82,6 +82,7 @@ If you believe something is missing, that something could be useful, or that som
 
 # 🍺 Original sources
 
-- The list of Nationalities was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/), modified and expanded by me.
-- The list of Light types was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/1cjwi04/made_this_lighting_guide_for_myself_thought_id/), modified and expanded by me.
-- The list of Artists was obtained from the [Stable Diffusion Cheat-Sheet](https://supagruen.github.io/StableDiffusion-CheatSheet/) website.
+- The list of Nationalities `nationalities.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/), modified and expanded by me.
+- The list of Light types `lighting.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/1cjwi04/made_this_lighting_guide_for_myself_thought_id/), modified and expanded by me.
+- The first list of Artists `artists.txt` was obtained from the [Stable Diffusion Cheat-Sheet](https://supagruen.github.io/StableDiffusion-CheatSheet/) website.
+- The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/). File `artists2_tagged.txt` contains only artists with tags (prompts in this file will increase the chance of generating a specific style). To extract data from [original file](<https://github.com/proximasan/sdxl_artist_styles_studies/blob/main/static/SDXL%20Image%20Synthesis%20Style%20Studies%20Database%20(Copy%20of%20The%20List)%20-%20Artists.csv>) use `/scripts/artists2.ts` script.
