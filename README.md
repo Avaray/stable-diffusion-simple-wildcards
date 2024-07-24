@@ -10,10 +10,13 @@ Since I work with these Wildcards myself, I catch problematic prompts and remove
 
 To use these Wildcards, you need an extension. You can use one of the following:
 
-- [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts)
+- [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) `Recommended`
 - [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
 
-Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server instance](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly. **A simple reload of WebUI may not be sufficient.** If you installed the extension using the [Provisioning Script](https://github.com/ai-dock/stable-diffusion-webui/blob/main/config/provisioning/default.sh) from [AI-Dock](https://github.com/ai-dock/stable-diffusion-webui), a restart will not be necessary.
+Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server instance](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly.  
+**A simple reload of WebUI may not be sufficient ❗️❗️❗️**
+
+If you installed the extension using the [Provisioning Script](https://github.com/ai-dock/stable-diffusion-webui/blob/main/config/provisioning/default.sh) from [AI-Dock](https://github.com/ai-dock/stable-diffusion-webui), a restart will not be necessary 👌
 
 ### Optional steps
 
@@ -69,7 +72,8 @@ The prompt will look like this:
 
 You can read more about BREAK keyword [in this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/15bty86/prompt_trick_for_more_consistent_results_in/).
 
-**WARNING**: [Nationalities](https://github.com/Avaray/stable-diffusion-simple-wildcards/blob/main/nationalities.txt) and [Artists](https://github.com/Avaray/stable-diffusion-simple-wildcards/blob/main/artists.txt) does not work well with `Pony Diffusion` checkpoints. You need to use it with good checkpoints focused on real people. I recommend using one of following checkpoints:
+**WARNING**: Prompting `Nationalities` and `Artists` does not work well with `Pony Diffusion` checkpoints because these checkpoints were trained on completely different data.  
+You need to use it with good checkpoints focused on real people. I recommend using one of following checkpoints:
 
 - [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
 - [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
