@@ -33,19 +33,19 @@ The path to the directory may look like this:
 Navigate to **the proper directory** and download the files.  
 You can download them by using one of the following commands:
 
-## Download automatically with [WGET](https://www.gnu.org/software/wget/)
+## Download automatically with [BASH](https://www.gnu.org/software/bash/) script and [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- wget
 ```
 
-## Download automatically with [ARIA2](https://github.com/aria2/aria2)
+## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [ARIA2](https://github.com/aria2/aria2)
 
 ```bash
 aria2c -q -d -o - https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- aria2c
 ```
 
-## Download automatically with [CURL](https://curl.se/) `slowest`
+## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [CURL](https://curl.se/) `slowest`
 
 ```bash
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
