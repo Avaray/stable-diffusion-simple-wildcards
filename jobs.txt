@@ -1,0 +1,97 @@
+athlete
+babysitter
+baker
+bank teller
+barber
+barista
+beach lifeguard
+bus driver
+butler
+cashier
+cheerleader
+chimney sweep
+cinema usher
+construction worker
+courier
+courthouse security
+crossing guard
+cruise ship staff
+customs officer
+delivery driver
+dentist
+doctor
+electrician
+factory worker
+farmer
+fast food worker
+firefighter
+fisherman
+flight attendant
+florist
+food delivery
+garbage collector
+gardener
+gas station attendant
+greengrocer
+gym instructor
+hairdresser
+highway patrol officer
+hospital orderly
+house painter
+housekeeper
+human billboard
+ice cream truck driver
+influencer
+janitor
+jewelry store clerk
+kitchen chef
+lab technician
+landscaper
+librarian
+maid
+mail carrier
+massage therapist
+mechanic
+military personnel
+miner
+museum docent
+nurse
+optician
+paramedic
+park ranger
+parking attendant
+personal shopper
+personal trainer
+pharmacist
+pilot
+pizza delivery person
+plumber
+police officer
+pool lifeguard
+porter
+postal worker
+prison guard
+professor
+real estate agent
+referee
+rickshaw driver
+school teacher
+security guard
+sport mascot
+street cleaner
+street performer
+street vendor
+student
+taxi driver
+theater usher
+toll booth operator
+tour guide
+veterinarian
+waiter
+waitress
+warehouse worker
+watch repairer
+window cleaner
+x-ray technician
+yoga instructor
+zookeeper
