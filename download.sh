@@ -1,25 +1,21 @@
 #!/bin/bash
 
-# Usage:
-# wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/download.sh | bash -s -- wget
-# curl -sL https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/download.sh | bash -s -- curl
-SUPPORTED_DOWNLOAD_TOOLS=("wget" "curl")
+SUPPORTED_DOWNLOAD_TOOLS=("aria2" "wget" "curl")
 SUPPORTED_ZIP_TOOLS=("unzip" "tar")
 
-# Check if download tool is specified
+# Check if download tool is specified and if is in SUPPORTED_DOWNLOAD_TOOLS
 if [ -z "$1" ]; then
     echo "Please specify download tool"
     exit 1
-elif [[ ! " ${SUPPORTED_DOWNLOAD_TOOLS[@]} " =~ " $1 " ]]; then
-    echo "Unsupported download tool"
+elif [[ ! " ${SUPPORTED_DOWNLOAD_TOOLS[@]} " =~ " ${1} " ]]; then
+    echo "Unsupported download tool $1 (Supported: ${SUPPORTED_DOWNLOAD_TOOLS[@]})"
     exit 1
 fi
 
 DOWNLOAD_TOOL="$1"
-DOWNLOAD_COMMAND=""
 
 REPO_URL="https://github.com/Avaray/stable-diffusion-simple-wildcards/"
-REPO_URL_API="https://api.github.com/repos/Avaray/stable-diffusion-simple-wildcards/contents/"
+REPO_URL_API="https://api.github.com/repos/Avaray/stable-diffusion-simple-wildcards/contents/?client_id=fda41a585d0b6ab5df8e&client_secret=8ff73efb08b09e032638375d51e860046414a125"
 ZIP_URL="https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip"
 
 SUCCESS=0
@@ -55,6 +51,7 @@ if [ -z "$ZIP_TOOL_FOUND" ]; then
 else
     echo "Using $ZIP_TOOL_FOUND to extract files"
     if [ "$ZIP_TOOL_FOUND" == "unzip" ]; then
+        # Unzip all .txt files
         unzip -oq '*.txt'
     else
         tar xf '*.txt'
