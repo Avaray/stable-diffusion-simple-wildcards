@@ -2,6 +2,7 @@
 
 API_CREDENTIALS=""
 if [ -n "$GITHUB_CLIENT" ] && [ -n "$GITHUB_SECRET" ]; then
+    echo "GitHub API credentials provided"
     API_CREDENTIALS="?client_id=$GITHUB_CLIENT&client_secret=$GITHUB_SECRET"
 fi
 
