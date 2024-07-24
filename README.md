@@ -69,12 +69,14 @@ The prompt will look like this:
 
 You can read more about BREAK keyword [in this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/15bty86/prompt_trick_for_more_consistent_results_in/).
 
-**WARNING**: [Nationalities](https://github.com/Avaray/stable-diffusion-simple-wildcards/blob/main/nationalities.txt) does not work well with `Pony Diffusion` checkpoints. You need to use it with good checkpoints focused on real people. I recommend using one of following checkpoints:
+**WARNING**: [Nationalities](https://github.com/Avaray/stable-diffusion-simple-wildcards/blob/main/nationalities.txt) and [Artists](https://github.com/Avaray/stable-diffusion-simple-wildcards/blob/main/artists.txt) does not work well with `Pony Diffusion` checkpoints. You need to use it with good checkpoints focused on real people. I recommend using one of following checkpoints:
 
 - [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
 - [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
 - [\_CHINOOK\_](https://civitai.com/models/400589/chinook) `SDXL 1.0`
 - [epiCRealism XL](https://civitai.com/models/277058/epicrealism-xl) `SDXL 1.0`
+
+For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person. For `Artists` it's better to have `CFG Scale 2-5` to achieve best results. In both cases Checkpoint will have the biggest impact on the final result.
 
 # 📝 Contributing
 
