@@ -1,4 +1,8 @@
+// This script fetches the artists data from the original CSV file, 
+// converts data and writes it to two separate files: artists2.txt and artists2_tagged.txt
+
 // You need to run this script with BUN - https://bun.sh/
+// Just run `bun artists2.ts` in the terminal
 
 type ArtistType = { name: string; tags: string }[];
 
