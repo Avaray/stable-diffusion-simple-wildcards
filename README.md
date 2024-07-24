@@ -32,27 +32,27 @@ The path to the directory may look like this:
 
 Navigate to **the proper directory** and download the files.  
 You can download them by using one of the following commands:
-## Download with [CURL](https://curl.se/) and [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html)
+
+## Download automatically with [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
-curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/files | xargs -n 1 -P 8 curl -s -fLO --retry 3 --remote-name-all
+wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- wget
 ```
 
-## Download with [WGET](https://www.gnu.org/software/wget/) and [unzip](https://linux.die.net/man/1/unzip)
+## Download automatically with [ARIA2](https://github.com/aria2/aria2)
 
 ```bash
-wget -q https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip -O main.zip &&
-unzip -joq main.zip '*.txt' &&
-rm -f main.zip
+aria2c -q -d -o - https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- aria2c
 ```
 
-## Download with [GIT](https://git-scm.com/)
+## Download automatically with [CURL](https://curl.se/) `slowest`
 
 ```bash
-git clone https://github.com/Avaray/stable-diffusion-simple-wildcards/ &&
-mv stable-diffusion-simple-wildcards/*.txt . &&
-rm -rf stable-diffusion-simple-wildcards
+curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
 ```
+
+For every command above, you need to have [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html) installed on your system.  
+You can find alternative ways to download files in the [DOWNLOAD.md](DOWNLOAD.md) file.
 
 # ⚡️ Usage
 
