@@ -1,5 +1,10 @@
 #!/bin/bash
 
+API_CREDENTIALS=""
+if [ -n "$GITHUB_CLIENT" ] && [ -n "$GITHUB_SECRET" ]; then
+    API_CREDENTIALS="?client_id=$GITHUB_CLIENT&client_secret=$GITHUB_SECRET"
+fi
+
 SUPPORTED_DOWNLOAD_TOOLS=("aria2" "wget" "curl")
 SUPPORTED_ZIP_TOOLS=("unzip" "tar")
 
@@ -15,7 +20,7 @@ fi
 DOWNLOAD_TOOL="$1"
 
 REPO_URL="https://github.com/Avaray/stable-diffusion-simple-wildcards/"
-REPO_URL_API="https://api.github.com/repos/Avaray/stable-diffusion-simple-wildcards/contents/"
+REPO_URL_API="https://api.github.com/repos/Avaray/stable-diffusion-simple-wildcards/contents/${API_CREDENTIALS}"
 ZIP_URL="https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip"
 
 SUCCESS=0
