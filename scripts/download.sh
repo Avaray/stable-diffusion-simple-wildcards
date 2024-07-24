@@ -35,8 +35,11 @@ SUCCESS=0
 if [ "$DOWNLOAD_TOOL" == "wget" ]; then
     wget -qO- $REPO_URL_API | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 10 wget -q -P . -nc && SUCCESS=1
 elif [ "$DOWNLOAD_TOOL" == "aria2c" ]; then
-    local ARIA2_OPTS="-q --allow-overwrite=true"
-    aria2c $ARIA2_OPTS $REPO_URL_API | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 10 aria2c $ARIA2_OPTS -d . && SUCCESS=1
+    # NEED TO DO THIS IN BASH WAY.
+    # DOWNLOAD JSON FILE AND THEN EXTRACT URLS FROM IT
+    # WORK FOR TOMORROW
+    ARIA2_OPTS="-q --allow-overwrite=true"
+    aria2c $ARIA2_OPTS $REPO_URL_API -o | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 10 aria2c $ARIA2_OPTS -d . && SUCCESS=1
 else
     # TODO: Need to check this, because it take much more time than with wget
     curl -sL $REPO_URL_API | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 10 curl -s -O && SUCCESS=1
