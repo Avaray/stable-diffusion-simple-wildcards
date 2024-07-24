@@ -86,4 +86,5 @@ If you believe something is missing, that something could be useful, or that som
 - The list of Light types `lighting.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/1cjwi04/made_this_lighting_guide_for_myself_thought_id/), modified and expanded by me.
 - The first list of Artists `artists.txt` was obtained from the [Stable Diffusion Cheat-Sheet](https://supagruen.github.io/StableDiffusion-CheatSheet/) website.
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).  
-  File `artists2_tagged.txt` contains only artists with tags. To extract data from [original file](<https://github.com/proximasan/sdxl_artist_styles_studies/blob/main/static/SDXL%20Image%20Synthesis%20Style%20Studies%20Database%20(Copy%20of%20The%20List)%20-%20Artists.csv>) use `/scripts/artists2.ts` script.
+  File `artists2_tagged.txt` contains only artists with tags.  
+  To extract data from [original file](<https://github.com/proximasan/sdxl_artist_styles_studies/blob/main/static/SDXL%20Image%20Synthesis%20Style%20Studies%20Database%20(Copy%20of%20The%20List)%20-%20Artists.csv>) use `/scripts/artists2.ts` script.
