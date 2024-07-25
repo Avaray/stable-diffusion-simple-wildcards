@@ -1,10 +1,13 @@
 # 📑 Simple Wildcards Collection for Stable Diffusion
 
-This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts/tree/main?tab=readme-ov-file#basic-usage), which I used before. Through my experience, I've found that Wildcards are more convenient to use.
 
-The purpose of these Wildcards is to introduce randomness and diversity into the created graphics. They are primarily intended for creating photorealistic scenes with people.
+<!-- This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts/tree/main?tab=readme-ov-file#basic-usage), which I used before. Through my experience, I've found that Wildcards are more convenient to use. -->
 
-Since I work with these Wildcards myself, I catch problematic prompts and remove them. Sometimes I also add new prompts, and even entire files. I'm constantly looking for new inspirations.
+**Wildcards** in this collection are mainly created for realistic scenes with people. Hoever, they can be used for other types of art as well. Wildcards from this collection will boost your creativity and give you inspiration.
+
+Since I work with these **Wildcards** myself, I catch problematic keywords and remove them. Sometimes I also add new keywords, and even entire files. I'm constantly looking for new ideas to expand this collection.
+
+The main idea is to not overcomplicate things. Dealing with thousands of wildcards may be overwhelming. I believe it's better to have a few that you can remember and use effectively.
 
 # 💻 Preparations
 
@@ -82,10 +85,6 @@ You need to use it with good checkpoints focused on real people. I recommend usi
 
 For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person. For `Artists` it's better to have `CFG Scale 2-5` to achieve best results. In both cases Checkpoint will have the biggest impact on the final result.
 
-# 📝 Contributing
-
-If you believe something is missing, that something could be useful, or that something should be removed, go ahead - [fork this repository, edit the files, and submit a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
-
 # 🍺 Original sources
 
 - The list of Nationalities `nationalities.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/), modified and expanded by me.
@@ -94,3 +93,11 @@ If you believe something is missing, that something could be useful, or that som
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).  
   File `artists2_tagged.txt` contains only artists with tags.  
   To extract data from [original file](<https://raw.githubusercontent.com/proximasan/sdxl_artist_styles_studies/main/static/SDXL%20Image%20Synthesis%20Style%20Studies%20Database%20(Copy%20of%20The%20List)%20-%20Artists.csv>) use `/scripts/artists2.ts` script.
+
+# 📝 Contributing
+
+If you believe something is missing, that something could be useful, or that something should be removed, go ahead - [fork this repository, edit the files, and submit a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).
+
+You can also support me on [GitHub](https://github.com/sponsors/Avaray), [Patreon](patreon.com/Avaray_), or [Buy Me a Coffee](https://buymeacoffee.com/avaray).
+
+<!-- <a href="https://buymeacoffee.com/avaray" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" height="41" width="174"></a> -->
