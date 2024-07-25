@@ -25,6 +25,27 @@ fi
 
 DOWNLOAD_TOOL="$1"
 
+# Check if download tool is installed
+# There might be a case where the download tool is not available here in the script
+# It happens when user is using alias in the terminal
+if ! command -v $DOWNLOAD_TOOL &> /dev/null; then
+    echo "Download tool $DOWNLOAD_TOOL not found"
+    echo "Searching for available download tools"
+    for TOOL in "${SUPPORTED_DOWNLOAD_TOOLS[@]}"; do
+        if command -v $TOOL &> /dev/null; then
+            echo "Supported tool $TOOL found and will be used"
+            DOWNLOAD_TOOL="$TOOL"
+            break
+        fi
+    done
+    # Check if the download tool is still not found
+    if [ "$DOWNLOAD_TOOL" == "$1" ]; then
+        echo "No supported download tool found"
+        echo "Are you using an alias for the $1?"
+        exit 1
+    fi
+fi
+
 REPO_OWNER="Avaray"
 REPO_NAME="stable-diffusion-simple-wildcards"
 REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/"
@@ -131,4 +152,3 @@ else
     cleanup
     exit 0
 fi
-
