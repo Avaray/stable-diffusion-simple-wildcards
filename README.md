@@ -70,7 +70,7 @@ With `sd-dynamic-prompts`, you can also use [Variables](https://github.com/adiey
 The prompt will look like this:  
 `woman in park BREAK pink shirt BREAK pink skirt BREAK pink boots`
 
-You can read more about BREAK keyword [in this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/15bty86/prompt_trick_for_more_consistent_results_in/).
+You can read more about `BREAK` keyword [in this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/15bty86/prompt_trick_for_more_consistent_results_in/).
 
 **WARNING**: Prompting `Nationalities` and `Artists` does not work well with `Pony Diffusion` checkpoints because these checkpoints were trained on completely different data.  
 You need to use it with good checkpoints focused on real people. I recommend using one of following checkpoints:
