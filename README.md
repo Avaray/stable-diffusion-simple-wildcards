@@ -39,13 +39,14 @@ You can download them by using one of the following commands:
 wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- wget
 ```
 
-<!-- ## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [ARIA2](https://github.com/aria2/aria2)
+## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [ARIA2](https://github.com/aria2/aria2)
 
 ```bash
-aria2c -q -d -o - https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- aria2c
-``` -->
+aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh &&
+chmod +x dl.sh && ./dl.sh aria2c
+```
 
-## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [CURL](https://curl.se/) `slower`
+## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [CURL](https://curl.se/) `slowest`
 
 ```bash
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
