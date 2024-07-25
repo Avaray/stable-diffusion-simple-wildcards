@@ -27,7 +27,9 @@ DOWNLOAD_TOOL="$1"
 
 # Check if download tool is installed
 # There might be a case where the download tool is not available here in the script
-# It happens when user is using alias in the terminal
+# It happens when user is using alias in the shell
+# I know there is -i option for BASH, but I don't want to use it to keep the commands being able to run in other shells
+# So, the next 17 lines are for this case
 if ! command -v $DOWNLOAD_TOOL &> /dev/null; then
     echo "Download tool $DOWNLOAD_TOOL not found"
     echo "Searching for available download tools"
