@@ -40,7 +40,7 @@ cleanup() {
     rm -rf dl.sh download.sh data.json $ARCHIVE_FILENAME ${REPO_NAME}* 2>/dev/null
 }
 
-Default download method
+# Default download method
 PATTERN='https://raw.[^"]*.txt'
 if [ "$DOWNLOAD_TOOL" == "wget" ]; then
     wget -qO- $REPO_URL_API | grep -o $PATTERN | xargs -n 1 -P 10 wget -q -P . -nc && SUCCESS=1
