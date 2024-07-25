@@ -66,7 +66,7 @@ Let's say you want to generate a scene with a woman in a random location. Let he
 The initial prompt will look as follows:  
 `photography of Polish woman BREAK wearing purple jacket BREAK in city street`
 
-With `sd-dynamic-prompts`, you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
+With [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts), you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
 `${c=__colors__} woman in __locations__ BREAK ${c} shirt BREAK ${c} skirt BREAK ${c} boots`
 
