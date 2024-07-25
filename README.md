@@ -45,7 +45,7 @@ wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildc
 aria2c -q -d -o - https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- aria2c
 ``` -->
 
-## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [CURL](https://curl.se/) `slowest`
+## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [CURL](https://curl.se/) `slower`
 
 ```bash
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
