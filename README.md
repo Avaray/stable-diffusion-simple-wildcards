@@ -51,7 +51,8 @@ aria2c -q -d -o - https://raw.githubusercontent.com/Avaray/stable-diffusion-simp
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
 ```
 
-For every command above, you need to have [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html) installed on your system.  
+<!-- For every command above, you need to have [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html) installed on your system.   -->
+
 You can find alternative ways to download files in the [DOWNLOAD.md](DOWNLOAD.md) file.
 
 # ⚡️ Usage
