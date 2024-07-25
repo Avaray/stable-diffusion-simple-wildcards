@@ -33,7 +33,7 @@ The path to the directory may look like this:
 Navigate to **the proper directory** and download the files.  
 You can download them by using one of the following commands:
 
-## Download automatically with [BASH](https://www.gnu.org/software/bash/) script and [WGET](https://www.gnu.org/software/wget/)
+## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- wget
