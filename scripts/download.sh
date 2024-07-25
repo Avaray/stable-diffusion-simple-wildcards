@@ -14,7 +14,7 @@ fi
 SUPPORTED_DOWNLOAD_TOOLS=("aria2c" "wget" "curl")
 SUPPORTED_ZIP_TOOLS=("unzip" "tar")
 
-# Check if download tool is specified and if is in SUPPORTED_DOWNLOAD_TOOLS
+# Check if download tool is specified and if it is supported
 if [ -z "$1" ]; then
     echo "Please specify download tool"
     exit 1
@@ -25,24 +25,32 @@ fi
 
 DOWNLOAD_TOOL="$1"
 
-REPO_URL="https://github.com/Avaray/stable-diffusion-simple-wildcards/"
-REPO_URL_API="https://api.github.com/repos/Avaray/stable-diffusion-simple-wildcards/contents/${API_CREDENTIALS}"
-ARCHIVE_URL="https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip"
+REPO_OWNER="Avaray"
+REPO_NAME="stable-diffusion-simple-wildcards"
+REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/"
+REPO_URL_API="https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${API_CREDENTIALS}"
+ARCHIVE_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/archive/refs/heads/main.zip"
+ARCHIVE_FILENAME="wildcards.zip"
 
 SUCCESS=0
 
-# Default download method
+# Function to delete all files possibly created by this script
+cleanup() {
+    # echo "Cleaning up"
+    rm -rf dl.sh download.sh data.json $ARCHIVE_FILENAME ${REPO_NAME}* 2>/dev/null
+}
+
+Default download method
+PATTERN='https://raw.[^"]*.txt'
 if [ "$DOWNLOAD_TOOL" == "wget" ]; then
-    wget -qO- $REPO_URL_API | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 10 wget -q -P . -nc && SUCCESS=1
+    wget -qO- $REPO_URL_API | grep -o $PATTERN | xargs -n 1 -P 10 wget -q -P . -nc && SUCCESS=1
 elif [ "$DOWNLOAD_TOOL" == "aria2c" ]; then
-    # NEED TO DO THIS IN BASH WAY.
-    # DOWNLOAD JSON FILE AND THEN EXTRACT URLS FROM IT
-    # WORK FOR TOMORROW
-    ARIA2_OPTS="-q --allow-overwrite=true"
-    aria2c $ARIA2_OPTS $REPO_URL_API -o | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 10 aria2c $ARIA2_OPTS -d . && SUCCESS=1
+    ARIA2_OPTS="-q --allow-overwrite=true --remove-control-file=true"
+    aria2c $ARIA2_OPTS -o data.json $REPO_URL_API 
+    cat data.json | grep -o $PATTERN | aria2c $ARIA2_OPTS -d . -i - && SUCCESS=1
 else
     # TODO: Need to check this, because it take much more time than with wget
-    curl -sL $REPO_URL_API | grep -o 'https://[^"]*.txt' | xargs -n 1 -P 10 curl -s -O && SUCCESS=1
+    curl -sL $REPO_URL_API | grep -o $PATTERN | xargs -n 1 -P 10 curl -s -O && SUCCESS=1
 fi
 
 # Check if default download method failed
@@ -50,6 +58,7 @@ if [ $SUCCESS -eq 0 ]; then
     echo "Default download method failed"
 elif [ $SUCCESS -eq 1 ]; then
     echo "Wildcard files downloaded successfully"
+    cleanup
     exit 0
 fi
 
@@ -74,7 +83,6 @@ fi
 
 # Download archive file
 if [ -n "$ZIP_TOOL_FOUND" ]; then
-    ARCHIVE_FILENAME="wildcards.zip"
     if [ "$DOWNLOAD_TOOL" == "wget" ]; then
         wget -q $ARCHIVE_URL -O $ARCHIVE_FILENAME
     elif [ "$DOWNLOAD_TOOL" == "aria2c" ]; then
@@ -88,7 +96,7 @@ fi
 # Extract .txt files from archive
 if [ -n "$ZIP_TOOL_FOUND" ]; then
     if [ "$ZIP_TOOL_FOUND" == "unzip" ]; then
-        unzip -q $ARCHIVE_FILENAME "*.txt"
+        unzip -qo $ARCHIVE_FILENAME "*.txt"
     else
         tar -xf $ARCHIVE_FILENAME --wildcards "*.txt"
     fi
@@ -102,19 +110,13 @@ else
     echo "Failed to extract wildcard files"
 fi
 
-# Clean up archive file
-if [ -f "$ARCHIVE_FILENAME" ]; then
-    rm $ARCHIVE_FILENAME
-fi
-
 # Desperate method: clone repository
 if [ $SUCCESS -eq 0 ]; then
     echo "Last chance: cloning repository"
     git clone --depth 1 $REPO_URL
     if [ $? -eq 0 ]; then
         mv stable-diffusion-simple-wildcards/*.txt .
-        rm -rf stable-diffusion-simple-wildcards
-        echo "Wildcard files"
+        echo "Wildcard files cloned successfully"
         SUCCESS=1
     else
         echo "Failed to clone repository"
@@ -126,5 +128,7 @@ if [ $SUCCESS -eq 0 ]; then
     echo "All download methods failed"
     exit 1
 else
+    cleanup
     exit 0
 fi
+
