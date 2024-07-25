@@ -5,7 +5,7 @@
 
 **Wildcards** in this collection are mainly created for realistic scenes with people. Hoever, they can be used for other types of art as well. Wildcards from this collection will boost your creativity and give you inspiration.
 
-Since I work with these **Wildcards** myself, I catch problematic keywords and remove them. Sometimes I also add new keywords, and even entire files. I'm constantly looking for new ideas to expand this collection.
+Since I work with these Wildcards myself, I catch problematic keywords and remove them. Sometimes I also add new keywords, and even entire files. I'm constantly looking for new ideas to expand this collection.
 
 The main idea is to not overcomplicate things. Dealing with thousands of wildcards may be overwhelming. I believe it's better to have a few that you can remember and use effectively.
 
