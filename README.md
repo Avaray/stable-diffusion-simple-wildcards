@@ -23,7 +23,7 @@ If you installed the extension using the [Provisioning Script](https://github.co
 ### Optional steps
 
 If you decided to use [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts), I recommend you to enable one useful option in the extension settings.  
-`Settings` -> `Uncategorised` -> `Dynamic Prompts` -> `Save template to metadata: Write prompt template into the PNG metadata`
+`Settings / Uncategorised / Dynamic Prompts / Save template to metadata: Write prompt template into the PNG metadata`
 
 # 💾 Installation
 
