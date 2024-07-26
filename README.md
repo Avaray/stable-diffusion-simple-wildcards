@@ -1,5 +1,6 @@
 # 📑 Simple Wildcards Collection for Stable Diffusion
 
+<!-- <img src="images/1.png" width="23%" /> <img src="images/2.png" width="23%" /> <img src="images/3.png" width="23%" /> <img src="images/4.png" width="23%" /> -->
 
 <!-- This is my collection of useful [Wildcards](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#wildcards). I created most of them using [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/) to streamline my work with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and avoid using the [Dynamic Prompts](https://github.com/adieyal/sd-dynamic-prompts/tree/main?tab=readme-ov-file#basic-usage), which I used before. Through my experience, I've found that Wildcards are more convenient to use. -->
 
