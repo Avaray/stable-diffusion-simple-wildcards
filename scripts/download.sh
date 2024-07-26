@@ -25,7 +25,6 @@ fi
 
 DOWNLOAD_TOOL="$1"
 
-# Check if download tool is installed
 # There might be a case where the download tool is not available here in the script
 # It happens when user is using alias in the shell
 # I know there is -i option for BASH, but I don't want to use it to keep the commands being able to run in other shells
