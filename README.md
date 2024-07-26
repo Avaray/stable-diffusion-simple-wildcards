@@ -60,11 +60,13 @@ You can find alternative ways to download files in the [DOWNLOAD.md](DOWNLOAD.md
 
 # ⚡️ Usage
 
+A **Wildcard** is essentially a file name that contains a list of keywords, one per line. If we have a file named `colors.txt`, you can use the wildcard in a prompt as `__colors__`. Stable Diffusion will replace `__colors__` with a random keyword from the `colors.txt` file.
+
 Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.  
 `photography of __nationalities__ woman BREAK wearing __colors__ __clothes_upper__ BREAK in __locations__`
 
 The initial prompt will look as follows:  
-`photography of Polish woman BREAK wearing purple jacket BREAK in city street`
+`photography of Polish woman BREAK wearing black dress BREAK in restaurant`
 
 With [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts), you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
