@@ -97,8 +97,8 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 # 📝 Contributing
 
 If you believe something is missing, that something could be useful, or that something should be removed, go ahead - [fork this repository, edit the files, and submit a pull request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).  
-Catch me on [Discord](https://discord.gg/) if you have any questions or suggestions: `avaray_`.
+Catch me on [Discord](https://discord.gg/) if you have any questions or suggestions: `avaray_`
 
-You can also support me on [GitHub Sponsors](https://github.com/sponsors/Avaray), [Patreon](patreon.com/Avaray_), or [Buy Me a Coffee](https://buymeacoffee.com/avaray)
+You can also support me on [GitHub Sponsors](https://github.com/sponsors/Avaray), [Patreon](patreon.com/Avaray_), or [Buy Me a Coffee](https://buymeacoffee.com/avaray).
 
 <!-- <a href="https://buymeacoffee.com/avaray" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" height="41" width="174"></a> -->
