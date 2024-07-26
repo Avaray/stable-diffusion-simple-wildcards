@@ -94,7 +94,7 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 - The first list of Artists `artists.txt` was obtained from the [Stable Diffusion Cheat-Sheet](https://supagruen.github.io/StableDiffusion-CheatSheet/).
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `films.txt` were obtained from the [SDXL 1.0 Artistic Studies](https://supagruen.github.io/StableDiffusion-CheatSheet/).
-- The rest of the files were created by me. For wildcards I used using [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
+- The rest of the files were created by me. For wildcards I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
 # 📝 Contributing
 
