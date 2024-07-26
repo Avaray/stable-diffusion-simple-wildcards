@@ -15,7 +15,8 @@ jobs:
         run: |
           awk '/### Download individual files/{flag=1; print; print ""; next} /^#/{flag=0} flag' DOWNLOAD.md > temp.md
           for file in wildcards/*.txt; do
-            echo "- [$(basename "$file")](./wildcards/$(basename "$file"))" >> temp.md
+            filename=$(basename "$file")
+            echo "- [$filename](https://github.com/${{ github.repository }}/raw/main/wildcards/$filename)" >> temp.md
           done
           mv temp.md DOWNLOAD.md
 
