@@ -135,7 +135,7 @@ fi
 # Desperate method: clone repository
 if [ $SUCCESS -eq 0 ]; then
     echo "Last chance: cloning repository"
-    git clone -q --depth 1 $REPO_URL
+    git clone --depth 1 $REPO_URL > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         mv stable-diffusion-simple-wildcards/wildcards/*.txt .
         echo "Wildcard files cloned successfully"
