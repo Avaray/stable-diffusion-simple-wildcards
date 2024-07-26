@@ -85,7 +85,7 @@ You need to use it with good checkpoints focused on real people. I recommend usi
 - [\_CHINOOK\_](https://civitai.com/models/400589/chinook) `SDXL 1.0`
 - [epiCRealism XL](https://civitai.com/models/277058/epicrealism-xl) `SDXL 1.0`
 
-For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person. For `Artists` it's better to have `CFG Scale 2-5` to achieve best results. In both cases Checkpoint will have the biggest impact on the final result.
+For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person. You can read more about it [here](https://dav.one/using-prompts-to-modify-face-and-body-in-stable-diffusion). For `Artists` it's better to have `CFG Scale 2-5` to achieve best results. In both cases Checkpoint will have the biggest impact on the final result.
 
 # 🍺 Original sources
 
