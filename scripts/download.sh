@@ -118,9 +118,9 @@ fi
 # Extract .txt files from archive
 if [ -n "$ZIP_TOOL_FOUND" ]; then
     if [ "$ZIP_TOOL_FOUND" == "unzip" ]; then
-        unzip -qo $ARCHIVE_FILENAME "*.txt"
+        unzip -qo $ARCHIVE_FILENAME "wildcards/*.txt"
     else
-        tar -xf $ARCHIVE_FILENAME --wildcards "*.txt"
+        tar -xf $ARCHIVE_FILENAME --wildcards "wildcards/*.txt"
     fi
 fi
 
@@ -137,7 +137,7 @@ if [ $SUCCESS -eq 0 ]; then
     echo "Last chance: cloning repository"
     git clone --depth 1 $REPO_URL
     if [ $? -eq 0 ]; then
-        mv stable-diffusion-simple-wildcards/*.txt .
+        mv stable-diffusion-simple-wildcards/wildcards/*.txt .
         echo "Wildcard files cloned successfully"
         SUCCESS=1
     else
