@@ -40,6 +40,4 @@ rm -rf stable-diffusion-simple-wildcards
 
 Click [this link](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip) and have fun 🤠
 
-<!-- ### single files -->
-
-<!-- here auto generated list of files -->
+### Download individual files
