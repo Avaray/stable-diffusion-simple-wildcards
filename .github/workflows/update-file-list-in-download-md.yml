@@ -66,6 +66,7 @@ jobs:
           git config --local user.email "action@github.com"
           git add DOWNLOAD.md
           git commit -m "Update DOWNLOAD.md with new file links" || echo "No changes to commit"
+          git pull --rebase origin main || echo "No changes to pull"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
