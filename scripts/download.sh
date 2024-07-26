@@ -79,7 +79,7 @@ fi
 if [ $SUCCESS -eq 0 ]; then
     echo "Default download method failed"
 elif [ $SUCCESS -eq 1 ]; then
-    echo "Wildcard files downloaded successfully"
+    echo "Wildcards downloaded successfully"
     cleanup
     exit 0
 fi
@@ -126,7 +126,7 @@ fi
 
 # Check if files are extracted successfully
 if [ $? -eq 0 ]; then
-    echo "Wildcard files extracted successfully"
+    echo "Wildcards extracted successfully"
     SUCCESS=1
 else
     echo "Failed to extract wildcard files"
@@ -138,7 +138,7 @@ if [ $SUCCESS -eq 0 ]; then
     git clone --depth 1 $REPO_URL > /dev/null 2>&1
     if [ $? -eq 0 ]; then
         mv stable-diffusion-simple-wildcards/wildcards/*.txt .
-        echo "Wildcard files cloned successfully"
+        echo "Wildcards cloned successfully"
         SUCCESS=1
     else
         echo "Failed to clone repository"
