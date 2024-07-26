@@ -53,7 +53,6 @@ peacoat
 peplum bustier
 peplum jacket
 peplum top
-peter pan collar top
 polo shirt
 poncho
 puffer jacket
@@ -61,7 +60,6 @@ pullover
 raincoat
 robe
 romper
-scarf
 shawl
 sheer blouse
 shirt
@@ -76,7 +74,6 @@ swimsuit
 t-shirt
 tank top
 thermal top
-tie
 toga
 trench coat
 tube top
