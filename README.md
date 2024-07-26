@@ -87,7 +87,7 @@ You need to use it with good checkpoints focused on real people. I recommend usi
 
 For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person. You can read more about it [here](https://dav.one/using-prompts-to-modify-face-and-body-in-stable-diffusion). For `Artists` it's better to have `CFG Scale 2-5` to achieve best results. In both cases Checkpoint will have the biggest impact on the final result.
 
-# 🍺 Original sources
+# 🍺 Original Sources and Copyrights
 
 - The list of Nationalities `nationalities.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/), modified and expanded by me.
 - The list of Light types `lighting.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/1cjwi04/made_this_lighting_guide_for_myself_thought_id/), modified and expanded by me.
@@ -95,6 +95,7 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).  
   File `artists2_tagged.txt` contains only artists with tags.
 - The lists of Cameras `cameras.txt` and Films `films.txt` were obtained from the [SDXL 1.0 Artistic Studies](https://supagruen.github.io/StableDiffusion-CheatSheet/) ([repo](https://github.com/rikkar69/SDXL-artist-study/tree/master/data/lists)).
+- The rest of the files were created by me. For wildcards I used using [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
 # 📝 Contributing
 
