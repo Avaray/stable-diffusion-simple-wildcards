@@ -15,6 +15,9 @@ low angle
 oblique angle
 overhead shot
 point-of-view shot
+pov from above
+pov from behind
+pov from below
 steadicam shot
 tilt shot
 tracking shot
