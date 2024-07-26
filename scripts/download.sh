@@ -65,14 +65,14 @@ cleanup() {
 # Default download method
 PATTERN='https://raw.[^"]*.txt'
 if [ "$DOWNLOAD_TOOL" == "wget" ]; then
-    wget -qO- $REPO_URL_API | grep -o $PATTERN | xargs -n 1 -P 10 wget -q -P . -nc && SUCCESS=1
+    wget -qO- $REPO_URL_API | grep -o $PATTERN | xargs -n 1 -P 5 wget -q -P . -nc && SUCCESS=1
 elif [ "$DOWNLOAD_TOOL" == "aria2c" ]; then
     ARIA2_OPTS="-q --allow-overwrite=true --remove-control-file=true"
     aria2c $ARIA2_OPTS -o data.json $REPO_URL_API 
     cat data.json | grep -o $PATTERN | aria2c $ARIA2_OPTS -d . -i - && SUCCESS=1
 else
     # TODO: Need to check this, because it take much more time than with wget
-    curl -sL $REPO_URL_API | grep -o $PATTERN | xargs -n 1 -P 10 curl -s -O && SUCCESS=1
+    curl -sL $REPO_URL_API | grep -o $PATTERN | xargs -n 1 -P 5 curl -s -O && SUCCESS=1
 fi
 
 # Check if default download method failed
