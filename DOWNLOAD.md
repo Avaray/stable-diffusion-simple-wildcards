@@ -39,3 +39,7 @@ rm -rf stable-diffusion-simple-wildcards
 ### Download as a ZIP archive
 
 Click [this link](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip) and have fun 🤠
+
+<!-- ### single files -->
+
+<!-- here auto generated list of files -->
