@@ -93,8 +93,7 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 - The list of Light types `lighting.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/1cjwi04/made_this_lighting_guide_for_myself_thought_id/), modified and expanded by me.
 - The first list of Artists `artists.txt` was obtained from the [Stable Diffusion Cheat-Sheet](https://supagruen.github.io/StableDiffusion-CheatSheet/) website.
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).  
-  File `artists2_tagged.txt` contains only artists with tags.  
-  To extract data from [original file](<https://raw.githubusercontent.com/proximasan/sdxl_artist_styles_studies/main/static/SDXL%20Image%20Synthesis%20Style%20Studies%20Database%20(Copy%20of%20The%20List)%20-%20Artists.csv>) use `/scripts/artists2.ts` script.
+  File `artists2_tagged.txt` contains only artists with tags.
 - The lists of Cameras `cameras.txt` and Films `films.txt` were obtained from the [SDXL 1.0 Artistic Studies](https://supagruen.github.io/StableDiffusion-CheatSheet/) ([repo](https://github.com/rikkar69/SDXL-artist-study/tree/master/data/lists)).
 
 # 📝 Contributing
