@@ -11,7 +11,7 @@ if [ -n "$GITHUB_CLIENT" ] && [ -n "$GITHUB_SECRET" ]; then
     API_CREDENTIALS="?client_id=$GITHUB_CLIENT&client_secret=$GITHUB_SECRET"
 fi
 
-SUPPORTED_DOWNLOAD_TOOLS=("aria2c" "wget" "curl")
+SUPPORTED_DOWNLOAD_TOOLS=("wget" "aria2c" "curl")
 SUPPORTED_ZIP_TOOLS=("unzip" "tar")
 
 # Check if download tool is specified and if it is supported
