@@ -1,0 +1,71 @@
+name: Update DOWNLOAD.md
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - wildcards/**
+
+jobs:
+  update-download:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get list of files in /wildcards
+        id: list_files
+        run: |
+          echo "## List of files in wildcards" > wildcards_file_list.md
+          for file in wildcards/*; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file")
+              echo "- [$filename](./wildcards/$filename)" >> wildcards_file_list.md
+            fi
+          done
+          cat wildcards_file_list.md
+
+      - name: Update DOWNLOAD.md
+        run: |
+          if [ -f DOWNLOAD.md ]; then
+            # Backup the original DOWNLOAD.md
+            cp DOWNLOAD.md DOWNLOAD.md.bak
+          fi
+
+          # Create a temporary file to hold the updated content
+          temp_file=$(mktemp)
+
+          # Read through DOWNLOAD.md and replace the file list under the specified header
+          in_header=false
+          while IFS= read -r line; do
+            # Check for the header
+            if [[ "$line" == "### Download individual files" ]]; then
+              in_header=true
+              echo "$line" >> "$temp_file"
+              # Append new file list
+              cat wildcards_file_list.md >> "$temp_file"
+              echo "" >> "$temp_file"  # Add a newline after the list
+            elif [[ "$in_header" == true && "$line" == "" ]]; then
+              # Stop reading when we hit a blank line after the header
+              in_header=false
+              echo "" >> "$temp_file"  # Preserve the blank line
+            else
+              # Write the original line to the temp file
+              echo "$line" >> "$temp_file"
+            fi
+          done < DOWNLOAD.md
+
+          # Move the temp file back to DOWNLOAD.md
+          mv "$temp_file" DOWNLOAD.md
+
+      - name: Commit changes
+        run: |
+          git config --local user.name "GitHub Action"
+          git config --local user.email "action@github.com"
+          git add DOWNLOAD.md
+          git commit -m "Update DOWNLOAD.md with new file links" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
