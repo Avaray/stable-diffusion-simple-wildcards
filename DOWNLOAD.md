@@ -59,4 +59,6 @@ rm -rf stable-diffusion-simple-wildcards
 - [materials](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/materials.txt)
 - [nationalities](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/nationalities.txt)
 - [test](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/test.txt)
-- [weather](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/weather.txt)
+- [weather](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/weather.txt) 
+
+
