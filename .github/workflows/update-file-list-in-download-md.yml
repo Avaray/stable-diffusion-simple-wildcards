@@ -11,6 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Print PWD
+        run: pwd
+
+      - name: Show file tree
+        run: tree
+
       - name: Make script executable
         run: chmod +x update-file-list-in-download-md.sh
 
