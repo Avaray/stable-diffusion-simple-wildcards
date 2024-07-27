@@ -14,13 +14,17 @@ wildcards_list_as_markdown=""
 for file in $wildcards; do
     name=$(basename "$file" .txt)
     file_path=$(basename "$file")
-    wildcards_list_as_markdown+="- [$name]($url$file_path)
+    # wildcards_list_as_markdown+="- [$name]($url$file_path)
+    wildcards_list_as_markdown+="<li><a href=\"$url$file_path\">$name</a></li>
 "
 done
 
 combined_content="$markdown_content 
 
-$wildcards_list_as_markdown"
+"<ul style="list-style-type: '⬇️ '">"
+$wildcards_list_as_markdown
+</ul>
+"
 
 echo "$combined_content" > "$source_file"
 
