@@ -13,12 +13,7 @@ jobs:
 
       - name: Update DOWNLOAD.md
         run: |
-          awk '/### Download individual files/{flag=1; print; print ""; next} /^#/{flag=0} flag' DOWNLOAD.md > temp.md
-          for file in wildcards/*.txt; do
-            filename=$(basename "$file")
-            echo "- [$filename](https://github.com/${{ github.repository }}/raw/main/wildcards/$filename)" >> temp.md
-          done
-          mv temp.md DOWNLOAD.md
+          ./update-file-list-in-download-md.sh
 
       - name: Commit changes
         run: |
