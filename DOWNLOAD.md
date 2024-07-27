@@ -42,25 +42,6 @@ rm -rf stable-diffusion-simple-wildcards
 
 ### Download individual files
 
-- [angles](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/angles.txt)
-- [artists](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists.txt)
-- [artists2](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists2.txt)
-- [artists2_tagged](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists2_tagged.txt)
-- [cameras](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/cameras.txt)
-- [clothes_bottom](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/clothes_bottom.txt)
-- [clothes_upper](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/clothes_upper.txt)
-- [colors](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/colors.txt)
-- [emotions](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/emotions.txt)
-- [films](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/films.txt)
-- [hairstyles](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/hairstyles.txt)
-- [jobs](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/jobs.txt)
-- [lighting](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/lighting.txt)
-- [locations](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/locations.txt)
-- [materials](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/materials.txt)
-- [nationalities](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/nationalities.txt)
-- [test](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/test.txt)
-- [weather](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/weather.txt)  
-
 <ul style="list-style-type: '⬇️ '">
 <li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/angles.txt">angles</a></li>
 <li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists.txt">artists</a></li>
@@ -81,4 +62,3 @@ rm -rf stable-diffusion-simple-wildcards
 <li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/weather.txt">weather</a></li>
 
 </ul>
-
