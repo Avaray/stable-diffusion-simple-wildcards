@@ -42,7 +42,7 @@ rm -rf stable-diffusion-simple-wildcards
 
 ### Download individual files
 
-<ul style="list-style-type: '⬇️ '">
+<ul style="list-style-type: '⬇️ ';">
 <li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/angles.txt">angles</a></li>
 <li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists.txt">artists</a></li>
 <li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists2.txt">artists2</a></li>
