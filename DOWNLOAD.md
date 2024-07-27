@@ -1,4 +1,6 @@
-# Terminal commands
+# 🖥️ Terminal commands
+
+The following commands are intended for [Linux](https://en.wikipedia.org/wiki/Linux). If you want to use them on [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows), I recommend using [Windows Terminal](https://github.com/microsoft/terminal) along with [BASH](https://www.gnu.org/software/bash/), which is automatically installed with [Git for Windows](https://git-scm.com/downloads).
 
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) script and [WGET](https://www.gnu.org/software/wget/)
 
@@ -18,7 +20,7 @@ aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
 ```
 
-### Download with [WGET](https://www.gnu.org/software/wget/) and extract files using [unzip](https://linux.die.net/man/1/unzip)
+### Download archive with [WGET](https://www.gnu.org/software/wget/) and extract files using [UNZIP](https://linux.die.net/man/1/unzip)
 
 ```bash
 wget -q https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip -O main.zip &&
@@ -34,13 +36,11 @@ mv stable-diffusion-simple-wildcards/*.txt . &&
 rm -rf stable-diffusion-simple-wildcards
 ```
 
-# Download manually
+# 🧩 Download manually
 
-### Download as a ZIP archive
+### [⬇️ Download as a ZIP archive](<(https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip)>)
 
-Click [this link](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip) and have fun 🤠
-
-### Download individual files 
+### Download individual files
 
 - [angles](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/angles.txt)
 - [artists](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists.txt)
@@ -60,4 +60,3 @@ Click [this link](https://github.com/Avaray/stable-diffusion-simple-wildcards/ar
 - [nationalities](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/nationalities.txt)
 - [test](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/test.txt)
 - [weather](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/weather.txt)
-
