@@ -11,9 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Update DOWNLOAD.md
-        run: |
-          ./update-file-list-in-download-md.sh
+      - name: Make script executable
+        run: chmod +x update-file-list-in-download-md.sh
+
+      - name: Run update script
+        run: ./update-file-list-in-download-md.sh
 
       - name: Commit changes
         run: |
