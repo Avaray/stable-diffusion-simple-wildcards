@@ -11,17 +11,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Print PWD
-        run: pwd
-
-      - name: Show file tree
-        run: tree
-
       - name: Make script executable
-        run: chmod +x update-file-list-in-download-md.sh
+        run: chmod +x .github/workflows/update-file-list-in-download-md.sh
 
       - name: Run update script
-        run: ./update-file-list-in-download-md.sh
+        run: ./.github/workflows/update-file-list-in-download-md.sh
 
       - name: Commit changes
         run: |
