@@ -21,7 +21,7 @@ done
 
 combined_content="$markdown_content 
 
-"<ul style="list-style-type: '⬇️ '">"
+<ul style="list-style-type: '⬇️ '">
 $wildcards_list_as_markdown
 </ul>
 "
