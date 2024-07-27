@@ -35,13 +35,16 @@ The path to the directory may look like this:
 `stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
 
 Navigate to **the proper directory** and download the files.  
-You can download them by using one of the following commands:
+You can download them with the following command:
 
 ## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- wget
 ```
+
+<details>
+<summary>Show other commands</summary>
 
 ## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [ARIA2](https://github.com/aria2/aria2)
 
@@ -55,9 +58,11 @@ aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
 ```
 
-<!-- For every command above, you need to have [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html) installed on your system.   -->
-
 You can find alternative ways to download files in the [DOWNLOAD.md](DOWNLOAD.md) file.
+
+</details>
+
+<!-- For every command above, you need to have [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html) installed on your system.   -->
 
 # ⚡️ Usage
 
