@@ -96,7 +96,7 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 ### Extra tips
 
 1. You can read more about `BREAK` keyword [in this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/15bty86/prompt_trick_for_more_consistent_results_in/).
-2. Do not use `realistic` keyword when you are generating realistic scenes in SDXL.13oea0i
+2. Do not use `realistic` keyword when you are generating realistic scenes in SDXL.
 3. No, SD 1.5 isn't better than SDXL 😂
 </details>
 
