@@ -8,9 +8,10 @@ jobs:
     name: get-repo-name
     runs-on: ubuntu-latest
     steps:
-      - run: echo $GITHUB_REPOSITORY
+      - run: echo $GITHUB_REPOSITORY # this will output username/repo-name
       - run: echo $GITHUB_REPOSITORY_OWNER
-      - run: echo $GITHUB_REF_NAME
+      - run: echo $GITHUB_REF_NAME # branch name
+      - run: echo $GITHUB_API_URL # https://api.github.com"
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
         with:
