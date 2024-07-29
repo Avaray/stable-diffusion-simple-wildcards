@@ -17,4 +17,4 @@ jobs:
 
       # run any `bun` or `bunx` command
       # - run: bun install
-      - run: bun ./.github/workflows/update-file-list-in-download-md.ts
+      - run: bun ./scripts/update-file-list-in-download-md.ts
