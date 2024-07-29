@@ -1,0 +1,20 @@
+{
+  "name": "stable-diffusion-simple-wildcards",
+  "description": "Collection of Wildcards for Stable Diffusion",
+  "Author": "Avaray",
+  "module": "index.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Avaray/stable-diffusion-simple-wildcards"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.12"
+  }
+}
