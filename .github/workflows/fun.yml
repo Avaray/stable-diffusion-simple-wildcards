@@ -1,0 +1,11 @@
+name: checking how it works
+
+on:
+  workflow_dispatch:
+
+jobs:
+  get-repo-name:
+    name: get-repo-name
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
