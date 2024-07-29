@@ -1,3 +1,7 @@
+// I created this script being inspired by this Reddit post
+// https://www.reddit.com/r/StableDiffusion/comments/1eeflm2/improving_face_variation_in_generations/
+// It outputs crazy long prompt for sd-dynamic-prompts extension
+
 import { readdir } from "node:fs/promises";
 
 // const files = await readdir('../wildcards');
