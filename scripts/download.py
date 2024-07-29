@@ -1,3 +1,5 @@
+# This script is not complete yet
+
 import os
 import sys 
 from urllib.request import urlopen
