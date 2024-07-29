@@ -2,6 +2,14 @@
 
 <!-- <img src="images/1.png" width="23%" /> <img src="images/2.png" width="23%" /> <img src="images/3.png" width="23%" /> <img src="images/4.png" width="23%" /> -->
 
+<!-- HEADER 1 WARNING RED TEXT COLOR -->
+<h1><span style="color:red">WARNING !!!</span></h1>
+<!-- red paragraph -->
+<p style="color:red">
+Currently I'm working on some minor changes in this repository.
+Download links and scripts may not work properly. Please be patient. Thank you.
+</p>
+
 **Wildcards** in this collection are mainly created for realistic scenes with people. Hoever, they can be used for other types of art as well. They will give you inspiration and boost your creativity.
 
 Since I work with these Wildcards myself, I catch problematic keywords and remove them. Sometimes I also add new keywords, and even entire files. I'm constantly looking for new ideas to expand this collection.
