@@ -3,8 +3,6 @@ console.log('Starting');
 // import { $ } from "bun"
 import { readdir } from "node:fs/promises";
 
-console.log(Bun.env);
-
 const PWD = Bun.env.PWD;
 
 process.exit(0);
