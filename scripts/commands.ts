@@ -1,10 +1,12 @@
 import data from '../package.json';
 
 // These will come from environment variables in the future
+const branch = 'sdxl';
 const repositoryName = data.name;
 const repositoryUrl = data.repository.url;
+const scriptUrl = `https://raw.githubusercontent.com/${data.Author}/${repositoryName}/${branch}/scripts/download.sh`
 
-const urls = {
+export const urls = {
   bash: 'https://www.gnu.org/software/bash/',
   wget: 'https://www.gnu.org/software/wget/',
   aria2c: 'https://aria2.github.io/',
@@ -17,28 +19,25 @@ const urls = {
 export const automatic = {
   wget: {
     commands: [
-      'wget -qO-',
-      'bash -s -- wget sdxl',
+      `wget -qO- ${scriptUrl} | bash -s -- wget sdxl`,
     ]
   },
   aria2c: {
     commands: [
-      'aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh',
+      `aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh ${scriptUrl}`,
       'chmod +x dl.sh',
       './dl.sh aria2c sdxl',
     ]
   },
   curl: {
     commands: [
-      'curl -s',
-      'bash -s -- curl sdxl',
+      `curl -s ${scriptUrl} | bash -s -- curl sdxl`,
     ]
   },
 }
 
 export const manual = [
   {
-    description: 'Download and execute the script using wget',
     tools: ['git'],
     commands: [
       `git clone --single-branch --branch sdxl ${repositoryUrl}`,
