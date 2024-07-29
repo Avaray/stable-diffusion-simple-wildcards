@@ -5,8 +5,6 @@ import { readdir } from "node:fs/promises";
 
 const PWD = Bun.env.PWD;
 
-process.exit(0);
-
 const wildcards = await readdir(`${PWD}/wildcards`);
 
 console.log(wildcards);
