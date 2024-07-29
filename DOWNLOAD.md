@@ -32,7 +32,7 @@ rm -f sdxl.zip
 
 ```bash
 git clone --single-branch --branch sdxl https://github.com/Avaray/stable-diffusion-simple-wildcards/ &&
-mv stable-diffusion-simple-wildcards/wildcards/*.txt . &&
+mv stable-diffusion-simple-wildcards/wildcards/*.txt . > /dev/null 2>&1 &&
 rm -rf stable-diffusion-simple-wildcards
 ```
 
