@@ -8,7 +8,7 @@
 API_CREDENTIALS=""
 if [ -n "$GITHUB_CLIENT" ] && [ -n "$GITHUB_SECRET" ]; then
     echo "GitHub API credentials provided"
-    API_CREDENTIALS="?client_id=$GITHUB_CLIENT&client_secret=$GITHUB_SECRET"
+    API_CREDENTIALS="&client_id=$GITHUB_CLIENT&client_secret=$GITHUB_SECRET"
 fi
 
 SUPPORTED_DOWNLOAD_TOOLS=("wget" "aria2c" "curl")
@@ -47,11 +47,28 @@ if ! command -v $DOWNLOAD_TOOL &> /dev/null; then
     fi
 fi
 
+BRANCHES=("sdxl" "pdxl")
+BRANCH=${BRANCHES[0]}
+
+# Check if branch is specified and if it is supported
+if [ -n "$2" ]; then
+    if [[ ! " ${BRANCHES[@]} " =~ " ${2} " ]]; then
+        echo "Invalid branch name $2"
+        echo "Valid branches are: ${BRANCHES[@]}"
+        echo "Using default branch $BRANCH"
+    fi
+    BRANCH="$2"
+fi
+
+echo "Downloading wildcards from $BRANCH branch using $DOWNLOAD_TOOL"
+
+exit 0
+
 REPO_OWNER="Avaray"
 REPO_NAME="stable-diffusion-simple-wildcards"
 REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/"
-REPO_URL_API="https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/wildcards/${API_CREDENTIALS}"
-ARCHIVE_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/archive/refs/heads/main.zip"
+REPO_URL_API="https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/wildcards/?ref=${BRANCH}${API_CREDENTIALS}"
+ARCHIVE_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/archive/refs/heads/${BRANCH}.zip"
 ARCHIVE_FILENAME="wildcards.zip"
 
 SUCCESS=0
