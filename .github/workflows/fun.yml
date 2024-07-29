@@ -8,4 +8,6 @@ jobs:
     name: get-repo-name
     runs-on: ubuntu-latest
     steps:
-      - run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}"
+      - run: echo $GITHUB_REPOSITORY
+      - run: echo $GITHUB_REPOSITORY_OWNER
+      - run: echo $GITHUB_REF_NAME
