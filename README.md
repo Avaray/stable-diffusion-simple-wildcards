@@ -45,7 +45,7 @@ You can download them with the following command:
 ## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- wget
+wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
 ```
 
 <details>
@@ -54,20 +54,18 @@ wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildc
 ## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [ARIA2](https://github.com/aria2/aria2)
 
 ```bash
-aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c
+aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c sdxl
 ```
 
 ## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [CURL](https://curl.se/) `slowest`
 
 ```bash
-curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
+curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
 ```
 
-You can find alternative ways to download files in the [DOWNLOAD.md](DOWNLOAD.md) file.
+You can find more ways to download files in the [DOWNLOAD.md](DOWNLOAD.md) file.
 
 </details>
-
-<!-- For every command above, you need to have [XARGS](https://www.man7.org/linux/man-pages/man1/xargs.1.html) installed on your system.   -->
 
 # ⚡️ Usage
 
