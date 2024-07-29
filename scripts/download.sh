@@ -160,7 +160,7 @@ if [ $SUCCESS -eq 0 ]; then
     fi
 fi
 
-# 
+# Check if all download methods failed
 if [ $SUCCESS -eq 0 ]; then
     echo "All download methods failed"
     exit 1
