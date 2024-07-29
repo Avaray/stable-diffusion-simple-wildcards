@@ -40,7 +40,6 @@ const processedData = (data: string) => {
 
 const writeToFile = async (filename: string, data: ArtistType) => {
   const stringData = data.sort((a, b) => a.name.localeCompare(b.name)).map((artist) => `${artist.name}, ${artist.tags}`).join("\n");
-  // @ts-expect-error
   await Bun.write(filename, stringData);
   console.log(`Successfully wrote data to ${filename}`);
 }
