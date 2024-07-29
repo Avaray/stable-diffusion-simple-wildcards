@@ -8,6 +8,4 @@ jobs:
     name: get-repo-name
     runs-on: ubuntu-latest
     steps:
-      - name: Get repository name
-        id: repo-name
-        run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+      - run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
