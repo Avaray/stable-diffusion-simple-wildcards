@@ -2,6 +2,10 @@
   "name": "workflows",
   "module": "index.ts",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Avaray/stable-diffusion-simple-wildcards"
+  },
   "devDependencies": {
     "@types/bun": "^1.1.6"
   },
