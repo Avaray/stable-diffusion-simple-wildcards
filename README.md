@@ -2,13 +2,10 @@
 
 <!-- <img src="images/1.png" width="23%" /> <img src="images/2.png" width="23%" /> <img src="images/3.png" width="23%" /> <img src="images/4.png" width="23%" /> -->
 
-<!-- HEADER 1 WARNING RED TEXT COLOR -->
-<h1><span style="color:red">WARNING !!!</span></h1>
-<!-- red paragraph -->
-<p style="color:red">
+# WARNING !!!
+
 Currently I'm working on some minor changes in this repository.
 Download links and scripts may not work properly. Please be patient. Thank you.
-</p>
 
 # END OF WARNING
 
