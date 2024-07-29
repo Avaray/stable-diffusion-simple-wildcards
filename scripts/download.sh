@@ -62,8 +62,6 @@ fi
 
 echo "Downloading wildcards from $BRANCH branch using $DOWNLOAD_TOOL"
 
-exit 0
-
 REPO_OWNER="Avaray"
 REPO_NAME="stable-diffusion-simple-wildcards"
 REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/"
