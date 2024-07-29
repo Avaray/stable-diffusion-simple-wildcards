@@ -1,6 +1,7 @@
 import data from '../package.json';
 
 // These will come from environment variables in the future
+// Need to figure out how to handle this with GitHub Actions
 const branch = 'sdxl';
 const repositoryName = data.name;
 const repositoryUrl = data.repository.url;
