@@ -1,4 +1,4 @@
-name: testing bun
+name: update docs
 
 # on manual run
 on:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   my-job:
-    name: testing-bun
+    name: update-docs
     runs-on: ubuntu-latest
     steps:
       # ...
@@ -17,4 +17,4 @@ jobs:
 
       # run any `bun` or `bunx` command
       # - run: bun install
-      - run: bun ./.github/workflows/update-file-list-in-download-md.ts
+      - run: bun ./scripts/update-docs.ts
