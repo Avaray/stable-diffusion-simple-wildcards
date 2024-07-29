@@ -44,22 +44,22 @@ rm -rf stable-diffusion-simple-wildcards
 
 <individual>
 <ul style="list-style-type: '⬇️ '">
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/angles.txt">angles</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists.txt">artists</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists2.txt">artists2</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/artists2_tagged.txt">artists2_tagged</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/camera_films.txt">camera_films</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/cameras.txt">cameras</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/clothes_bottom.txt">clothes_bottom</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/clothes_upper.txt">clothes_upper</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/colors.txt">colors</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/emotions.txt">emotions</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/hairstyles.txt">hairstyles</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/jobs.txt">jobs</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/lighting.txt">lighting</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/locations.txt">locations</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/materials.txt">materials</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/nationalities.txt">nationalities</a></li>
-<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/wildcards/weather.txt">weather</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/angles.txt">angles</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/artists.txt">artists</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/artists2.txt">artists2</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/artists2_tagged.txt">artists2_tagged</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/camera_films.txt">camera_films</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/cameras.txt">cameras</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/clothes_bottom.txt">clothes_bottom</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/clothes_upper.txt">clothes_upper</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/colors.txt">colors</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/emotions.txt">emotions</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/hairstyles.txt">hairstyles</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/jobs.txt">jobs</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/lighting.txt">lighting</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/locations.txt">locations</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/materials.txt">materials</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/nationalities.txt">nationalities</a></li>
+<li><a href="https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/weather.txt">weather</a></li>
 </ul>
 </individual>
