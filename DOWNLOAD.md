@@ -5,34 +5,34 @@ The following commands are intended for [Linux](https://en.wikipedia.org/wiki/Li
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) script and [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- wget
+wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
 ```
 
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [ARIA2](https://github.com/aria2/aria2)
 
 ```bash
-aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c
+aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c sdxl
 ```
 
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [CURL](https://curl.se/)
 
 ```bash
-curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/main/scripts/download.sh | bash -s -- curl
+curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
 ```
 
 ### Download archive with [WGET](https://www.gnu.org/software/wget/) and extract files using [UNZIP](https://linux.die.net/man/1/unzip)
 
 ```bash
-wget -q https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/main.zip -O main.zip &&
-unzip -joq main.zip '*.txt' &&
-rm -f main.zip
+wget -q https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/sdxl.zip -O sdxl.zip &&
+unzip -joq sdxl.zip '*.txt' &&
+rm -f sdxl.zip
 ```
 
 ### Download with [GIT](https://git-scm.com/)
 
 ```bash
-git clone https://github.com/Avaray/stable-diffusion-simple-wildcards/ &&
-mv stable-diffusion-simple-wildcards/*.txt . &&
+git clone --single-branch --branch sdxl https://github.com/Avaray/stable-diffusion-simple-wildcards/ &&
+mv stable-diffusion-simple-wildcards/wildcards/*.txt . &&
 rm -rf stable-diffusion-simple-wildcards
 ```
 
