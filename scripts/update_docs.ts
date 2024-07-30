@@ -71,7 +71,7 @@ const replaceNonBranchContent = (content: string) => {
   return content
     .replace(regex, '')
     .replace(commentRegex, '')
-    .replaceAll(emptyLinesInMarkdownLists, '\n');
+    .replace(emptyLinesInMarkdownLists, '');
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
