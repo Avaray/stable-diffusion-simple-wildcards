@@ -1,4 +1,4 @@
-// console.log('Starting');
+console.log('Starting');
 
 console.log(`meta path: ${import.meta.path}`);
 console.log(`meta dir: ${import.meta.dir}`);
@@ -63,7 +63,7 @@ const wrapInDetails = (content: string) => {
 
 function replaceNonBranchContent(content: string): string {
   const regex = `<!--\\s*${branchName}\\s*-->[\\s\\S]*?<!--\\s*\\/\\1\\s*-->`;
-  return content.replaceAll(regex, '');
+  return content.replace(new RegExp(regex, 'g'), '');
 }
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
