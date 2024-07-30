@@ -18,7 +18,9 @@ To use these Wildcards, you need an extension. You can use one of the following:
 <details>
 <summary>Show extra info</summary>
 
-Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server instance](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly. **A simple reload of WebUI may not be sufficient ❗️❗️❗️**
+### Extra info
+
+Most likely, after installing the extension, you'll need to restart Stable Diffusion (or the [rented server instance](https://cloud.vast.ai/?ref_id=62878&creator_id=42512&name=null)) for the extension to work correctly. **A simple reload of WebUI may not be sufficient**. You can easily check if the extension works by generating an image. If the keyword `colors` appears where you used `__colors__` wildcard, it means something is wrong.
 
 If you installed the extension using the [Provisioning Script](https://github.com/ai-dock/stable-diffusion-webui/blob/main/config/provisioning/default.sh) from [AI-Dock](https://github.com/ai-dock/stable-diffusion-webui), a restart will not be necessary 👌
 
@@ -41,8 +43,6 @@ Navigate to **the proper directory** and download the files.
 You can download them with the following command:
 
 ## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [WGET](https://www.gnu.org/software/wget/)
-
-<automatic>
 
 ### Download automatically with bash and wget
 
@@ -69,11 +69,11 @@ curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcar
 
 ```
 
-  </details></automatic>
+</details>
 
 # ⚡️ Usage
 
-A **Wildcard** is essentially a name of a file that contains a list of keywords, one per line. If you have a file named `colors.txt`, you can use the wildcard in a prompt as `__colors__`. Stable Diffusion will replace `__colors__` with a random keyword from the `colors.txt` file.
+A **Wildcard** is essentially a name of a file that contains a list of keywords, one per line. If you have a file named `colors.txt`, you can use the wildcard in your prompt as `__colors__`. Stable Diffusion will replace `__colors__` with a random keyword from the `colors.txt` file.
 
 Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.  
 `photography of __nationalities__ woman BREAK wearing __colors__ __clothes_upper__ BREAK in __locations__`
@@ -91,7 +91,9 @@ The prompt will look like this:
 <details>
 <summary>Show extra info</summary>
 
-**WARNING!!!** Checkpoints that are based on `Pony Diffusion` may not work with some of these Wildcards. `Pony Diffusion` checkpoints were trained on completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real people. I recommend using one of following checkpoints:
+### WARNING
+
+Checkpoints that are based on `Pony Diffusion` may not work with some of these Wildcards. `Pony Diffusion` checkpoints were trained on completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real people. I recommend using one of following checkpoints:
 
 - [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
 - [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
