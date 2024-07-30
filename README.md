@@ -42,34 +42,25 @@ The path to the directory may look like this:
 Navigate to **the proper directory** and download the files.  
 You can download them with the following command:
 
-## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [WGET](https://www.gnu.org/software/wget/)
-
 ### Download automatically with bash and wget
+
+### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
 ```
 
-<details>
-### Download automatically with bash and aria2c
+### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [ARIA2C](https://aria2.github.io/)
 
 ```bash
-
-aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh &&
-chmod +x dl.sh &&
-./dl.sh aria2c sdxl
-
+aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c sdxl
 ```
 
-### Download automatically with bash and curl
+### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [CURL](https://curl.se/)
 
 ```bash
-
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
-
 ```
-
-</details>
 
 # ⚡️ Usage
 
