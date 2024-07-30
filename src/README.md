@@ -91,14 +91,12 @@ The prompt will look like this:
 <details>
 <summary>Show extra info</summary>
 
-> [!WARNING]
->
-> Checkpoints that are based on `Pony Diffusion` may not work with some of these Wildcards. `Pony Diffusion` checkpoints were trained on completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real people. I recommend using one of following checkpoints:
->
-> - [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
-> - [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
-> - [\_CHINOOK\_](https://civitai.com/models/400589/chinook) `SDXL 1.0`
-> - [epiCRealism XL](https://civitai.com/models/277058/epicrealism-xl) `SDXL 1.0`
+**WARNING!!!** Checkpoints that are based on `Pony Diffusion` may not work with some of these Wildcards. `Pony Diffusion` checkpoints were trained on completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real people. I recommend using one of following checkpoints:
+
+- [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
+- [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
+- [\_CHINOOK\_](https://civitai.com/models/400589/chinook) `SDXL 1.0`
+- [epiCRealism XL](https://civitai.com/models/277058/epicrealism-xl) `SDXL 1.0`
 
 For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person (you can read more about it [here](https://dav.one/using-prompts-to-modify-face-and-body-in-stable-diffusion)). For `Artists` it's better to have `CFG Scale 2-5` to achieve best results. In both cases Checkpoint will have the biggest impact on the final result. Every checkpoint is different.
 
