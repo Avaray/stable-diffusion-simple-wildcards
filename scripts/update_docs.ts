@@ -62,16 +62,15 @@ const wrapInDetails = (content: string) => {
 };
 
 const replaceNonBranchContent = (content: string) => {
+  // this one doesn't work
   const emptyLinesInMarkdownLists = new RegExp('^s*-s*\n', 'gm');
+
   const commentRegex = new RegExp('<!--[^]*?-->', 'gm');
   const regex = new RegExp(
     `<!--\\s*(?!${branchName})(\\w+)\\s*-->([\\s\\S]*?)<!--\\s*/\\1\\s*-->`,
     'gm',
   );
-  return content
-    .replace(regex, '')
-    .replace(commentRegex, '')
-    .replace(emptyLinesInMarkdownLists, '');
+  return content.replace(regex, '').replace(commentRegex, '');
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
@@ -97,7 +96,7 @@ docsFiles.forEach(async (file) => {
     .replaceAll('{{automaticMethods}}', processedAutomaticMethods)
     .replaceAll('{{manualMethods}}', manualMethods)
     .replaceAll('{{amount}}', wildcards.length.toString())
-    .replace(/^\n\n/gm, '\n');
+    .replace(/^\n{2,}/gm, '\n');
 
   if (file === 'README.md') {
     await Bun.write(`${path}/${file}`, processed);
