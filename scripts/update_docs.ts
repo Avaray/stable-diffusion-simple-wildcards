@@ -52,10 +52,10 @@ const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
 
 const manualMethods = manual.map((m) => downloadMethod(m)).join('\n');
 
-const docsFiles = await readdir(`${path}/../src`);
+const docsFiles = await readdir(`${path}/src`);
 
 docsFiles.forEach(async (file) => {
-  const content = await Bun.file(`${path}/../src/${file}`).text();
+  const content = await Bun.file(`${path}/src/${file}`).text();
   const processed = content
     .replaceAll('{{filesList}}', filesList)
     .replaceAll('{{branch}}', branchName)
@@ -65,14 +65,10 @@ docsFiles.forEach(async (file) => {
     .replace(/^\n\n/gm, '\n');
 
   if (file === 'README.md') {
-    await Bun.write(`${path}/../${file}`, processed);
+    await Bun.write(`${path}/${file}`, processed);
   } else {
-    await Bun.write(`${path}/../docs/${file}`, processed);
+    await Bun.write(`${path}/docs/${file}`, processed);
   }
 });
-
-const readme = await Bun.file(`${path}/../README.md`).text();
-
-// await Bun.write(`${PWD}/README.md`, cleanReadme);
 
 console.log('Done');
