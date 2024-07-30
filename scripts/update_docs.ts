@@ -61,7 +61,8 @@ const wrapInDetails = (content: string) => {
   );
 };
 
-const emptyLinesInMarkdownLists = new RegExp('(?<=^- .*\n)s*\n(?=- )', 'gm');
+// Doesnt work as expected, on regex101 it works
+const emptyLinesInMarkdownLists = new RegExp('(?<=^- .*\n)\\s*\n(?=- )', 'gm');
 
 const replaceNonBranchContent = (content: string) => {
   const commentRegex = new RegExp('<!--[^]*?-->', 'gm');
