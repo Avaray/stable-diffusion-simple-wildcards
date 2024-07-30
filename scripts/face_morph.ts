@@ -4,10 +4,9 @@
 
 import { readdir } from "node:fs/promises";
 
-const nationalities = await Bun.file('../wildcards/nationalities.txt').text()
-const nationalitiesCleaned = nationalities.replace(/[\r\n]+/g, '\n')
+const nationalities = await Bun.file('../wildcards/nationalities.txt').text();
+const nationalitiesCleaned = nationalities.replace(/[\r\n]+/g, '\n');
 const nationalitiesArray = nationalitiesCleaned.split('\n').filter(nat => nat.length > 0);
-const nationalitiesProcessed = '[${nationalities}|${nationalities}]';
 
 const data: { [key: string]: string[] } = {
   "nationalities": nationalitiesArray,
@@ -28,17 +27,17 @@ const data: { [key: string]: string[] } = {
   // "skin_texture": ["smooth", "slightly wrinkled", "wrinkled"]
 }
 
-const converted = Object.keys(data).map(key => {
+const variables = Object.keys(data).map(key => {
   const values = data[key].join('|');
   return `\${${key}={${values}}}`;
 }).join(' ');
 
-const post = Object.keys(data).map(key => {
+const prompts = Object.keys(data).map(key => {
   if (key === 'nationalities') return '';
   return `\${${key}} ${key.replace('_', ' ')}`;
 }).join(', ');
 
-const combined = `${converted} ${post}, ${nationalitiesProcessed}`;
+const combined = `${variables} ${prompts}, [\${nationalities}|\${nationalities}]`;
 
 console.log(combined);
 
