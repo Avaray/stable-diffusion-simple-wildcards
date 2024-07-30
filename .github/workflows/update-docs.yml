@@ -1,8 +1,7 @@
-name: update docs
+name: Update Docs
 
-# on manual run
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   my-job:
@@ -14,6 +13,5 @@ jobs:
         with:
           bun-version: 1.1.21
 
-      # run any `bun` or `bunx` command
-      # - run: bun install
+      - run: bun install
       - run: bun ./scripts/update-docs.ts
