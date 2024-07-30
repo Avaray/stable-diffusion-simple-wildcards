@@ -32,7 +32,7 @@ const rawUrl = `https://raw.githubusercontent.com/Avaray/stable-diffusion-simple
 
 const path = Bun.env.GITHUB_REPOSITORY ? Bun.env.PWD : import.meta.dir;
 
-console.log(path);
+console.log(`Bun.env.PWD: ${Bun.env.PWD}`);
 
 const wildcards = await readdir(`${path}/wildcards`);
 const filesList = `${wildcards.map((w) => `- [${w.split('.')[0]}](${rawUrl}/${w})\n`).join('')}\n`;
