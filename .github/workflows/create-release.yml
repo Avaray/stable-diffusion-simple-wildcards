@@ -1,0 +1,14 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'wildcards/**'
+
+jobs:
+  create-release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
