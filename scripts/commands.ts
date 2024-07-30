@@ -5,7 +5,7 @@ import data from '../package.json';
 const branch = 'sdxl';
 const repositoryName = data.name;
 const repositoryUrl = data.repository.url;
-const scriptUrl = `https://raw.githubusercontent.com/${data.Author}/${repositoryName}/${branch}/scripts/download.sh`
+const scriptUrl = `https://raw.githubusercontent.com/${data.Author}/${repositoryName}/${branch}/scripts/download.sh`;
 
 export const urls = {
   bash: 'https://www.gnu.org/software/bash/',
@@ -20,9 +20,7 @@ export const urls = {
 export const automatic = [
   {
     tools: ['bash', 'wget'],
-    commands: [
-      `wget -qO- ${scriptUrl} | bash -s -- wget sdxl`,
-    ]
+    commands: [`wget -qO- ${scriptUrl} | bash -s -- wget sdxl`],
   },
   {
     tools: ['bash', 'aria2c'],
@@ -30,28 +28,22 @@ export const automatic = [
       `aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh ${scriptUrl}`,
       'chmod +x dl.sh',
       './dl.sh aria2c sdxl',
-    ]
+    ],
   },
   {
     tools: ['bash', 'curl'],
-    commands: [
-      `curl -s ${scriptUrl} | bash -s -- curl sdxl`,
-    ]
+    commands: [`curl -s ${scriptUrl} | bash -s -- curl sdxl`],
   },
-]
+];
 
 export const manual = [
   {
     tools: ['wget', 'unzip'],
-    commands: [
-      `wget -qO- ${scriptUrl} | bash -s -- unzip sdxl`,
-    ]
+    commands: [`wget -qO- ${scriptUrl} | bash -s -- unzip sdxl`],
   },
   {
     tools: ['wget', 'tar'],
-    commands: [
-      `wget -qO- ${scriptUrl} | bash -s -- tar sdxl`,
-    ]
+    commands: [`wget -qO- ${scriptUrl} | bash -s -- tar sdxl`],
   },
   {
     tools: ['git'],
@@ -59,6 +51,6 @@ export const manual = [
       `git clone --single-branch --branch sdxl ${repositoryUrl}`,
       `mv ${repositoryName}/wildcards/*.txt . > /dev/null 2>&1`,
       `rm -rf ${repositoryName}`,
-    ]
+    ],
   },
-]
+];
