@@ -61,13 +61,15 @@ const wrapInDetails = (content: string) => {
   );
 };
 
-function replaceNonBranchContent(content: string): string {
+const replaceNonBranchContent = (content: string) => {
+  const emptyLinesInListRegex = new RegExp('(- \\[.*\\])\\n\\n', 'gm');
+  const commentRegex = new RegExp('<!--[^]*?-->', 'gm');
   const regex = new RegExp(
     `<!--\\s*(?!${branchName})(\\w+)\\s*-->([\\s\\S]*?)<!--\\s*/\\1\\s*-->`,
     'gm',
   );
-  return content.replace(regex, '');
-}
+  return content.replace(regex, '').replace(commentRegex, '');
+};
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
 
