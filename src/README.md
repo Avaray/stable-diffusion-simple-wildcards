@@ -94,6 +94,14 @@ The prompt will look like this:
 > [!WARNING]  
 > Checkpoints that are based on `Pony Diffusion` may not work with some of these Wildcards. `Pony Diffusion` checkpoints were trained on completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real people. I recommend using one of following checkpoints:
 
+> **Note**
+>
+> This is a note
+
+> **Warning**
+>
+> This is a warning
+
 - [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
 - [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
 - [\_CHINOOK\_](https://civitai.com/models/400589/chinook) `SDXL 1.0`
