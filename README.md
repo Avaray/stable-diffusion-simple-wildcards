@@ -42,8 +42,6 @@ The path to the directory may look like this:
 Navigate to **the proper directory** and download the files.  
 You can download them with the following command:
 
-### Download automatically with bash and wget
-
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
