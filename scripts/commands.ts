@@ -15,29 +15,44 @@ export const urls = {
   git: 'https://git-scm.com/',
   unzip: 'https://en.wikipedia.org/wiki/Info-ZIP',
   tar: 'https://www.gnu.org/software/tar/',
-}
+} as { [key: string]: string };
 
-export const automatic = {
-  wget: {
+export const automatic = [
+  {
+    tools: ['bash', 'wget'],
     commands: [
       `wget -qO- ${scriptUrl} | bash -s -- wget sdxl`,
     ]
   },
-  aria2c: {
+  {
+    tools: ['bash', 'aria2c'],
     commands: [
       `aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh ${scriptUrl}`,
       'chmod +x dl.sh',
       './dl.sh aria2c sdxl',
     ]
   },
-  curl: {
+  {
+    tools: ['bash', 'curl'],
     commands: [
       `curl -s ${scriptUrl} | bash -s -- curl sdxl`,
     ]
   },
-}
+]
 
 export const manual = [
+  {
+    tools: ['wget', 'unzip'],
+    commands: [
+      `wget -qO- ${scriptUrl} | bash -s -- unzip sdxl`,
+    ]
+  },
+  {
+    tools: ['wget', 'tar'],
+    commands: [
+      `wget -qO- ${scriptUrl} | bash -s -- tar sdxl`,
+    ]
+  },
   {
     tools: ['git'],
     commands: [
@@ -45,5 +60,5 @@ export const manual = [
       `mv ${repositoryName}/wildcards/*.txt . > /dev/null 2>&1`,
       `rm -rf ${repositoryName}`,
     ]
-  }
+  },
 ]
