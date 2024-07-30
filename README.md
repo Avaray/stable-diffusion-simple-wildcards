@@ -107,12 +107,16 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 
 # 🍺 Original Sources and Copyrights
 
+<!-- sdxl -->
 
-<!-- pdxl -->
+- The list of Nationalities `nationalities.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/).
+- The list of Light types `lighting.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/1cjwi04/made_this_lighting_guide_for_myself_thought_id/).
+- The first list of Artists `artists.txt` was obtained from the [Stable Diffusion Cheat-Sheet](https://supagruen.github.io/StableDiffusion-CheatSheet/).
+- The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
+- The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
 
-- Lists of Characters from Videogames `videogame.txt`, Animations `animation.txt` and Anime `anime.txt` were created by [etude2k](https://civitai.com/user/etude2k) and posted on [CivitAI](https://civitai.com/models/338658/pony-diffusions-characters-wildcards).
+<!-- /sdxl -->
 
-<!-- /pdxl -->
 
 - The rest of the files were created by me. For wildcards I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
