@@ -178,3 +178,7 @@ dist
 bun.lockb
 TODO*
 images
+
+# Will be in pdxl branch
+wildcards/anim*
+wildcards/video*
