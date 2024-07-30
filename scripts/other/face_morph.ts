@@ -4,7 +4,7 @@
 
 import { readdir } from "node:fs/promises";
 
-const nationalities = await Bun.file('../wildcards/nationalities.txt').text();
+const nationalities = await Bun.file('../../wildcards/nationalities.txt').text();
 const nationalitiesCleaned = nationalities.replace(/[\r\n]+/g, '\n');
 const nationalitiesArray = nationalitiesCleaned.split('\n').filter(nat => nat.length > 0);
 
