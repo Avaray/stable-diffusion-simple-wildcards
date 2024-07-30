@@ -42,34 +42,9 @@ The path to the directory may look like this:
 Navigate to **the proper directory** and download the files.  
 You can download them with the following command:
 
-## Download automatically with [BASH](https://www.gnu.org/software/bash/) script using [WGET](https://www.gnu.org/software/wget/)
-
 ### Download automatically with bash and wget
 
-```bash
-wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/{{branch}}/scripts/download.sh | bash -s -- wget {{branch}}
-```
-
-<details>
-### Download automatically with bash and aria2c
-
-```bash
-
-aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/{{branch}}/scripts/download.sh &&
-chmod +x dl.sh &&
-./dl.sh aria2c {{branch}}
-
-```
-
-### Download automatically with bash and curl
-
-```bash
-
-curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/{{branch}}/scripts/download.sh | bash -s -- curl {{branch}}
-
-```
-
-</details>
+{{automaticMethods}}
 
 # ⚡️ Usage
 
