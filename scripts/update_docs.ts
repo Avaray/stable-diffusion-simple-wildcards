@@ -28,13 +28,14 @@ const repoOwner = Bun.env.GITHUB_REPOSITORY?.split('/')[0];
 const repoName = Bun.env.GITHUB_REPOSITORY?.split('/')[1];
 const branchName = Bun.env.GITHUB_REF_NAME || 'sdxl';
 const apiURL = Bun.env.GITHUB_API_URL;
+const rawUrl = `https://github.com/Avaray/stable-diffusion-simple-wildcards/blob/${branchName}/wildcards/`;
 
 const path = Bun.env.GITHUB_REPOSITORY ? Bun.env.PWD : import.meta.dir;
 
 console.log(path);
 
 const wildcards = await readdir(`${path}/../wildcards`);
-const filesList = `${wildcards.map((w) => `- [${w.split('.')[0]}](wildcards/${w})\n`).join('')}\n`;
+const filesList = `${wildcards.map((w) => `- [${w.split('.')[0]}](${rawUrl}/${w})\n`).join('')}\n`;
 
 const downloadMethod = (method: {
   type: string;
