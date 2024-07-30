@@ -62,15 +62,16 @@ const wrapInDetails = (content: string) => {
 };
 
 const replaceNonBranchContent = (content: string) => {
-  // this one doesn't work
-  const emptyLinesInMarkdownLists = new RegExp('^s*-s*\n', 'gm');
-
+  const emptyLinesInMarkdownLists = new RegExp('(?<=^- .*\n)s*\n(?=- )', 'gm');
   const commentRegex = new RegExp('<!--[^]*?-->', 'gm');
   const regex = new RegExp(
     `<!--\\s*(?!${branchName})(\\w+)\\s*-->([\\s\\S]*?)<!--\\s*/\\1\\s*-->`,
     'gm',
   );
-  return content.replace(regex, '').replace(commentRegex, '');
+  return content
+    .replace(regex, '')
+    .replace(commentRegex, '')
+    .replace(emptyLinesInMarkdownLists, '\n');
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
