@@ -1,6 +1,5 @@
 # 📑 Wildcards Collection for Stable Diffusion
 
-<!-- <img src="images/1.png" width="23%" /> <img src="images/2.png" width="23%" /> <img src="images/3.png" width="23%" /> <img src="images/4.png" width="23%" /> -->
 
 **Wildcards** in this collection are mainly created for realistic scenes with people. Hoever, they can be used for other types of art as well. They will give you inspiration and boost your creativity.
 
@@ -107,7 +106,6 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 
 # 🍺 Original Sources and Copyrights
 
-<!-- sdxl -->
 
 - The list of Nationalities `nationalities.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/).
 - The list of Light types `lighting.txt` was inspired by [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/1cjwi04/made_this_lighting_guide_for_myself_thought_id/).
@@ -115,7 +113,6 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
 
-<!-- /sdxl -->
 
 
 - The rest of the files were created by me. For wildcards I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
