@@ -61,6 +61,11 @@ const wrapInDetails = (content: string) => {
   );
 };
 
+function replaceNonBranchContent(content: string): string {
+  const regex = `<!--\\s*${branchName}\\s*-->[\\s\\S]*?<!--\\s*\\/\\1\\s*-->`;
+  return content.replaceAll(regex, '');
+}
+
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
 
 const manualMethods = manual.map((m) => downloadMethod(m)).join('\n');
@@ -68,7 +73,9 @@ const manualMethods = manual.map((m) => downloadMethod(m)).join('\n');
 const docsFiles = await readdir(`${path}/src`);
 
 docsFiles.forEach(async (file) => {
-  const content = await Bun.file(`${path}/src/${file}`).text();
+  let content = await Bun.file(`${path}/src/${file}`).text();
+
+  content = replaceNonBranchContent(content);
 
   let processedAutomaticMethods = automaticMethods;
 
