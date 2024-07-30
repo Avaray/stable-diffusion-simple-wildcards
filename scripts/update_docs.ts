@@ -57,7 +57,7 @@ const wrapInDetails = (content: string) => {
     parts[1] +
     '<details>\n<summary>Show more commands</summary>\n\n###' +
     parts.slice(2).join('###') +
-    '\n</details>'
+    '\n\nYou can find more ways to download the wildcards in [DOWNLOAD.md](docs/DOWNLOAD.md) file.\n\n</details>'
   );
 };
 
