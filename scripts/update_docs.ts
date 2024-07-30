@@ -2,11 +2,12 @@
 
 console.log(`meta path: ${import.meta.path}`);
 console.log(`meta dir: ${import.meta.dir}`);
+console.log(`Bun.env.PWD: ${Bun.env.PWD}`);
 
 // https://docs.github.com/en/actions/learn-github-actions/variables
 // https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
 
-import { $ } from 'bun';
+// import { $ } from 'bun';
 import { readdir } from 'node:fs/promises';
 import { urls, automatic, manual } from './commands.ts';
 
@@ -32,8 +33,6 @@ const rawUrl = `https://raw.githubusercontent.com/Avaray/stable-diffusion-simple
 
 const path = Bun.env.GITHUB_REPOSITORY ? Bun.env.PWD : import.meta.dir;
 
-console.log(`Bun.env.PWD: ${Bun.env.PWD}`);
-
 const wildcards = await readdir(`${path}/wildcards`);
 const filesList = `${wildcards.map((w) => `- [${w.split('.')[0]}](${rawUrl}/${w})\n`).join('')}\n`;
 
@@ -48,6 +47,20 @@ const downloadMethod = (method: {
   return header + code;
 };
 
+const wrapInDetails = (content: string) => {
+  const parts = content.split('###');
+  if (parts.length < 3) return content;
+
+  return (
+    parts[0] +
+    '###' +
+    parts[1] +
+    '<details>\n<summary>Show more commands</summary>\n\n###' +
+    parts.slice(2).join('###') +
+    '\n</details>'
+  );
+};
+
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
 
 const manualMethods = manual.map((m) => downloadMethod(m)).join('\n');
@@ -56,10 +69,17 @@ const docsFiles = await readdir(`${path}/src`);
 
 docsFiles.forEach(async (file) => {
   const content = await Bun.file(`${path}/src/${file}`).text();
+
+  let processedAutomaticMethods = automaticMethods;
+
+  if (file === 'README.md') {
+    processedAutomaticMethods = wrapInDetails(automaticMethods);
+  }
+
   const processed = content
     .replaceAll('{{filesList}}', filesList)
     .replaceAll('{{branch}}', branchName)
-    .replaceAll('{{automaticMethods}}', automaticMethods)
+    .replaceAll('{{automaticMethods}}', processedAutomaticMethods)
     .replaceAll('{{manualMethods}}', manualMethods)
     .replaceAll('{{amount}}', wildcards.length.toString())
     .replace(/^\n\n/gm, '\n');
