@@ -61,7 +61,7 @@ const wrapInDetails = (content: string) => {
   );
 };
 
-// Doesnt work as expected, on regex101 it works
+// I need to use \\s in the middle of the regex because with one slash prettier removes it
 const emptyLinesInMarkdownLists = new RegExp('(?<=^- .*\n)\\s*\n(?=- )', 'gm');
 
 const replaceNonBranchContent = (content: string) => {
