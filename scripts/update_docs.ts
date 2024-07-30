@@ -1,7 +1,7 @@
 // console.log('Starting');
 
-// console.log(`meta path: ${import.meta.path}`);
-// console.log(`meta dir: ${import.meta.dir}`);
+console.log(`meta path: ${import.meta.path}`);
+console.log(`meta dir: ${import.meta.dir}`);
 
 // https://docs.github.com/en/actions/learn-github-actions/variables
 // https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
@@ -34,7 +34,7 @@ const path = Bun.env.GITHUB_REPOSITORY ? Bun.env.PWD : import.meta.dir;
 
 console.log(path);
 
-const wildcards = await readdir(`${path}/../wildcards`);
+const wildcards = await readdir(`${path}/wildcards`);
 const filesList = `${wildcards.map((w) => `- [${w.split('.')[0]}](${rawUrl}/${w})\n`).join('')}\n`;
 
 const downloadMethod = (method: {
