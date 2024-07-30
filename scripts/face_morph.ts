@@ -4,16 +4,10 @@
 
 import { readdir } from "node:fs/promises";
 
-// const files = await readdir('../wildcards');
-
-// console.log(files);
-
 const nationalities = await Bun.file('../wildcards/nationalities.txt').text()
 const nationalitiesCleaned = nationalities.replace(/[\r\n]+/g, '\n')
 const nationalitiesArray = nationalitiesCleaned.split('\n').filter(nat => nat.length > 0);
-const nationalitiesProcessed = `[\${nationalities}|\${nationalities}]`;
-
-// console.log(nationalitiesArray);
+const nationalitiesProcessed = '[${nationalities}|${nationalities}]';
 
 const data: { [key: string]: string[] } = {
   "nationalities": nationalitiesArray,
@@ -29,9 +23,9 @@ const data: { [key: string]: string[] } = {
   "chin": ["strong", "weak", "square", "pointed", "round"],
   "cheekbones": ["high", "low", "prominent", "subtle"],
   "ears": ["small", "large", "protruding", "close-set"],
-  "freckles": ["light", "moderate", "heavy"],
-  "laugh_lines": ["subtle", "prominent"],
-  "skin_texture": ["smooth", "slightly wrinkled", "wrinkled"]
+  // "freckles": ["light", "moderate", "heavy"],
+  // "laugh_lines": ["subtle", "prominent"],
+  // "skin_texture": ["smooth", "slightly wrinkled", "wrinkled"]
 }
 
 const converted = Object.keys(data).map(key => {
@@ -47,3 +41,5 @@ const post = Object.keys(data).map(key => {
 const combined = `${converted} ${post}, ${nationalitiesProcessed}`;
 
 console.log(combined);
+
+// Bun.write('face_morph.txt', combined);
