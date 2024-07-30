@@ -56,7 +56,7 @@ aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
 ```
 
-You can find more ways to download files in the [DOWNLOAD.md](DOWNLOAD.md) file.
+You can find more ways to download files in the [DOWNLOAD.md](docs/DOWNLOAD.md) file.
 
 </details>
 
