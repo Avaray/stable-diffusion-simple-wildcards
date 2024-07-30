@@ -99,8 +99,16 @@ The prompt will look like this:
 > This is a note
 
 > **Warning**
->
 > This is a warning
+
+> [!NOTE]
+> This alert uses [!NOTE]
+
+> [!IMPORTANT]
+> This alert uses [!IMPORTANT]
+
+> [!WARNING]
+> This alert uses [!WARNING]
 
 - [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
 - [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
