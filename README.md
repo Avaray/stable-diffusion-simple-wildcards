@@ -48,6 +48,9 @@ You can download them with the following command:
 wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
 ```
 
+<details>
+<summary>Show more commands</summary>
+
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [ARIA2C](https://aria2.github.io/)
 
 ```bash
@@ -59,6 +62,8 @@ aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw
 ```bash
 curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
 ```
+
+</details>
 
 # ⚡️ Usage
 
