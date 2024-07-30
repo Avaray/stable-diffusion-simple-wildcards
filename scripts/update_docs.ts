@@ -61,17 +61,15 @@ const wrapInDetails = (content: string) => {
   );
 };
 
+const emptyLinesInMarkdownLists = new RegExp('(?<=^- .*\n)s*\n(?=- )', 'gm');
+
 const replaceNonBranchContent = (content: string) => {
-  const emptyLinesInMarkdownLists = new RegExp('(?<=^- .*\n)s*\n(?=- )', 'gm');
   const commentRegex = new RegExp('<!--[^]*?-->', 'gm');
   const regex = new RegExp(
     `<!--\\s*(?!${branchName})(\\w+)\\s*-->([\\s\\S]*?)<!--\\s*/\\1\\s*-->`,
     'gm',
   );
-  return content
-    .replace(regex, '')
-    .replace(commentRegex, '')
-    .replace(emptyLinesInMarkdownLists, '');
+  return content.replace(regex, '').replace(commentRegex, '');
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
@@ -97,6 +95,7 @@ docsFiles.forEach(async (file) => {
     .replaceAll('{{automaticMethods}}', processedAutomaticMethods)
     .replaceAll('{{manualMethods}}', manualMethods)
     .replaceAll('{{amount}}', wildcards.length.toString())
+    .replace(emptyLinesInMarkdownLists, '')
     .replace(/^\n{2,}/gm, '\n');
 
   if (file === 'README.md') {
