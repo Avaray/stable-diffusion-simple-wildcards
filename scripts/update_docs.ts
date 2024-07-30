@@ -62,8 +62,11 @@ const wrapInDetails = (content: string) => {
 };
 
 function replaceNonBranchContent(content: string): string {
-  const regex = `<!--\\s*${branchName}\\s*-->[\\s\\S]*?<!--\\s*\\/\\1\\s*-->`;
-  return content.replace(new RegExp(regex, 'g'), '');
+  const regex = new RegExp(
+    `<!--\\s*${branchName}\\s*-->[\\s\\S]*?<!--\\s*\/${branchName}\\s*-->`,
+    'gm',
+  );
+  return content.replace(regex, '');
 }
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join('\n');
