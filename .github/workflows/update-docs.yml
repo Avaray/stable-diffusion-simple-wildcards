@@ -1,6 +1,7 @@
 name: Update Docs
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'docs/**'
