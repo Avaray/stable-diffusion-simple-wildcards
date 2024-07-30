@@ -1,6 +1,6 @@
 # 📑 Simple Wildcards Collection for Stable Diffusion
 
-<img src="images/1.png" width="23%" /> <img src="images/1.png" width="23%" /> <img src="images/1.png" width="23%" /> <img src="images/1.png" width="23%" />
+<!-- <img src="images/1.png" width="23%" /> <img src="images/2.png" width="23%" /> <img src="images/3.png" width="23%" /> <img src="images/4.png" width="23%" /> -->
 
 **Wildcards** in this collection are mainly created for realistic scenes with people. Hoever, they can be used for other types of art as well. They will give you inspiration and boost your creativity.
 
