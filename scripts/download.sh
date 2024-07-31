@@ -66,7 +66,7 @@ REPO_OWNER="Avaray"
 REPO_NAME="stable-diffusion-simple-wildcards"
 REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/"
 REPO_URL_API="https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/wildcards/?ref=${BRANCH}${API_CREDENTIALS}"
-ARCHIVE_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/archive/refs/heads/${BRANCH}.zip"
+ARCHIVE_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/releases/latest/download/${REPO_NAME}-${BRANCH}.zip"
 ARCHIVE_FILENAME="wildcards.zip"
 
 SUCCESS=0

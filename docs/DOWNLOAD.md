@@ -28,7 +28,9 @@ git clone --single-branch --branch sdxl https://github.com/Avaray/stable-diffusi
 
 # 🧩 Download manually
 
-### [⬇️ Download as a ZIP archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/sdxl.zip)
+<!-- ### [⬇️ Download as a ZIP archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/sdxl.zip) -->
+
+### [⬇️ Download as a ZIP archive]({{archiveUrl}})
 
 ### Download individual files (17 files in total)
 
@@ -49,4 +51,3 @@ git clone --single-branch --branch sdxl https://github.com/Avaray/stable-diffusi
 - [angles](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards//angles.txt)
 - [weather](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards//weather.txt)
 - [artists2_tagged](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards//artists2_tagged.txt)
-

@@ -20,7 +20,7 @@ const branches = {
   },
 };
 
-// if (!Bun.env.GITHUB_REPOSITORY || !Bun.env.GITHUB_REF_NAME || !Bun.env.GITHUB_API_URL || !Bun.env.PWD) {
+// if (!Bun.env.GITHUB_REPOSITORY || !Bun.env.GITHUB_REF_NAME || !Bun.env.GITHUB_API_URL) {
 //   console.log('This script must be run in a GitHub Action environment');
 //   process.exit(1);
 // }
@@ -29,18 +29,16 @@ const repoOwner = Bun.env.GITHUB_REPOSITORY?.split('/')[0];
 const repoName = Bun.env.GITHUB_REPOSITORY?.split('/')[1];
 const branchName = Bun.env.GITHUB_REF_NAME || 'sdxl';
 const apiURL = Bun.env.GITHUB_API_URL;
-const rawUrl = `https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/${branchName}/wildcards/`;
+const rawUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/wildcards/`;
+const archiveUrl = `https://github.com/${repoOwner}/${repoName}/releases/latest/download/${repoName}-${branchName}.zip`;
 
 const path = Bun.env.GITHUB_REPOSITORY ? Bun.env.PWD : import.meta.dir;
 
 const wildcards = await readdir(`${path}/wildcards`);
-const filesList = `${wildcards.map((w) => `- [${w.split('.')[0]}](${rawUrl}/${w})\n`).join('')}\n`;
+const sanitizedUrl = rawUrl.endsWith('/') ? rawUrl.slice(0, -1) : rawUrl;
+const filesList = `${wildcards.map((w) => `- [${w.split('.')[0]}](${sanitizedUrl}/${w})\n`).join('')}\n`;
 
-const downloadMethod = (method: {
-  type: string;
-  tools: string[];
-  commands: string[];
-}) => {
+const downloadMethod = (method: { type: string; tools: string[]; commands: string[] }) => {
   const header = `### Download${method.type === 'automatic' ? ' automatically' : ''} with ${method.tools.map((tool) => `[${tool.toUpperCase()}](${urls[tool]})`).join(' and ')}\n\n`;
   const code = `\`\`\`bash\n${method.commands.join(' && ')}\n\`\`\`\n`;
 
@@ -92,6 +90,7 @@ docsFiles.forEach(async (file) => {
 
   const processed = content
     .replaceAll('{{filesList}}', filesList)
+    .replaceAll('{{archiveUrl}}', archiveUrl)
     .replaceAll('{{branch}}', branchName)
     .replaceAll('{{automaticMethods}}', processedAutomaticMethods)
     .replaceAll('{{manualMethods}}', manualMethods)
