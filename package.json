@@ -2,7 +2,7 @@
   "name": "stable-diffusion-simple-wildcards",
   "description": "Collection of Wildcards for Stable Diffusion",
   "Author": "Avaray",
-  "version": "1.0.8",
+  "version": "1.0.7",
   "module": "index.ts",
   "type": "module",
   "repository": {
