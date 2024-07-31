@@ -43,7 +43,7 @@ jobs:
           name: Release ${{ steps.increment_version.outputs.new_version }}
           body: |
             Automated release after changes in `wildcards` directory
-          draft: false
+          draft: true
           prerelease: false
 
       - name: Push changes
