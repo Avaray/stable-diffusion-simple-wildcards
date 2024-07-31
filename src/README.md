@@ -50,7 +50,7 @@ A **Wildcard** is essentially a name of a file that contains a list of keywords,
 
 Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.
 
-> photography of **\_\_nationalities\_\_** woman, wearing **\_\_colors** \_\_clothes_upper****, standing in **\_\_locations\_\_**
+> photography of **\_\_nationalities\_\_** woman, wearing **\_\_colors\_\_** **\_\_clothes_upper\_\_**, standing in **\_\_locations\_\_**
 
 The initial prompt will look like this:
 
@@ -58,7 +58,7 @@ The initial prompt will look like this:
 
 With [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts), you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
-> \${c=\_\_colors**} woman in \_\_locations** \${c} shirt, \${c} skirt, \${c} boots
+> **\${c=\_\_colors}** woman in **\_\_locations\_\_**, **\${c}** shirt, **\${c}** skirt, **\${c}** boots
 
 The prompt will look like this:
 
