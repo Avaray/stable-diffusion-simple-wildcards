@@ -31,7 +31,7 @@ jobs:
           REPO_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
           BRANCH_NAME=${GITHUB_REF#refs/heads/}
           ZIP_NAME="${REPO_NAME}-${BRANCH_NAME}.zip"
-          zip -r "$ZIP_NAME" wildcards
+          zip -rj "$ZIP_NAME" wildcards
           echo "zip_name=$ZIP_NAME" >> $GITHUB_OUTPUT
         id: create_zip
 
