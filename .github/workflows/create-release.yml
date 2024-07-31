@@ -24,14 +24,15 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           npm version patch -m "Bump version to %s"
-          echo "Version updated to $(node -p "require('./package.json').version")"
+          echo "version=$(node -p "require('./package.json').version")" >> $WILDCARDS_VERSION
+          echo "Version updated to $WILDCARDS_VERSION"
 
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             wildcards/*
-          tag_name: v${{ steps.increment_version.outputs.version }}
+          tag_name: $WILDCARDS_VERSION
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
