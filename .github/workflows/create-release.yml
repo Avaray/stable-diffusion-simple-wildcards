@@ -42,7 +42,7 @@ jobs:
           tag_name: ${{ steps.increment_version.outputs.new_version }}
           name: Release ${{ steps.increment_version.outputs.new_version }}
           body: |
-            Automated release of version ${{ steps.increment_version.outputs.new_version }}
+            Automated release after changes in `wildcards` directory
           draft: false
           prerelease: false
 
