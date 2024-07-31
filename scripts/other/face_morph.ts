@@ -2,8 +2,6 @@
 // https://www.reddit.com/r/StableDiffusion/comments/1eeflm2/improving_face_variation_in_generations/
 // It outputs crazy long prompt for sd-dynamic-prompts extension
 
-import { readdir } from 'node:fs/promises';
-
 const nationalitiesFile = await Bun.file('../../wildcards/nationalities.txt').text();
 const nationalitiesCleaned = nationalitiesFile.replace(/[\r\n]+/g, '\n');
 const nationalities = nationalitiesCleaned.split('\n').filter((nat) => nat.length > 0);
@@ -15,7 +13,8 @@ const names = Array.from(new Set(artistNamesExtracted));
 
 // prettier-ignore
 const femaleNames = ['Alice', 'Ava', 'Ella', 'Emma', 'Grace', 'Hannah', 'Isabella', 'Lily', 'Olivia', 'Sophia', 'Zoe', 'Abigail', 'Amelia', 'Aria', 'Aurora', 'Bella', 'Camila', 'Charlotte', 'Chloe', 'Claire', 'Elena', 'Elizabeth', 'Emily', 'Eva', 'Evelyn', 'Harper', 'Hazel', 'Layla', 'Leah', 'Lucy', 'Mia', 'Mila', 'Nora', 'Penelope', 'Riley', 'Scarlett', 'Stella', 'Victoria', 'Violet', 'Willow', 'Adelaide', 'Catherine', 'Dorothy', 'Eleanor', 'Frances', 'Genevieve', 'Josephine', 'Margaret', 'Matilda', 'Rosemary', 'Aaliyah', 'Brielle', 'Cora', 'Emery', 'Jasmine', 'Kinsley', 'Luna', 'Maya', 'Nyla', 'Sienna', 'Azura', 'Calliope', 'Dahlia', 'Elowen', 'Indigo', 'Juniper', 'Seraphina', 'Talia', 'Zinnia', 'Anya', 'Bianca', 'Chiara', 'Freya', 'Ines', 'Leila', 'Niamh', 'Saoirse', 'Yara', 'Autumn', 'Clover', 'Daisy', 'Ivy', 'Juniper', 'Marigold', 'Poppy', 'Sage', 'Sky', 'Wren', 'Agnes', 'Beatrice', 'Clara', 'Edith', 'Florence', 'Mabel', 'Nora', 'Opal', 'Sylvia', 'Winifred', 'Ari', 'Bea', 'Eve', 'Gia', 'Joy', 'Liv', 'Mae', 'Nia', 'Pia', 'Zia'];
-const unwantedNames = ['Grandma', 'Tetsuya', 'Tsubasa'];
+// prettier-ignore
+const unwantedNames = ['Grandma', 'Tetsuya', 'Tsubasa', 'Andrea', 'Aquila', 'Bena', 'Elia', 'Josia', 'Luca', 'Misha', 'Nikita', 'Sasha', 'Toma', 'Zia', 'Kosta', 'Rafa', 'Sima', 'Zara', 'Nikita', 'Mica', 'Khalifa'];
 const allNames = [...names, ...femaleNames].filter((name) => !unwantedNames.includes(name)).sort();
 
 const data: { [key: string]: string[] } = {
