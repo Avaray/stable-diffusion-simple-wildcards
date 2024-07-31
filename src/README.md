@@ -65,7 +65,7 @@ The prompt will look like this:
 > woman in **dressing room**, **pink** shirt, **pink** skirt, **pink** boots
 
 <details>
-<summary>Show extra info</summary>
+<summary>Show Warning</summary>
 
 ### WARNING
 
