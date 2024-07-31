@@ -26,11 +26,19 @@ jobs:
           NEW_VERSION=$(npm version patch -m "Bump version to %s")
           echo "new_version=${NEW_VERSION}" >> $GITHUB_OUTPUT
 
+      - name: Create Archive
+        run: |
+          REPO_NAME=$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}')
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          ZIP_NAME="${REPO_NAME}-${BRANCH_NAME}.zip"
+          zip -r "$ZIP_NAME" wildcards
+          echo "zip_name=$ZIP_NAME" >> $GITHUB_OUTPUT
+        id: create_zip
+
       - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            wildcards/*
+          files: ${{ steps.create_zip.outputs.zip_name }}
           tag_name: ${{ steps.increment_version.outputs.new_version }}
 
       - name: Push changes
