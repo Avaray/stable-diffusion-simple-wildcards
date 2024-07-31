@@ -12,3 +12,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setting up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Increment version
+        run: |
+          npm version patch
+          echo "Version updated to $(node -p "require('./package.json').version")"
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            wildcards/*
+          tag_name: $(node -p "require('./package.json').version")
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref_name }}
