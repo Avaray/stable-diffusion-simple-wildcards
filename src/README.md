@@ -50,6 +50,11 @@ A **Wildcard** is essentially a name of a file that contains a list of keywords,
 
 Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.
 
+<!-- prettier-ignore -->
+```md           
+photography of __nationalities__ woman, wearing __colors__ __clothes_upper__, standing in __locations__
+```
+
 > photography of **\_\_nationalities\_\_** woman, wearing **\_\_colors\_\_** **\_\_clothes_upper\_\_**, standing in **\_\_locations\_\_**
 
 The initial prompt will look like this:
