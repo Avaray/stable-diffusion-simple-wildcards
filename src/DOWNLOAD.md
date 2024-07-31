@@ -8,7 +8,7 @@ The following commands are intended for [Linux](https://en.wikipedia.org/wiki/Li
 
 # 🧩 Download manually
 
-### [⬇️ Download as a ZIP archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/{{branch}}.zip)
+### [⬇️ Download as a ZIP archive]({{archiveUrl}})
 
 ### Download individual files ({{amount}} files in total)
 
