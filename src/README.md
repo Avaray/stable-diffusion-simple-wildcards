@@ -48,18 +48,21 @@ You can download them with the following command:
 
 A **Wildcard** is essentially a name of a file that contains a list of keywords, one per line. If you have a file named `colors.txt`, you can use the wildcard in your prompt as `__colors__`. Stable Diffusion will replace `__colors__` with a random keyword from the `colors.txt` file.
 
-Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.  
-`photography of __nationalities__ woman BREAK wearing __colors__ __clothes_upper__ BREAK in __locations__`
+Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.
 
-The initial prompt will look like this:  
-`photography of Polish woman BREAK wearing black dress BREAK in restaurant`
+> photography of **\_\_nationalities\_\_** woman, wearing **\_\_colors** \_\_clothes_upper****, standing in **\_\_locations\_\_**
+
+The initial prompt will look like this:
+
+> photography of **Spanish** woman, wearing **black dress**, standing in **restaurant**`
 
 With [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts), you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
-`${c=__colors__} woman in __locations__ BREAK ${c} shirt BREAK ${c} skirt BREAK ${c} boots`
+> \${c=\_\_colors**} woman in \_\_locations** \${c} shirt, \${c} skirt, \${c} boots
 
-The prompt will look like this:  
-`woman in park BREAK pink shirt BREAK pink skirt BREAK pink boots`
+The prompt will look like this:
+
+> woman in **dressing room**, **pink** shirt, **pink** skirt, **pink** boots
 
 <details>
 <summary>Show extra info</summary>
@@ -75,11 +78,6 @@ Checkpoints that are based on `Pony Diffusion` may not work with some of these W
 
 For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person (you can read more about it [here](https://dav.one/using-prompts-to-modify-face-and-body-in-stable-diffusion)). For `Artists` it's better to have `CFG Scale 2-5` to achieve best results. In both cases Checkpoint will have the biggest impact on the final result. Every checkpoint is different.
 
-### Extra tips
-
-1. You can read more about `BREAK` keyword [in this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/15bty86/prompt_trick_for_more_consistent_results_in/).
-2. Do not use `realistic` keyword when you are generating realistic scenes in SDXL.
-3. No, SD 1.5 isn't better than SDXL 😂
 </details>
 
 # 🍺 Original Sources and Copyrights
