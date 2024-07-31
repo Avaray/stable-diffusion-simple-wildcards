@@ -46,7 +46,7 @@ You can download them with the following command:
 
 # ⚡️ Usage
 
-A **Wildcard** is essentially a name of a file that contains a list of keywords, one per line. If you have a file named `colors.txt`, you can use the wildcard in your prompt as `__colors__`. Stable Diffusion will replace `__colors__` with a random keyword from the `colors.txt` file.
+A **Wildcard** is essentially a name of a file that contains a list of keywords. If you have a file named `colors.txt`, you can use the wildcard in your prompt as `__colors__`. Stable Diffusion will replace `__colors__` with a random keyword from the `colors.txt` file.
 
 Let's say you want to generate a scene with a woman in a random location. Let her clothing be random as well.
 
