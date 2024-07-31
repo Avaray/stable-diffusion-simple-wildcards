@@ -54,7 +54,7 @@ Let's say you want to generate a scene with a woman in a random location. Let he
 
 The initial prompt will look like this:
 
-> photography of **Spanish** woman, wearing **black dress**, standing in **restaurant**`
+> photography of **Spanish** woman, wearing **black dress**, standing in **restaurant**
 
 With [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts), you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
