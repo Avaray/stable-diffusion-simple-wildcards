@@ -19,10 +19,11 @@ jobs:
           node-version: 20
 
       - name: Increment version
+        id: increment_version
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          npm version patch
+          npm version patch -m "Bump version to %s"
           echo "Version updated to $(node -p "require('./package.json').version")"
 
       - name: Create release
@@ -30,10 +31,14 @@ jobs:
         with:
           files: |
             wildcards/*
-          tag_name: $(node -p "require('./package.json').version")
+          tag_name: v${{ steps.increment_version.outputs.version }}
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref_name }}
+          tags: true
