@@ -177,7 +177,7 @@ dist
 # No need
 bun.lockb
 TODO*
-images
+images/**/
 
 # Will be in pdxl branch
 wildcards/anim*
