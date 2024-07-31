@@ -23,11 +23,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          npm version patch -m "Bump version to %s"
-
-      - name: Get version from package.json
-        id: get_version
-        run: echo "WILDCARDS_VERSION=$(node -p \"require('./package.json').version\")" >> $GITHUB_ENV
+          NEW_VERSION=$(npm version patch -m "Bump version to %s")
+          echo "new_version=${NEW_VERSION}" >> $GITHUB_OUTPUT
 
       - name: Create release
         uses: softprops/action-gh-release@v2
@@ -35,7 +32,7 @@ jobs:
         with:
           files: |
             wildcards/*
-          tag_name: env.WILDCARDS_VERSION
+          tag_name: ${{ steps.increment_version.outputs.new_version }}
 
       - name: Push changes
         uses: ad-m/github-push-action@master
