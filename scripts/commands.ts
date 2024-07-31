@@ -46,7 +46,7 @@ export const manual = [
     type: 'manual',
     tools: ['git'],
     commands: [
-      `git clone --single-branch --branch ${branch} ${repositoryUrl}`,
+      `git clone --depth 1 --single-branch --branch ${branch} ${repositoryUrl}`,
       `mv ${repositoryName}/wildcards/*.txt . > /dev/null 2>&1`,
       `rm -rf ${repositoryName}`,
     ],
