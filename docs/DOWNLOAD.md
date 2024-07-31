@@ -23,7 +23,7 @@ curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcar
 ### Download with [GIT](https://git-scm.com/)
 
 ```bash
-git clone --single-branch --branch sdxl https://github.com/Avaray/stable-diffusion-simple-wildcards && mv stable-diffusion-simple-wildcards/wildcards/*.txt . > /dev/null 2>&1 && rm -rf stable-diffusion-simple-wildcards
+git clone --depth 1 --single-branch --branch sdxl https://github.com/Avaray/stable-diffusion-simple-wildcards && mv stable-diffusion-simple-wildcards/wildcards/*.txt . > /dev/null 2>&1 && rm -rf stable-diffusion-simple-wildcards
 ```
 
 # 🧩 Download manually
