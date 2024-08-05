@@ -81,7 +81,7 @@ The initial prompt will look like this:
 
 With [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
-> **\${c=\_\_colors}** woman in **\_\_locations\_\_**, **\${c}** shirt, **\${c}** skirt, **\${c}** boots
+> **\${c=\_\_colors\_\_}** woman in **\_\_locations\_\_**, **\${c}** shirt, **\${c}** skirt, **\${c}** boots
 
 The prompt will look like this:
 
