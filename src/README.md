@@ -70,7 +70,7 @@ The prompt will look like this:
 To get [multiple values](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#choosing-multiple-values) from one wildcard, you can specify amount of values you want to get.  
 `sd-dynamic-prompts only`
 
-> photography of toy cars, {4$$**\_\_colors\_\_**}
+> photography of toy cars, **{4$$\_\_colors\_\_}**
 
 The prompt will look like this:
 
