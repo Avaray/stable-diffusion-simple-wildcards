@@ -79,7 +79,8 @@ The initial prompt will look like this:
 
 > photography of **Spanish** woman, wearing **black dress**, standing in **restaurant**
 
-With [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) you can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
+You can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)  
+`sd-dynamic-prompts only`
 
 > **\${c=\_\_colors\_\_}** woman in **\_\_locations\_\_**, **\${c}** shirt, **\${c}** skirt, **\${c}** boots
 
@@ -87,13 +88,14 @@ The prompt will look like this:
 
 > woman in **dressing room**, **pink** shirt, **pink** skirt, **pink** boots
 
-To get [multiple values](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#choosing-multiple-values) from one wildcard, you can specify amount of values you want to get in this way:
+To get [multiple values](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#choosing-multiple-values) from one wildcard, you can specify amount of values you want to get.  
+`sd-dynamic-prompts only`
 
-> multiple cars, {4$$**colors**}
+> photography of toy cars, {4$$**\_\_colors\_\_**}
 
 The prompt will look like this:
 
-> multiple cars, **red**, **blue**, **green**, **yellow**
+> photography of toy cars, **red**, **blue**, **green**, **yellow**
 
 <details>
 <summary>Show Warning</summary>
