@@ -4,8 +4,6 @@
 
 ![Nationalities](images/nationalities_animated.webp)
 
-<!-- <img src="images/1.png" width="23%" /> <img src="images/2.png" width="23%" /> <img src="images/3.png" width="23%" /> <img src="images/4.png" width="23%" /> -->
-
 **Wildcards** in this collection are mainly created for realistic scenes with people. Hoever, they can be used for other types of art as well. They will give you inspiration and boost your creativity.
 
 Since I work with these Wildcards myself, I catch problematic keywords and remove them. Sometimes I also add new keywords, and even entire files. I'm constantly looking for new ideas to expand this collection.
@@ -67,6 +65,14 @@ With [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) you can
 The prompt will look like this:
 
 > woman in **dressing room**, **pink** shirt, **pink** skirt, **pink** boots
+
+To get [multiple values](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#choosing-multiple-values) from one wildcard, you can specify amount of values you want to get in this way:
+
+> multiple cars, {4$$**colors**}
+
+The prompt will look like this:
+
+> multiple cars, **red**, **blue**, **green**, **yellow**
 
 <details>
 <summary>Show Warning</summary>
