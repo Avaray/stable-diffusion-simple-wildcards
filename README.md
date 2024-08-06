@@ -87,6 +87,14 @@ The prompt will look like this:
 
 > woman in **dressing room**, **pink** shirt, **pink** skirt, **pink** boots
 
+To get [multiple values](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#choosing-multiple-values) from one wildcard, you can specify amount of values you want to get in this way:
+
+> multiple cars, {4$$**colors**}
+
+The prompt will look like this:
+
+> multiple cars, **red**, **blue**, **green**, **yellow**
+
 <details>
 <summary>Show Warning</summary>
 
