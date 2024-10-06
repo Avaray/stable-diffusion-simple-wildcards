@@ -10,6 +10,7 @@ balcony with city view
 ballroom
 bamboo forest
 basement
+bathroom
 beach
 beach boardwalk
 beach bonfire
@@ -142,7 +143,6 @@ sunset overlook
 tea plantation
 theater
 theater room
-toilet
 treetop canopy
 tropical rainforest
 urban alley
