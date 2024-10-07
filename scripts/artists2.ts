@@ -1,4 +1,4 @@
-// This script fetches the artists data from the original CSV file, 
+// This script fetches the artists data from the original CSV file,
 // converts data and writes it to two separate files: artists2.txt and artists2_tagged.txt
 
 // You need to run this script with BUN - https://bun.sh/
@@ -6,11 +6,12 @@
 
 type ArtistType = { name: string; tags: string }[];
 
-const outputFilename = "./artists2.txt";
-const outputFilenameWithTags = "./artists2_tagged.txt";
-const outputDir = "../";
+const outputFilename = './artists2.txt';
+const outputFilenameWithTags = './artists2_tagged.txt';
+const outputDir = '../';
 
-const originalFileUrl = "https://raw.githubusercontent.com/proximasan/sdxl_artist_styles_studies/main/static/SDXL%20Image%20Synthesis%20Style%20Studies%20Database%20(Copy%20of%20The%20List)%20-%20Artists.csv";
+const originalFileUrl =
+  'https://raw.githubusercontent.com/proximasan/sdxl_artist_styles_studies/main/static/SDXL%20Image%20Synthesis%20Style%20Studies%20Database%20(Copy%20of%20The%20List)%20-%20Artists.csv';
 
 const fetchedData = async () => {
   console.log(`Fetching data `);
@@ -21,28 +22,31 @@ const fetchedData = async () => {
 
 const processedData = (data: string) => {
   console.log(`Processing data `);
-  data = data.replace(/[\s\S]*?^(?=.*N\/A)(?=.*Notes).*\r?\n/m, "");
-  const lines = data.split("\n");
+  data = data.replace(/[\s\S]*?^(?=.*N\/A)(?=.*Notes).*\r?\n/m, '');
+  const lines = data.split('\n');
   const artistsAll = [] as ArtistType;
   let artistsWithTags = [] as ArtistType;
 
   for (let i = 1; i < lines.length; i++) {
     const line = lines[i];
     const fields = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
-    const name = fields[2].replace(/"/g, "");
-    const tags = fields[7].replace(/["-]/g, "");
+    const name = fields[2].replace(/"/g, '');
+    const tags = fields[7].replace(/["-]/g, '');
     artistsAll.push({ name, tags });
-    artistsWithTags = artistsAll.filter((artist) => artist.tags !== "");
+    artistsWithTags = artistsAll.filter((artist) => artist.tags !== '');
   }
 
   return { all: artistsAll, tagged: artistsWithTags };
-}
+};
 
 const writeToFile = async (filename: string, data: ArtistType) => {
-  const stringData = data.sort((a, b) => a.name.localeCompare(b.name)).map((artist) => `${artist.name}, ${artist.tags}`).join("\n");
+  const stringData = data
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((artist) => `${artist.name}, ${artist.tags}`)
+    .join('\n');
   await Bun.write(filename, stringData);
   console.log(`Successfully wrote data to ${filename}`);
-}
+};
 
 (async () => {
   const data = await fetchedData();
