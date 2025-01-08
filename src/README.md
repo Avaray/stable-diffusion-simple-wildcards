@@ -2,7 +2,7 @@
 
 <!-- TESTING IF ANIMATED WEBP WORKS IN GITHUB -->
 
-![Nationalities](images/nationalities_animated.webp)
+![Nationalities](images/animation.webp)
 
 **Wildcards** in this collection are mainly created for realistic scenes with people. Hoever, they can be used for other types of art as well. They will give you inspiration and boost your creativity.
 
