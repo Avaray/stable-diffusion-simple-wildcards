@@ -24,17 +24,28 @@ You need to install an extension. You can choose one of the following options:
 - [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) `Recommended`
 - [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
 
-Most likely, after installing the extension, you'll need to restart Stable Diffusion for the extension to work correctly. **A simple reload
-of WebUI may not be sufficient**.
+Most likely, after installing the extension, you'll need to restart UI for the extension to work correctly.\
+**A simple reload of WebUI may not be sufficient**.
 
 The path to the Wildcards directory may look like this:\
 `../stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`\
 `../stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
 
+## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+
+You need to install custom Node.\
+At the moment, `ImpactWildcardProcessor` from [ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good
+choice.\
+You can install it using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
+[here](https://github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/tutorial/ImpactWildcard.md) is a tutorial on
+how to use it.
+
+Path to the Wildcards directory should look like this:\
+`../ComfyUI/custom_nodes/ComfyUI-Impact-Pack/custom_wildcards/`
+
 ## [Fooocus](https://github.com/lllyasviel/Fooocus)
 
-Fooocus supports Wildcards out of the box. You don't need to install any extension.
-
+Fooocus supports Wildcards out of the box.\
 Path to the Wildcards directory should look like this:\
 `../Fooocus/wildcards/`
 
