@@ -12,7 +12,8 @@ The main idea is to not overcomplicate things. Dealing with thousands of weirdly
 
 # 💻 Preparations
 
-To use these Wildcards, you need an extension. You can use one of the following:
+To use these Wildcards in [WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) or
+[Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge), you need an extension. You can choose one of the following options:
 
 - [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) `Recommended`
 - [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
