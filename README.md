@@ -10,7 +10,8 @@ The main idea is to not overcomplicate things. Dealing with thousands of weirdly
 
 # 💻 Preparations
 
-To use these Wildcards, you need an extension. You can use one of the following:
+To use these Wildcards in [WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) or
+[Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge), you need an extension. You can choose one of the following options:
 
 - [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) `Recommended`
 - [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
@@ -104,10 +105,10 @@ The prompt will look like this:
 
 Checkpoints that are based on `Pony Diffusion` may not work with some of these Wildcards. `Pony Diffusion` checkpoints were trained on completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real people. I recommend using one of following checkpoints:
 
-- [WildCardX-XL](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
-- [ZavyChromaXL](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
+- [RealVis](https://civitai.com/models/139562?modelVersionId=789646) `SDXL 1.0`
+- [WildCardX](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
+- [ZavyChroma](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
 - [\_CHINOOK\_](https://civitai.com/models/400589/chinook) `SDXL 1.0`
-- [epiCRealism XL](https://civitai.com/models/277058/epicrealism-xl) `SDXL 1.0`
 
 For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person (you can read more about it [here](https://dav.one/using-prompts-to-modify-face-and-body-in-stable-diffusion)). For `Artists` it's better to have `CFG Scale 2-5` to achieve best results. In both cases Checkpoint will have the biggest impact on the final result. Every checkpoint is different.
 
