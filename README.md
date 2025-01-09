@@ -2,7 +2,7 @@
 
 ![Nationalities](images/animation.webp)
 
-**Wildcards** in this collection are mainly created for realistic scenes with people. Hoever, they can be used for other types of art as
+**Wildcards** in this collection are mainly created for realistic scenes with people. However, they can be used for other types of art as
 well. They will give you inspiration and boost your creativity.
 
 Since I work with these Wildcards myself, I catch problematic keywords and remove them. Sometimes I also add new keywords, and even entire
@@ -51,10 +51,8 @@ Path to the Wildcards directory should look like this:\
 
 # 💾 Installation
 
-You need to download the wildcard `.txt` files into the appropriate directory (refer to the [preparations](#-preparations) section).
-
-Navigate to **the proper directory** and download the files.\
-You can download them with the following command:
+You need to install the wildcard `.txt` files into the appropriate directory (refer to the [preparations](#-preparations) section). Navigate
+to **the proper directory** and download the files with one of the following commands:
 
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [WGET](https://www.gnu.org/software/wget/)
 
@@ -146,7 +144,7 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
 
-- The rest of the files were created by me. For wildcards I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
+- The rest of the files were created by me. For wildcards, I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
 # 📝 Contributing
 
