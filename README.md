@@ -124,7 +124,6 @@ Checkpoints that are based on `Pony Diffusion` may not work with some of these W
 completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not
 work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real
 people. I recommend using one of following checkpoints:
-
 - [RealVis](https://civitai.com/models/139562?modelVersionId=789646) `SDXL 1.0`
 - [WildCardX](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
 - [ZavyChroma](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
@@ -137,7 +136,6 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 </details>
 
 # 🍺 Original Sources and Copyrights
-
 - The list of Nationalities `nationalities.txt` was inspired by
   [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/).
 - The list of Light types `lighting.txt` was inspired by
@@ -147,7 +145,6 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
-
 - The rest of the files were created by me. For wildcards, I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
 # 📝 Contributing
