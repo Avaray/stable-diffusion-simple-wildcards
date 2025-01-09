@@ -2,7 +2,7 @@
 
 <!-- TESTING IF ANIMATED WEBP WORKS IN GITHUB -->
 
-![Nationalities](images/animation.webp)
+![Nationalities](/images/animation.webp)
 
 **Wildcards** in this collection are mainly created for realistic scenes with people. However, they can be used for other types of art as
 well. They will give you inspiration and boost your creativity.
@@ -31,10 +31,7 @@ The **path** to the Wildcards directory should look like this:\
 
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
-You need to install custom Node.\
-At the moment, `ImpactWildcardProcessor` from [ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good
-choice.\
-You can install it using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
+You need to install custom Node. At the moment, `ImpactWildcardProcessor` from [ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good choice. You can install it using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
 [here](https://github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/tutorial/ImpactWildcard.md) is a tutorial on
 how to use it.
 
