@@ -138,8 +138,6 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 
 # 🍺 Original Sources and Copyrights
 
-<!-- sdxl -->
-
 - The list of Nationalities `nationalities.txt` was inspired by
   [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/).
 - The list of Light types `lighting.txt` was inspired by
