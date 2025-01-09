@@ -70,7 +70,7 @@ const replaceNonBranchContent = (content: string) => {
     `<!-- ${branchName} -->(.*?)<!-- \/${branchName} -->`,
     "gms",
   );
-  return content.replace(regex, "").replace(/\n{2,}/g, "\n");
+  return content.replace(regex, "");
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join("\n");
