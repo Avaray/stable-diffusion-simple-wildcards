@@ -2,7 +2,7 @@
 
 <!-- TESTING IF ANIMATED WEBP WORKS IN GITHUB -->
 
-![Nationalities](images/animation.webp)
+![Nationalities](/images/animation.webp)
 
 **Wildcards** in this collection are mainly created for realistic scenes with people. However, they can be used for other types of art as
 well. They will give you inspiration and boost your creativity.
@@ -21,36 +21,30 @@ Below you can find instructions on how to use Wildcards in specific UIs.
 
 ## [Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) and other UIs based on [WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-You need to install an extension. You can choose one of the following options:
-
-- [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) `Recommended`
-- [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
+You need to install an extension. I recommend using [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts?tab=readme-ov-file#installation).
 
 Most likely, after installing the extension, you'll need to restart UI for the extension to work correctly.\
 **A simple reload of WebUI may not be sufficient**.
 
-The path to the Wildcards directory may look like this:\
-`../stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`\
-`../stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
+The **path** to the Wildcards directory should look like this:\
+`../stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`
 
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
-You need to install custom Node.\
-At the moment, `ImpactWildcardProcessor` from [ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good
-choice.\
-You can install it using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
+You need to install custom Node. At the moment, `ImpactWildcardProcessor` from [ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good choice. You can install it using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
 [here](https://github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/tutorial/ImpactWildcard.md) is a tutorial on
 how to use it.
 
-Path to the Wildcards directory should look like this:\
+The **path** to the Wildcards directory should look like this:\
 `../ComfyUI/custom_nodes/ComfyUI-Impact-Pack/custom_wildcards/`
 
 <!-- ## [InvokeAI](https://github.com/invoke-ai/InvokeAI) -->
 
 ## [Fooocus](https://github.com/lllyasviel/Fooocus)
 
-Fooocus supports Wildcards out of the box.\
-Path to the Wildcards directory should look like this:\
+Fooocus supports Wildcards out of the box.
+
+The **path** to the Wildcards directory should look like this:\
 `../Fooocus/wildcards/`
 
 # 💾 Installation
@@ -124,6 +118,7 @@ Checkpoints that are based on `Pony Diffusion` may not work with some of these W
 completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not
 work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real
 people. I recommend using one of following checkpoints:
+
 - [RealVis](https://civitai.com/models/139562?modelVersionId=789646) `SDXL 1.0`
 - [WildCardX](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
 - [ZavyChroma](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
