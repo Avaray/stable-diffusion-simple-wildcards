@@ -25,7 +25,6 @@ You need to install an extension. You can choose one of the following options:
 
 - [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) `Recommended`
 - [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
-
 Most likely, after installing the extension, you'll need to restart UI for the extension to work correctly.\
 **A simple reload of WebUI may not be sufficient**.
 
@@ -129,7 +128,6 @@ people. I recommend using one of following checkpoints:
 - [WildCardX](https://civitai.com/models/239561/wildcardx-xl) `SDXL 1.0`
 - [ZavyChroma](https://civitai.com/models/119229/zavychromaxl) `SDXL 1.0`
 - [\_CHINOOK\_](https://civitai.com/models/400589/chinook) `SDXL 1.0`
-
 For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person (you can read more about it
 [here](https://dav.one/using-prompts-to-modify-face-and-body-in-stable-diffusion)). For `Artists` it's better to have `CFG Scale 2-5` to
 achieve best results. In both cases Checkpoint will have the biggest impact on the final result. Every checkpoint is different.
@@ -149,7 +147,6 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
 
 - The rest of the files were created by me. For wildcards, I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
-
 # 📝 Contributing
 
 If you believe something is missing, that something could be useful, or that something should be removed, go ahead -
