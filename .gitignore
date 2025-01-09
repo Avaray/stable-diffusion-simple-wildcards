@@ -176,6 +176,7 @@ dist
 
 # No need
 bun.lockb
+package-lock.json
 TODO*
 images/**/
 
