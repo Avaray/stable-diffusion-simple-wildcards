@@ -75,7 +75,7 @@ const replaceNonBranchContent = (content: string) => {
     `<!-- ${branch} -->(.*?)<!-- \/${branch} -->`,
     "gms",
   );
-  return content.replace(regex, "").replace(/\n<!-- \w+ -->/gms, "").replace(/(?<=^\s*-\s.*\n)^\s*$\n?/, "");
+  return content.replace(regex, "").replace(/\n<!-- \W?\w+ -->/gms, "").replace(/(?<=^\s*-\s.*\n)^\s*$\n?/, "");
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join("\n");
