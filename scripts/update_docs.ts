@@ -71,12 +71,11 @@ const emptyLinesInMarkdownLists = new RegExp("(?<=^- .*\n)\\s*\n(?=- )", "gm");
 
 const replaceNonBranchContent = (content: string) => {
   const branch = branchName === "sdxl" ? "pdxl" : "sdxl";
-
   const regex = new RegExp(
     `<!-- ${branch} -->(.*?)<!-- \/${branch} -->`,
     "gms",
   );
-  return content.replace(regex, "").replace(/(?<=^\s*-\s.*\n)^\s*$\n?/, "");
+  return content.replace(regex, "").replace(/\n<!-- \w+ -->/gms, "").replace(/(?<=^\s*-\s.*\n)^\s*$\n?/, "");
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join("\n");
