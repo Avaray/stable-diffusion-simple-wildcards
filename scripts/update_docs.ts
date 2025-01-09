@@ -33,6 +33,7 @@ const branchName = Bun.env.GITHUB_REF_NAME || "sdxl";
 console.log(`Branch name: ${branchName}`);
 
 // const apiURL = Bun.env.GITHUB_API_URL;
+
 const rawUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/wildcards/`;
 const archiveUrl = `https://github.com/${repoOwner}/${repoName}/releases/latest/download/${repoName}-${branchName}.zip`;
 
@@ -69,8 +70,9 @@ const wrapInDetails = (content: string) => {
 const emptyLinesInMarkdownLists = new RegExp("(?<=^- .*\n)\\s*\n(?=- )", "gm");
 
 const replaceNonBranchContent = (content: string) => {
+  const branch = branchName === "sdxl" ? "pdxl" : "sdxl";
   const regex = new RegExp(
-    `<!-- ${branchName} -->(.*?)<!-- \/${branchName} -->`,
+    `<!-- ${branch} -->(.*?)<!-- \/${branch} -->`,
     "gms",
   );
   return content.replace(regex, "");
