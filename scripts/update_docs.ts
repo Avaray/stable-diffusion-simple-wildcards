@@ -28,7 +28,10 @@ import { automatic, manual, urls } from "./commands.ts";
 
 const repoOwner = Bun.env.GITHUB_REPOSITORY?.split("/")[0];
 const repoName = Bun.env.GITHUB_REPOSITORY?.split("/")[1];
+
 const branchName = Bun.env.GITHUB_REF_NAME || "sdxl";
+console.log(`Branch name: ${branchName}`);
+
 // const apiURL = Bun.env.GITHUB_API_URL;
 const rawUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/wildcards/`;
 const archiveUrl = `https://github.com/${repoOwner}/${repoName}/releases/latest/download/${repoName}-${branchName}.zip`;
