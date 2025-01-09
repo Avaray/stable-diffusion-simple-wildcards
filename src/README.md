@@ -21,17 +21,13 @@ Below you can find instructions on how to use Wildcards in specific UIs.
 
 ## [Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) and other UIs based on [WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-You need to install an extension. You can choose one of the following options:
-
-- [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts) `Recommended`
-- [stable-diffusion-webui-wildcards](https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards)
+You need to install an extension. I recommend using [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts?tab=readme-ov-file#installation).
 
 Most likely, after installing the extension, you'll need to restart UI for the extension to work correctly.\
 **A simple reload of WebUI may not be sufficient**.
 
-The path to the Wildcards directory may look like this:\
-`../stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`\
-`../stable-diffusion-webui/extensions/stable-diffusion-webui-wildcards/wildcards/`
+The **path** to the Wildcards directory should look like this:\
+`../stable-diffusion-webui/extensions/sd-dynamic-prompts/wildcards/`
 
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
@@ -42,15 +38,16 @@ You can install it using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-M
 [here](https://github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/tutorial/ImpactWildcard.md) is a tutorial on
 how to use it.
 
-Path to the Wildcards directory should look like this:\
+The **path** to the Wildcards directory should look like this:\
 `../ComfyUI/custom_nodes/ComfyUI-Impact-Pack/custom_wildcards/`
 
 <!-- ## [InvokeAI](https://github.com/invoke-ai/InvokeAI) -->
 
 ## [Fooocus](https://github.com/lllyasviel/Fooocus)
 
-Fooocus supports Wildcards out of the box.\
-Path to the Wildcards directory should look like this:\
+Fooocus supports Wildcards out of the box.
+
+The **path** to the Wildcards directory should look like this:\
 `../Fooocus/wildcards/`
 
 # 💾 Installation
