@@ -9,6 +9,7 @@ console.log(`Bun.env.PWD: ${Bun.env.PWD}`);
 
 // import { $ } from 'bun';
 import { readdir } from "node:fs/promises";
+import { normalize } from "node:path";
 import { automatic, manual, urls } from "./commands.ts";
 
 // const branches = {
@@ -24,6 +25,8 @@ import { automatic, manual, urls } from "./commands.ts";
 //   console.log('This script must be run in a GitHub Action environment');
 //   process.exit(1);
 // }
+
+console.log(`Repository: ${Bun.env.GITHUB_REPOSITORY}`);
 
 const repoOwner = Bun.env.GITHUB_REPOSITORY?.split("/")[0];
 const repoName = Bun.env.GITHUB_REPOSITORY?.split("/")[1];
@@ -43,9 +46,8 @@ const sanitizedUrl = rawUrl.endsWith("/") ? rawUrl.slice(0, -1) : rawUrl;
 const filesList = `${wildcards.map((w) => `- [${w.split(".")[0]}](${sanitizedUrl}/${w})\n`).join("")}\n`;
 
 const downloadMethod = (method: { type: string; tools: string[]; commands: string[] }) => {
-  const header = `### Download${method.type === "automatic" ? " automatically" : ""} with ${
-    method.tools.map((tool) => `[${tool.toUpperCase()}](${urls[tool]})`).join(" and ")
-  }\n\n`;
+  const header = `### Download${method.type === "automatic" ? " automatically" : ""} with ${method.tools.map((tool) => `[${tool.toUpperCase()}](${urls[tool]})`).join(" and ")
+    }\n\n`;
   const code = `\`\`\`bash\n${method.commands.join(" && ")}\n\`\`\`\n`;
 
   return header + code;
@@ -71,10 +73,10 @@ const emptyLinesInMarkdownLists = new RegExp("(?<=^- .*\n)\\s*\n(?=- )", "gm");
 const replaceNonBranchContent = (content: string) => {
   const branch = branchName === "sdxl" ? "pdxl" : "sdxl";
   const regex = new RegExp(
-    `<!-- ${branch} -->(.*?)<!-- \/${branch} -->`,
+    `^{+${branch}+-start+}+.*?{+${branch}-end+}+`,
     "gms",
   );
-  return content.replace(regex, "").replace(/\n<!-- \W?\w+ -->/gms, "").replace(/(?<=^-.*\n)^\s*$\n(?=^-)/gms, "");
+  return content.replace(regex, "").replace(/^<.*?>/gms, "").replace(/n{2,}/g, "\n");
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join("\n");
