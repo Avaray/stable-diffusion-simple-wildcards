@@ -107,7 +107,7 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 
 # 🍺 Original Sources and Copyrights
 
-{{sdxl-on}}
+{{sdxl-start}}
 - The list of Nationalities `nationalities.txt` was inspired by
   [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/).
 - The list of Light types `lighting.txt` was inspired by
@@ -117,12 +117,12 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
-{{sdxl-off}}
-{{pdxl-on}}
+{{sdxl-end}}
+{{pdxl-start}}
 - Lists of Characters from Videogames `videogame.txt`, Animations `animation.txt` and Anime `anime.txt` were created by
   [etude2k](https://civitai.com/user/etude2k) and posted on
   [CivitAI](https://civitai.com/models/338658/pony-diffusions-characters-wildcards).
-{{pdxl-off}}
+{{pdxl-end}}
 - The rest of the files were created by me. For wildcards, I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
 # 📝 Contributing
