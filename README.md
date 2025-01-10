@@ -1,7 +1,5 @@
 # 📑 Wildcards Collection for Stable Diffusion
 
-<!-- TESTING IF ANIMATED WEBP WORKS IN GITHUB -->
-
 ![Nationalities](/images/animation.webp)
 
 **Wildcards** in this collection are mainly created for realistic scenes with people. However, they can be used for other types of art as
@@ -37,8 +35,6 @@ how to use it.
 
 The **path** to the Wildcards directory should look like this:\
 `../ComfyUI/custom_nodes/ComfyUI-Impact-Pack/custom_wildcards/`
-
-<!-- ## [InvokeAI](https://github.com/invoke-ai/InvokeAI) -->
 
 ## [Fooocus](https://github.com/lllyasviel/Fooocus)
 
@@ -109,14 +105,14 @@ The prompt will look like this:
 
 > photography of toy cars, **red**, **blue**, **green**, **yellow**
 
-<details>
-<summary>Show Warning</summary>
+Show Warning</summary>
 
 ### WARNING
 
 Checkpoints that are based on `Pony Diffusion` may not work with some of these Wildcards. `Pony Diffusion` checkpoints were trained on
 completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not
-work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real
+work at all. If you are pla
+ing to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real
 people. I recommend using one of following checkpoints:
 
 - [RealVis](https://civitai.com/models/139562?modelVersionId=789646) `SDXL 1.0`
@@ -128,9 +124,9 @@ For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt aff
 [here](https://dav.one/using-prompts-to-modify-face-and-body-in-stable-diffusion)). For `Artists` it's better to have `CFG Scale 2-5` to
 achieve best results. In both cases Checkpoint will have the biggest impact on the final result. Every checkpoint is different.
 
-</details>
-
 # 🍺 Original Sources and Copyrights
+
+{{sdxl-on}}
 - The list of Nationalities `nationalities.txt` was inspired by
   [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/).
 - The list of Light types `lighting.txt` was inspired by
@@ -140,6 +136,12 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
+{{sdxl-off}}
+{{pdxl-on}}
+- Lists of Characters from Videogames `videogame.txt`, Animations `animation.txt` and Anime `anime.txt` were created by
+  [etude2k](https://civitai.com/user/etude2k) and posted on
+  [CivitAI](https://civitai.com/models/338658/pony-diffusions-characters-wildcards).
+{{pdxl-off}}
 - The rest of the files were created by me. For wildcards, I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
 # 📝 Contributing
