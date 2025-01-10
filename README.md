@@ -48,31 +48,6 @@ The **path** to the Wildcards directory should look like this:\
 You need to install the wildcard `.txt` files into the appropriate directory (refer to the [preparations](#-preparations) section). Navigate
 to **the proper directory** and download the files with one of the following commands:
 
-### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [WGET](https://www.gnu.org/software/wget/)
-
-```bash
-wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
-```
-
-<details>
-<summary>Show more commands</summary>
-
-### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [ARIA2C](https://aria2.github.io/)
-
-```bash
-aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c sdxl
-```
-
-### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [CURL](https://curl.se/)
-
-```bash
-curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
-```
-
-You can find more ways to download the wildcards in [DOWNLOAD.md](docs/DOWNLOAD.md) file.
-
-</details>
-
 # ⚡️ Usage
 
 A **Wildcard** is essentially a name of a file that contains a list of keywords. If you have a file named `colors.txt`, you can use the
@@ -111,8 +86,7 @@ Show Warning</summary>
 
 Checkpoints that are based on `Pony Diffusion` may not work with some of these Wildcards. `Pony Diffusion` checkpoints were trained on
 completely different data and lack the knowledge about many things. `Nationalities`, `Artists`, `Cameras` and `Films` most likely will not
-work at all. If you are pla
-ing to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real
+work at all. If you are planning to use these Wildcards for generating realistic scenes, you should use good checkpoints focused on real
 people. I recommend using one of following checkpoints:
 
 - [RealVis](https://civitai.com/models/139562?modelVersionId=789646) `SDXL 1.0`
@@ -126,7 +100,6 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 
 # 🍺 Original Sources and Copyrights
 
-{{sdxl-on}}
 - The list of Nationalities `nationalities.txt` was inspired by
   [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/).
 - The list of Light types `lighting.txt` was inspired by
@@ -136,12 +109,7 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
-{{sdxl-off}}
-{{pdxl-on}}
-- Lists of Characters from Videogames `videogame.txt`, Animations `animation.txt` and Anime `anime.txt` were created by
-  [etude2k](https://civitai.com/user/etude2k) and posted on
-  [CivitAI](https://civitai.com/models/338658/pony-diffusions-characters-wildcards).
-{{pdxl-off}}
+
 - The rest of the files were created by me. For wildcards, I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
 # 📝 Contributing
