@@ -9,7 +9,6 @@ console.log(`Bun.env.PWD: ${Bun.env.PWD}`);
 
 // import { $ } from 'bun';
 import { readdir } from "node:fs/promises";
-import { join } from "node:path";
 import { automatic, manual, urls } from "./commands.ts";
 
 // const branches = {
