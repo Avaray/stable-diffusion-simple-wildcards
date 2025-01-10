@@ -1,7 +1,7 @@
 console.log("Starting");
 
-console.log(`meta path: ${import.meta.path}`);
-console.log(`meta dir: ${import.meta.dir}`);
+console.log(`meta.path: ${import.meta.path}`);
+console.log(`meta.dir: ${import.meta.dir}`);
 console.log(`Bun.env.PWD: ${Bun.env.PWD}`);
 
 // https://docs.github.com/en/actions/learn-github-actions/variables
@@ -39,6 +39,8 @@ console.log(`Branch name: ${branchName}`);
 const rawUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/wildcards/`;
 const archiveUrl = `https://github.com/${repoOwner}/${repoName}/releases/latest/download/${repoName}-${branchName}.zip`;
 
+console.log(`PWD: ${Bun.env.PWD}`);
+
 const path = Bun.env.GITHUB_REPOSITORY ? Bun.env.PWD : import.meta.dir;
 
 const wildcards = await readdir(`${path}/wildcards`);
@@ -73,10 +75,10 @@ const emptyLinesInMarkdownLists = new RegExp("(?<=^- .*\n)\\s*\n(?=- )", "gm");
 const replaceNonBranchContent = (content: string) => {
   const branch = branchName === "sdxl" ? "pdxl" : "sdxl";
   const regex = new RegExp(
-    `^{+${branch}+-start+}+.*?{+${branch}-end+}+`,
+    `^{+${branch}-start+}+.*?{+${branch}-end+}+`,
     "gms",
   );
-  return content.replace(regex, "").replace(/^<.*?>/gms, "").replace(/n{2,}/g, "\n");
+  return content.replace(regex, "").replace(/^<.*?>/gms, "").replace(/^{+[\w-]+}+/gm, "").replace(/^\n{2,}/gm, "\n");
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join("\n");
