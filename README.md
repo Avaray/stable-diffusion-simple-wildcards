@@ -108,7 +108,8 @@ The prompt will look like this:
 
 > photography of toy cars, **red**, **blue**, **green**, **yellow**
 
-Show Warning</summary>
+<details>
+<summary>Show Warning</summary>
 
 ### WARNING
 
@@ -125,6 +126,8 @@ people. I recommend using one of following checkpoints:
 For `Nationalities` it's good to be around `CFG Scale 6-7` to see how prompt affect the generated person (you can read more about it
 [here](https://dav.one/using-prompts-to-modify-face-and-body-in-stable-diffusion)). For `Artists` it's better to have `CFG Scale 2-5` to
 achieve best results. In both cases Checkpoint will have the biggest impact on the final result. Every checkpoint is different.
+
+</details>
 
 # 🍺 Original Sources and Copyrights
 
