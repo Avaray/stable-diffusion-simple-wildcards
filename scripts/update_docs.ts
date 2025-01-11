@@ -80,7 +80,7 @@ const replaceNonBranchContent = (content: string) => {
     `- ${branch}-start.*?- ${branch}-end`,
     "gms",
   );
-  return content.replace(regex, "").replace(/^- \w+-(?:end|start)\n?/gm, "").replace(/^<.*?>/gms, "").replace(/^\n{2,}/gm, "\n");
+  return content.replace(regex, "").replace(/^- \w+-(?:end|start)\n?/gm, "").replace(/^<!.*?->/gms, "").replace(/^\n{2,}/gm, "\n");
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join("\n");
