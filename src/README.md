@@ -19,7 +19,8 @@ Below you can find instructions on how to use Wildcards in specific UIs.
 
 ## [Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) and other UIs based on [WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-You need to install an extension. I recommend using [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts?tab=readme-ov-file#installation).
+You need to install an extension. I recommend using
+[sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts?tab=readme-ov-file#installation).
 
 Most likely, after installing the extension, you'll need to restart UI for the extension to work correctly.\
 **A simple reload of WebUI may not be sufficient**.
@@ -29,7 +30,9 @@ The **path** to the Wildcards directory should look like this:\
 
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
-You need to install custom Node. At the moment, `ImpactWildcardProcessor` from [ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good choice. You can install it using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
+You need to install custom Node. At the moment, `ImpactWildcardProcessor` from
+[ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good choice. You can install it using
+[ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
 [here](https://github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/tutorial/ImpactWildcard.md) is a tutorial on
 how to use it.
 
@@ -107,7 +110,7 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 
 # 🍺 Original Sources and Copyrights
 
-{{sdxl-start}}
+- sdxl-start
 - The list of Nationalities `nationalities.txt` was inspired by
   [this Reddit post](https://www.reddit.com/r/StableDiffusion/comments/13oea0i/photorealistic_portraits_of_200_ethinicities/).
 - The list of Light types `lighting.txt` was inspired by
@@ -117,13 +120,12 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
-{{sdxl-end}}
-{{pdxl-start}}
+- sdxl-end
+- pdxl-start
 - Lists of Characters from Videogames `videogame.txt`, Animations `animation.txt` and Anime `anime.txt` were created by
   [etude2k](https://civitai.com/user/etude2k) and posted on
   [CivitAI](https://civitai.com/models/338658/pony-diffusions-characters-wildcards).
-{{pdxl-end}}
-- The rest of the files were created by me. For wildcards, I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
+- pdxl-end
 
 # 📝 Contributing
 
