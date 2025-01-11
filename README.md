@@ -19,7 +19,8 @@ Below you can find instructions on how to use Wildcards in specific UIs.
 
 ## [Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) and other UIs based on [WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 
-You need to install an extension. I recommend using [sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts?tab=readme-ov-file#installation).
+You need to install an extension. I recommend using
+[sd-dynamic-prompts](https://github.com/adieyal/sd-dynamic-prompts?tab=readme-ov-file#installation).
 
 Most likely, after installing the extension, you'll need to restart UI for the extension to work correctly.\
 **A simple reload of WebUI may not be sufficient**.
@@ -29,7 +30,9 @@ The **path** to the Wildcards directory should look like this:\
 
 ## [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 
-You need to install custom Node. At the moment, `ImpactWildcardProcessor` from [ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good choice. You can install it using [ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
+You need to install custom Node. At the moment, `ImpactWildcardProcessor` from
+[ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) seems to be a good choice. You can install it using
+[ComfyUI Manager](https://github.com/ltdrdata/ComfyUI-Manager) and
 [here](https://github.com/ltdrdata/ComfyUI-extension-tutorials/blob/Main/ComfyUI-Impact-Pack/tutorial/ImpactWildcard.md) is a tutorial on
 how to use it.
 
@@ -47,6 +50,31 @@ The **path** to the Wildcards directory should look like this:\
 
 You need to install the wildcard `.txt` files into the appropriate directory (refer to the [preparations](#-preparations) section). Navigate
 to **the proper directory** and download the files with one of the following commands:
+
+### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [WGET](https://www.gnu.org/software/wget/)
+
+```bash
+wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
+```
+
+<details>
+<summary>Show more commands</summary>
+
+### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [ARIA2C](https://aria2.github.io/)
+
+```bash
+aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c sdxl
+```
+
+### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [CURL](https://curl.se/)
+
+```bash
+curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
+```
+
+You can find more ways to download the wildcards in [DOWNLOAD.md](docs/DOWNLOAD.md) file.
+
+</details>
 
 # ⚡️ Usage
 
@@ -109,8 +137,6 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
-
-- The rest of the files were created by me. For wildcards, I used [ChatGPT](https://chat.openai.com) and [Claude](https://claude.ai/).
 
 # 📝 Contributing
 
