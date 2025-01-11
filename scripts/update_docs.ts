@@ -72,13 +72,15 @@ const wrapInDetails = (content: string) => {
 // I need to use \\s in the middle of the regex because with one slash prettier removes it
 const emptyLinesInMarkdownLists = new RegExp("(?<=^- .*\n)\\s*\n(?=- )", "gm");
 
+// ^- \w+-[end|start]
+
 const replaceNonBranchContent = (content: string) => {
   const branch = branchName === "sdxl" ? "pdxl" : "sdxl";
   const regex = new RegExp(
-    `^{+${branch}-start+}+.*?{+${branch}-end+}+`,
+    `- ${branch}-start.*?- ${branch}-end`,
     "gms",
   );
-  return content.replace(regex, "").replace(/^<.*?>/gms, "").replace(/^{+[\w-]+}+/gm, "").replace(/^\n{2,}/gm, "\n");
+  return content.replace(regex, "").replace(/^- \w+-(?:end|start)\n?/gm, "").replace(/^<.*?>/gms, "").replace(/^\n{2,}/gm, "\n");
 };
 
 const automaticMethods = automatic.map((m) => downloadMethod(m)).join("\n");
