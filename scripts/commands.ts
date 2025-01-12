@@ -1,13 +1,9 @@
-import data from "../package.json";
+import { getCurrentBranch } from "./utils.ts";
 
-// These will come from environment variables in the future
-// Need to figure out how to handle this with GitHub Actions
-const branch = Bun.env.GITHUB_REF_NAME || "sdxl";
-const repositoryName = data.name;
-const repositoryUrl = data.repository.url;
-const scriptUrl = `https://raw.githubusercontent.com/${data.Author}/${repositoryName}/${branch}/scripts/download.sh`;
-const archiveUrl = `https://github.com/Avaray/stable-diffusion-simple-wildcards/archive/refs/heads/${branch}.zip`;
-const archiveFilename = "wildcards.zip";
+const branch = await getCurrentBranch();
+const repo = Deno.env.get("GITHUB_REPOSITORY");
+const repoUrl = new URL(`https://github.com/${repo}`);
+const scriptUrl = new URL(`https://raw.githubusercontent.com/${repo}/${branch}/scripts/download.sh`);
 
 export const urls = {
   bash: "https://www.gnu.org/software/bash/",
@@ -46,9 +42,9 @@ export const manual = [
     type: "manual",
     tools: ["git"],
     commands: [
-      `git clone --depth 1 --single-branch --branch ${branch} ${repositoryUrl}`,
-      `mv ${repositoryName}/wildcards/*.txt . > /dev/null 2>&1`,
-      `rm -rf ${repositoryName}`,
+      `git clone --depth 1 --single-branch --branch ${branch} ${repoUrl}.git`,
+      `mv ${repo}/wildcards/*.txt . > /dev/null 2>&1`,
+      `rm -rf ${repo}`,
     ],
   },
 ] as { type: string; tools: string[]; commands: string[] }[];

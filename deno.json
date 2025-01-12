@@ -1,4 +1,11 @@
 {
+  "tasks": {
+    "dev": "deno run -A --env-file=.env --watch scripts/update_docs.ts",
+    "build": "deno run -A scripts/update_docs.ts"
+  },
+  "imports": {
+    "@std/path": "jsr:@std/path@^1.0.8"
+  },
   "fmt": {
     "options": {
       "lineWidth": 140

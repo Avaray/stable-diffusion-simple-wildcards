@@ -1,51 +1,37 @@
-console.log("Starting");
-
-console.log(`meta.path: ${import.meta.path}`);
-console.log(`meta.dir: ${import.meta.dir}`);
-console.log(`Bun.env.PWD: ${Bun.env.PWD}`);
-
 // https://docs.github.com/en/actions/learn-github-actions/variables
 // https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
 
-// import { $ } from 'bun';
 import { readdir } from "node:fs/promises";
-import { normalize } from "node:path";
+import { join } from "node:path";
 import { automatic, manual, urls } from "./commands.ts";
+import { getCurrentBranch, getTrackedFiles } from "./utils.ts";
 
-// const branches = {
-//   sdxl: {
-//     name: "Stable Diffusion XL",
-//   },
-//   pdxl: {
-//     name: "Pony Diffusion XL",
-//   },
-// };
+const branchName = await getCurrentBranch();
+!branchName && (console.log("Failed to get the current branch"), Deno.exit(1));
+console.log(`Branch: ${branchName}`);
 
-// if (!Bun.env.GITHUB_REPOSITORY || !Bun.env.GITHUB_REF_NAME || !Bun.env.GITHUB_API_URL) {
-//   console.log('This script must be run in a GitHub Action environment');
-//   process.exit(1);
-// }
+const cwd = Deno.cwd();
+console.log(`CWD: ${cwd}`);
 
-console.log(`Repository: ${Bun.env.GITHUB_REPOSITORY}`);
+console.log(`meta.filename: ${import.meta.filename}`);
+console.log(`meta.dir: ${import.meta.dirname}`);
 
-const repoOwner = Bun.env.GITHUB_REPOSITORY?.split("/")[0];
-const repoName = Bun.env.GITHUB_REPOSITORY?.split("/")[1];
+const repo = Deno.env.get("GITHUB_REPOSITORY");
+!repo && (console.log('Missing "GITHUB_REPOSITORY" environment variable'), Deno.exit(1));
+console.log(`GITHUB_REPOSITORY: ${repo}`);
 
-const branchName = Bun.env.GITHUB_REF_NAME || "sdxl";
-console.log(`Branch name: ${branchName}`);
-
-// const apiURL = Bun.env.GITHUB_API_URL;
+const repoOwner = repo?.split("/")[0];
+const repoName = repo?.split("/")[1];
 
 const rawUrl = `https://raw.githubusercontent.com/${repoOwner}/${repoName}/${branchName}/wildcards/`;
 const archiveUrl = `https://github.com/${repoOwner}/${repoName}/releases/latest/download/${repoName}-${branchName}.zip`;
 
-console.log(`PWD: ${Bun.env.PWD}`);
+const wildcardsDir = join(cwd, "wildcards");
+const wildcards = await getTrackedFiles(wildcardsDir);
+!wildcards.length && (console.log("No wildcard files found"), Deno.exit(0));
+console.log(`Found ${wildcards.length} wildcard files`);
 
-const path = Bun.env.GITHUB_REPOSITORY ? Bun.env.PWD : import.meta.dir;
-
-const wildcards = await readdir(`${path}/wildcards`);
-const sanitizedUrl = rawUrl.endsWith("/") ? rawUrl.slice(0, -1) : rawUrl;
-const filesList = `${wildcards.map((w) => `- [${w.split(".")[0]}](${sanitizedUrl}/${w})\n`).join("")}\n`;
+const filesList = wildcards.map((w) => `- [${w.split(".")[0]}](${new URL(w, rawUrl).href})`).join("\n");
 
 const downloadMethod = (method: { type: string; tools: string[]; commands: string[] }) => {
   const header = `### Download${method.type === "automatic" ? " automatically" : ""} with ${method.tools.map((tool) => `[${tool.toUpperCase()}](${urls[tool]})`).join(" and ")
@@ -69,17 +55,13 @@ const wrapInDetails = (content: string) => {
   );
 };
 
-// I need to use \\s in the middle of the regex because with one slash prettier removes it
-const emptyLinesInMarkdownLists = new RegExp("(?<=^- .*\n)\\s*\n(?=- )", "gm");
-
-// ^- \w+-[end|start]
-
 const replaceNonBranchContent = (content: string) => {
-  const branch = branchName === "sdxl" ? "pdxl" : "sdxl";
+  // Regex to match all branch blocks except the current branch
   const regex = new RegExp(
-    `- ${branch}-start.*?- ${branch}-end`,
+    `- (?!${branchName})\w+-start.*?- (?!${branchName})\w+-end`,
     "gms",
   );
+  // Remove non-branch content, branch blocks, comments and multiple empty lines
   return content.replace(regex, "").replace(/^- \w+-(?:end|start)\n?/gm, "").replace(/^<!.*?->/gms, "").replace(/^\n{2,}/gm, "\n");
 };
 
@@ -87,18 +69,16 @@ const automaticMethods = automatic.map((m) => downloadMethod(m)).join("\n");
 
 const manualMethods = manual.map((m) => downloadMethod(m)).join("\n");
 
-const docsFiles = await readdir(`${path}/src`);
+const docsFiles = await readdir(join(cwd, "src"));
 
 docsFiles.forEach(async (file) => {
-  let content = await Bun.file(`${path}/src/${file}`).text();
+  let content = await Deno.readTextFile(join(cwd, "src", file));
 
   content = replaceNonBranchContent(content);
 
   let processedAutomaticMethods = automaticMethods;
 
-  if (file === "README.md") {
-    processedAutomaticMethods = wrapInDetails(automaticMethods);
-  }
+  file === "README.md" && (processedAutomaticMethods = wrapInDetails(automaticMethods));
 
   const processed = content
     .replaceAll("{{filesList}}", filesList)
@@ -107,14 +87,14 @@ docsFiles.forEach(async (file) => {
     .replaceAll("{{automaticMethods}}", processedAutomaticMethods)
     .replaceAll("{{manualMethods}}", manualMethods)
     .replaceAll("{{amount}}", wildcards.length.toString())
-    .replace(emptyLinesInMarkdownLists, "")
     .replace(/^\n{2,}/gm, "\n");
 
   if (file === "README.md") {
-    await Bun.write(`${path}/${file}`, processed);
+    await Deno.writeTextFile(join(cwd, file), processed);
   } else {
-    await Bun.write(`${path}/docs/${file}`, processed);
+    await Deno.writeTextFile(join(cwd, "docs", file), processed);
   }
 });
 
 console.log("Done");
+

@@ -54,7 +54,7 @@ to **the proper directory** and download the files with one of the following com
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
+wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh | bash -s -- wget moving-to-deno
 ```
 
 <details>
@@ -63,13 +63,13 @@ wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildc
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [ARIA2C](https://aria2.github.io/)
 
 ```bash
-aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c sdxl
+aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c moving-to-deno
 ```
 
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [CURL](https://curl.se/)
 
 ```bash
-curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
+curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh | bash -s -- curl moving-to-deno
 ```
 
 You can find more ways to download the wildcards in [DOWNLOAD.md](docs/DOWNLOAD.md) file.
@@ -140,6 +140,9 @@ achieve best results. In both cases Checkpoint will have the biggest impact on t
 - The second list of Artists `artists2.txt` was obtained from the [SDXL Artist Style Studies](https://sdxl.parrotzone.art/).
 - The lists of Cameras `cameras.txt` and Films `camera_films.txt` were obtained from the
   [SDXL 1.0 Artistic Studies](https://rikkar69.github.io/SDXL-artist-study/).
+- Lists of Characters from Videogames `videogame.txt`, Animations `animation.txt` and Anime `anime.txt` were created by
+  [etude2k](https://civitai.com/user/etude2k) and posted on
+  [CivitAI](https://civitai.com/models/338658/pony-diffusions-characters-wildcards).
 
 # 📝 Contributing
 
