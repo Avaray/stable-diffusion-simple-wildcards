@@ -21,8 +21,8 @@ jobs:
       - name: Increment version
         id: increment_version
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "${{ secrets.DYGNITORZ_EMAIL }}"
+          git config --local user.name "${{ secrets.DYGNITORZ_NAME }}"
           NEW_VERSION=$(npm version patch -m "Bump version to %s")
           echo "new_version=${NEW_VERSION}" >> $GITHUB_OUTPUT
 
@@ -49,7 +49,7 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.DYGNITORZ_TOKEN }}
           branch: ${{ github.ref_name }}
           force: true
           tags: true

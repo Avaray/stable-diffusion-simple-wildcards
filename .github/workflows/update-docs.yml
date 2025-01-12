@@ -16,25 +16,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
+      - uses: denoland/setup-deno@v2
         with:
-          bun-version: 1.1.21
+          deno-version: v2.x
 
       - name: Install dependencies
-        run: bun install
+        run: deno install
 
       - name: Update docs
-        run: bun ./scripts/update_docs.ts
+        run: deno run build
 
       - name: Commit changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "${{ secrets.DYGNITORZ_EMAIL }}"
+          git config --local user.name "${{ secrets.DYGNITORZ_NAME }}"
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "Updated Files"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.DYGNITORZ_TOKEN }}
           branch: ${{ github.ref_name }}
