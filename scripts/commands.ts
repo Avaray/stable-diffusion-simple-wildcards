@@ -2,6 +2,7 @@ import { getCurrentBranch } from "./utils.ts";
 
 const branch = await getCurrentBranch();
 const repo = Deno.env.get("GITHUB_REPOSITORY");
+const repoName = repo?.split("/")[1];
 const repoUrl = new URL(`https://github.com/${repo}`);
 const scriptUrl = new URL(`https://raw.githubusercontent.com/${repo}/${branch}/scripts/download.sh`);
 
@@ -43,8 +44,8 @@ export const manual = [
     tools: ["git"],
     commands: [
       `git clone --depth 1 --single-branch --branch ${branch} ${repoUrl}.git`,
-      `mv ${repo}/wildcards/*.txt . > /dev/null 2>&1`,
-      `rm -rf ${repo}`,
+      `mv ${repoName}/wildcards/*.txt . > /dev/null 2>&1`,
+      `rm -rf ${repoName}`,
     ],
   },
 ] as { type: string; tools: string[]; commands: string[] }[];
