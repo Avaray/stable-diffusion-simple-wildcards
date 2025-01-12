@@ -8,47 +8,47 @@ along with [BASH](https://www.gnu.org/software/bash/), which is automatically in
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh | bash -s -- wget moving-to-deno
+wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
 ```
 
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [ARIA2C](https://aria2.github.io/)
 
 ```bash
-aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c moving-to-deno
+aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c sdxl
 ```
 
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [CURL](https://curl.se/)
 
 ```bash
-curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh | bash -s -- curl moving-to-deno
+curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
 ```
 
 ### Download with [GIT](https://git-scm.com/)
 
 ```bash
-git clone --depth 1 --single-branch --branch moving-to-deno https://github.com/Avaray/stable-diffusion-simple-wildcards.git && mv Avaray/stable-diffusion-simple-wildcards/wildcards/*.txt . > /dev/null 2>&1 && rm -rf Avaray/stable-diffusion-simple-wildcards
+git clone --depth 1 --single-branch --branch sdxl https://github.com/Avaray/stable-diffusion-simple-wildcards.git && mv Avaray/stable-diffusion-simple-wildcards/wildcards/*.txt . > /dev/null 2>&1 && rm -rf Avaray/stable-diffusion-simple-wildcards
 ```
 
 # 🧩 Download manually
 
-### [⬇️ Download as a ZIP archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/releases/latest/download/stable-diffusion-simple-wildcards-moving-to-deno.zip)
+### [⬇️ Download as a ZIP archive](https://github.com/Avaray/stable-diffusion-simple-wildcards/releases/latest/download/stable-diffusion-simple-wildcards-sdxl.zip)
 
 ### Download individual files (17 files in total)
 
-- [angles](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/angles.txt)
-- [artists](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/artists.txt)
-- [artists2](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/artists2.txt)
-- [artists2_tagged](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/artists2_tagged.txt)
-- [camera_films](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/camera_films.txt)
-- [cameras](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/cameras.txt)
-- [clothes_bottom](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/clothes_bottom.txt)
-- [clothes_upper](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/clothes_upper.txt)
-- [colors](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/colors.txt)
-- [emotions](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/emotions.txt)
-- [hairstyles](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/hairstyles.txt)
-- [jobs](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/jobs.txt)
-- [lighting](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/lighting.txt)
-- [locations](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/locations.txt)
-- [materials](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/materials.txt)
-- [nationalities](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/nationalities.txt)
-- [weather](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/wildcards/weather.txt)
+- [angles](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/angles.txt)
+- [artists](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/artists.txt)
+- [artists2](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/artists2.txt)
+- [artists2_tagged](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/artists2_tagged.txt)
+- [camera_films](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/camera_films.txt)
+- [cameras](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/cameras.txt)
+- [clothes_bottom](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/clothes_bottom.txt)
+- [clothes_upper](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/clothes_upper.txt)
+- [colors](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/colors.txt)
+- [emotions](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/emotions.txt)
+- [hairstyles](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/hairstyles.txt)
+- [jobs](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/jobs.txt)
+- [lighting](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/lighting.txt)
+- [locations](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/locations.txt)
+- [materials](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/materials.txt)
+- [nationalities](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/nationalities.txt)
+- [weather](https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/wildcards/weather.txt)

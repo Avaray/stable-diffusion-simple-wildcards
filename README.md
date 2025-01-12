@@ -54,7 +54,7 @@ to **the proper directory** and download the files with one of the following com
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [WGET](https://www.gnu.org/software/wget/)
 
 ```bash
-wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh | bash -s -- wget moving-to-deno
+wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- wget sdxl
 ```
 
 <details>
@@ -63,13 +63,13 @@ wget -qO- https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildc
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [ARIA2C](https://aria2.github.io/)
 
 ```bash
-aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c moving-to-deno
+aria2c -q --allow-overwrite=true --remove-control-file=true -o dl.sh https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh && chmod +x dl.sh && ./dl.sh aria2c sdxl
 ```
 
 ### Download automatically with [BASH](https://www.gnu.org/software/bash/) and [CURL](https://curl.se/)
 
 ```bash
-curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/moving-to-deno/scripts/download.sh | bash -s -- curl moving-to-deno
+curl -s https://raw.githubusercontent.com/Avaray/stable-diffusion-simple-wildcards/sdxl/scripts/download.sh | bash -s -- curl sdxl
 ```
 
 You can find more ways to download the wildcards in [DOWNLOAD.md](docs/DOWNLOAD.md) file.
