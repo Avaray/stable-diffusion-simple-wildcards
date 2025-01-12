@@ -70,6 +70,7 @@ The initial prompt will look like this:
 
 <details>
 <summary>Show things available only in sd-dynamic-prompts extension</summary>
+&nbsp;
 
 You can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
