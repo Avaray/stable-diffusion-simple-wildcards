@@ -90,7 +90,7 @@ The initial prompt will look like this:
 > photography of **Spanish** woman, wearing **black dress**, standing in **restaurant**
 
 <details>
-<summary>Show things available only in `sd-dynamic-prompts`</summary>
+<summary>Show things available only in sd-dynamic-prompts extension</summary>
 
 You can also use [Variables](https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md#variables)
 
